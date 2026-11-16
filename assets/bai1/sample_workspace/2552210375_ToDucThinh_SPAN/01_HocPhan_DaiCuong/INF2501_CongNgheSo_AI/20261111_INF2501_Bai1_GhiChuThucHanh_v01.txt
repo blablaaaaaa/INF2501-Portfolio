@@ -1,0 +1,10 @@
+Ghi chú thực hành Bài 1 - Mục 1.4 (Chương 1)
+Sinh viên: Tô Đức Thịnh | MSSV: 2552210375 | Lớp: K20G
+Thư mục thực hành trên Windows: D:\ThucHanh_ToDucThinh\
+Các thao tác đã kiểm chứng:
+1. Tạo thư mục ThucHanh_ToDucThinh trên ổ D: (không dùng ổ hệ thống C:).
+2. Tạo GhiChu.txt -> Đổi tên thành GhiChuQuanTrong.txt.
+3. Tạo thư mục con TaiLieu -> Sao chép (Ctrl+C / Ctrl+V) GhiChuQuanTrong.txt vào TaiLieu.
+4. Tạo DiChuyen.txt -> Di chuyển (Ctrl+X / Ctrl+V) vào TaiLieu.
+5. Xóa GhiChuQuanTrong.txt trong TaiLieu bằng Delete (chuyển vào Recycle Bin) và khôi phục (Restore).
+6. Xóa vĩnh viễn DiChuyen.txt bằng Shift + Delete (có hộp thoại xác nhận).

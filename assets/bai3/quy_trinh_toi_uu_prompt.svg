@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 380" width="920" height="380" role="img" aria-labelledby="svg3Title svg3Desc">
+  <title id="svg3Title">Sơ đồ tiến hóa 3 cấp độ viết Prompt hiệu quả</title>
+  <desc id="svg3Desc">Minh họa sự nâng cấp từ Prompt Cơ bản sang Cải tiến và Nâng cao với 5 trụ cột Prompt Engineering</desc>
+  <defs>
+    <linearGradient id="bgHdr3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#131b3a"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+    <filter id="sh3" x="-4%" y="-4%" width="108%" height="112%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#131b3a" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect width="920" height="380" rx="16" fill="#f8fafc"/>
+  <rect x="0" y="0" width="920" height="60" rx="16" fill="url(#bgHdr3)"/>
+  <rect x="0" y="44" width="920" height="16" fill="url(#bgHdr3)"/>
+  <text x="28" y="37" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="17.5" font-weight="700" fill="#ffffff">MÔ HÌNH TIẾN HÓA 3 CẤP ĐỘ PROMPT ENGINEERING TRONG HỌC TẬP</text>
+
+  <!-- Level 1 -->
+  <g filter="url(#sh3)">
+    <rect x="24" y="82" width="268" height="194" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+    <rect x="24" y="82" width="268" height="38" rx="12" fill="#f1f5f9"/>
+    <rect x="24" y="108" width="268" height="12" fill="#f1f5f9"/>
+    <text x="42" y="106" font-family="'Be Vietnam Pro', sans-serif" font-size="13" font-weight="700" fill="#334155">CẤP 1: PROMPT CƠ BẢN</text>
+    <rect x="224" y="90" width="54" height="22" rx="11" fill="#e2e8f0"/>
+    <text x="251" y="105" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#475569">~25%</text>
+    <text x="42" y="144" font-family="'Be Vietnam Pro', sans-serif" font-size="12" font-weight="600" fill="#0f172a">Đặc điểm:</text>
+    <text x="42" y="164" font-family="'Be Vietnam Pro', sans-serif" font-size="11.5" fill="#475569">• Câu hỏi ngắn, thiếu ngữ cảnh.</text>
+    <text x="42" y="182" font-family="'Be Vietnam Pro', sans-serif" font-size="11.5" fill="#475569">• Không chỉ rõ đối tượng người học.</text>
+    <text x="42" y="200" font-family="'Be Vietnam Pro', sans-serif" font-size="11.5" fill="#475569">• Không giới hạn định dạng/độ dài.</text>
+    <rect x="40" y="218" width="236" height="44" rx="8" fill="#fef2f2" stroke="#fecaca"/>
+    <text x="52" y="236" font-family="'Be Vietnam Pro', sans-serif" font-size="11" font-weight="600" fill="#b91c1c">Hệ quả đầu ra:</text>
+    <text x="52" y="252" font-family="'Be Vietnam Pro', sans-serif" font-size="11" fill="#7f1d1d">Chung chung, dễ lạc tông, thiếu sư phạm.</text>
+  </g>
+
+  <polygon points="300,174 318,174 318,167 330,179 318,191 318,184 300,184" fill="#0284c7"/>
+
+  <!-- Level 2 -->
+  <g filter="url(#sh3)">
+    <rect x="336" y="82" width="268" height="194" rx="12" fill="#ffffff" stroke="#0284c7" stroke-width="1.5"/>
+    <rect x="336" y="82" width="268" height="38" rx="12" fill="#e0f2fe"/>
+    <rect x="336" y="108" width="268" height="12" fill="#e0f2fe"/>
+    <text x="354" y="106" font-family="'Be Vietnam Pro', sans-serif" font-size="13" font-weight="700" fill="#0369a1">CẤP 2: PROMPT CẢI TIẾN</text>
+    <rect x="536" y="90" width="54" height="22" rx="11" fill="#0284c7"/>
+    <text x="563" y="105" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#ffffff">~65%</text>
+    <text x="354" y="144" font-family="'Be Vietnam Pro', sans-serif" font-size="12" font-weight="600" fill="#0f172a">Bổ sung cấu trúc rõ ràng:</text>
+    <text x="354" y="164" font-family="'Be Vietnam Pro', sans-serif" font-size="11.5" fill="#334155">• Có mục tiêu &amp; trình độ (VD: lớp 6 / SV).</text>
+    <text x="354" y="182" font-family="'Be Vietnam Pro', sans-serif" font-size="11.5" fill="#334155">• Yêu cầu định dạng (bảng, gạch đầu dòng).</text>
+    <text x="354" y="200" font-family="'Be Vietnam Pro', sans-serif" font-size="11.5" fill="#334155">• Giới hạn số từ, số câu hoặc thời lượng.</text>
+    <rect x="352" y="218" width="236" height="44" rx="8" fill="#f0f9ff" stroke="#bae6fd"/>
+    <text x="364" y="236" font-family="'Be Vietnam Pro', sans-serif" font-size="11" font-weight="600" fill="#0369a1">Hệ quả đầu ra:</text>
+    <text x="364" y="252" font-family="'Be Vietnam Pro', sans-serif" font-size="11" fill="#0c4a6e">Đúng trọng tâm, gọn gàng, dùng được ngay.</text>
+  </g>
+
+  <polygon points="612,174 630,174 630,167 642,179 630,191 630,184 612,184" fill="#f59e0b"/>
+
+  <!-- Level 3 -->
+  <g filter="url(#sh3)">
+    <rect x="648" y="82" width="248" height="194" rx="12" fill="#131b3a" stroke="#f59e0b" stroke-width="2"/>
+    <rect x="648" y="82" width="248" height="38" rx="12" fill="#1e2b58"/>
+    <rect x="648" y="108" width="248" height="12" fill="#1e2b58"/>
+    <text x="664" y="106" font-family="'Be Vietnam Pro', sans-serif" font-size="13" font-weight="700" fill="#fde68a">CẤP 3: NÂNG CAO</text>
+    <rect x="826" y="90" width="56" height="22" rx="11" fill="#f59e0b"/>
+    <text x="854" y="105" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#0b1026">95%+</text>
+    <text x="664" y="144" font-family="'Be Vietnam Pro', sans-serif" font-size="12" font-weight="600" fill="#ffffff">Kỹ thuật Prompt Engineering:</text>
+    <text x="664" y="164" font-family="'Be Vietnam Pro', sans-serif" font-size="11.5" fill="#cbd5e1">• Role Prompting (Vai chuyên gia SPAN).</text>
+    <text x="664" y="182" font-family="'Be Vietnam Pro', sans-serif" font-size="11.5" fill="#cbd5e1">• Chain-of-Thought (Suy luận từng bước).</text>
+    <text x="664" y="200" font-family="'Be Vietnam Pro', sans-serif" font-size="11.5" fill="#cbd5e1">• Few-Shot Examples (Ví dụ mẫu chuẩn).</text>
+    <rect x="662" y="218" width="220" height="44" rx="8" fill="#0b1026" stroke="#f59e0b" stroke-opacity="0.6"/>
+    <text x="674" y="236" font-family="'Be Vietnam Pro', sans-serif" font-size="11" font-weight="600" fill="#fde68a">Hệ quả đầu ra:</text>
+    <text x="674" y="252" font-family="'Be Vietnam Pro', sans-serif" font-size="11" fill="#e2e8f0">Sâu sắc, có rubric kiểm chứng, hạn chế bịa.</text>
+  </g>
+
+  <!-- 5 Pillars Footer Strip -->
+  <rect x="24" y="294" width="872" height="66" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="42" y="316" font-family="'Be Vietnam Pro', sans-serif" font-size="12" font-weight="700" fill="#131b3a">CÔNG THỨC 5 THÀNH PHẦN VÀNG:</text>
+  <rect x="42" y="324" width="154" height="26" rx="6" fill="#e8ecf8"/>
+  <text x="119" y="341" text-anchor="middle" font-family="'Be Vietnam Pro', sans-serif" font-size="11.5" font-weight="600" fill="#131b3a">1. Vai trò (Role)</text>
+
+  <rect x="208" y="324" width="166" height="26" rx="6" fill="#e0f2fe"/>
+  <text x="291" y="341" text-anchor="middle" font-family="'Be Vietnam Pro', sans-serif" font-size="11.5" font-weight="600" fill="#0369a1">2. Bối cảnh (Context)</text>
+
+  <rect x="386" y="324" width="160" height="26" rx="6" fill="#fef3c7"/>
+  <text x="466" y="341" text-anchor="middle" font-family="'Be Vietnam Pro', sans-serif" font-size="11.5" font-weight="600" fill="#b45309">3. Nhiệm vụ (Task)</text>
+
+  <rect x="558" y="324" width="158" height="26" rx="6" fill="#dcfce7"/>
+  <text x="637" y="341" text-anchor="middle" font-family="'Be Vietnam Pro', sans-serif" font-size="11.5" font-weight="600" fill="#15803d">4. Định dạng (Format)</text>
+
+  <rect x="728" y="324" width="152" height="26" rx="6" fill="#f1f5f9" stroke="#cbd5e1"/>
+  <text x="804" y="341" text-anchor="middle" font-family="'Be Vietnam Pro', sans-serif" font-size="11.5" font-weight="600" fill="#334155">5. Ràng buộc &amp; Kiểm chứng</text>
+</svg>

@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 430" width="920" height="430" role="img" aria-labelledby="svg2Title svg2Desc">
+  <title id="svg2Title">Sơ đồ kết hợp toán tử tìm kiếm học thuật nâng cao</title>
+  <desc id="svg2Desc">Minh họa cách kết hợp ngoặc kép, AND, OR, site:, filetype: và intitle: để lọc tài liệu học thuật về AI trong Giáo dục Âm nhạc</desc>
+  <defs>
+    <linearGradient id="bgHdr2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#131b3a"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+    <filter id="sh2" x="-4%" y="-4%" width="108%" height="112%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#131b3a" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect width="920" height="430" rx="16" fill="#f8fafc"/>
+  <rect x="0" y="0" width="920" height="62" rx="16" fill="url(#bgHdr2)"/>
+  <rect x="0" y="46" width="920" height="16" fill="url(#bgHdr2)"/>
+  <text x="28" y="38" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="17.5" font-weight="700" fill="#ffffff">CHIẾN LƯỢC KẾT HỢP TOÁN TỬ TÌM KIẾM HỌC THUẬT — AI &amp; GIÁO DỤC ÂM NHẠC</text>
+
+  <!-- Step 1: Exact Phrase -->
+  <g filter="url(#sh2)">
+    <rect x="24" y="84" width="270" height="146" rx="12" fill="#ffffff" stroke="#0284c7" stroke-width="1.5"/>
+    <rect x="24" y="84" width="270" height="34" rx="12" fill="#e0f2fe"/>
+    <rect x="24" y="106" width="270" height="12" fill="#e0f2fe"/>
+    <text x="159" y="106" text-anchor="middle" font-family="'Be Vietnam Pro', sans-serif" font-size="12.5" font-weight="700" fill="#0369a1">1. Khóa cụm từ chính xác ("...")</text>
+    <rect x="38" y="130" width="242" height="32" rx="7" fill="#0f172a"/>
+    <text x="159" y="151" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12" fill="#fde68a">"artificial intelligence"</text>
+    <text x="40" y="182" font-family="'Be Vietnam Pro', sans-serif" font-size="11.5" fill="#334155">• Ép công cụ tìm đúng cụm từ liền nhau.</text>
+    <text x="40" y="200" font-family="'Be Vietnam Pro', sans-serif" font-size="11.5" fill="#334155">• Loại bỏ bài chỉ nhắc từ đơn lẻ</text>
+    <text x="48" y="216" font-family="'Be Vietnam Pro', sans-serif" font-size="11.5" fill="#334155">(ví dụ chỉ có "intelligence" chung).</text>
+  </g>
+
+  <!-- Plus / AND bridge -->
+  <circle cx="316" cy="157" r="17" fill="#f59e0b"/>
+  <text x="316" y="162" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#0b1026">AND</text>
+
+  <!-- Step 2: OR Expansion -->
+  <g filter="url(#sh2)">
+    <rect x="338" y="84" width="266" height="146" rx="12" fill="#ffffff" stroke="#1e2b58" stroke-width="1.5"/>
+    <rect x="338" y="84" width="266" height="34" rx="12" fill="#e8ecf8"/>
+    <rect x="338" y="106" width="266" height="12" fill="#e8ecf8"/>
+    <text x="471" y="106" text-anchor="middle" font-family="'Be Vietnam Pro', sans-serif" font-size="12.5" font-weight="700" fill="#131b3a">2. Mở rộng đồng nghĩa (OR)</text>
+    <rect x="352" y="130" width="238" height="32" rx="7" fill="#0f172a"/>
+    <text x="471" y="151" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10.8" fill="#38bdf8">("music education" OR "music pedagogy")</text>
+    <text x="354" y="182" font-family="'Be Vietnam Pro', sans-serif" font-size="11.5" fill="#334155">• Giao thoa đúng 2 trục chủ đề cốt lõi.</text>
+    <text x="354" y="200" font-family="'Be Vietnam Pro', sans-serif" font-size="11.5" fill="#334155">• Không bỏ sót nghiên cứu dùng thuật</text>
+    <text x="362" y="216" font-family="'Be Vietnam Pro', sans-serif" font-size="11.5" fill="#334155">ngữ "music pedagogy".</text>
+  </g>
+
+  <!-- Filter bridge -->
+  <circle cx="626" cy="157" r="17" fill="#0284c7"/>
+  <text x="626" y="161" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#ffffff">LỌC</text>
+
+  <!-- Step 3: Domain & Format -->
+  <g filter="url(#sh2)">
+    <rect x="648" y="84" width="248" height="146" rx="12" fill="#ffffff" stroke="#d97706" stroke-width="1.5"/>
+    <rect x="648" y="84" width="248" height="34" rx="12" fill="#fef3c7"/>
+    <rect x="648" y="106" width="248" height="12" fill="#fef3c7"/>
+    <text x="772" y="106" text-anchor="middle" font-family="'Be Vietnam Pro', sans-serif" font-size="12.5" font-weight="700" fill="#b45309">3. Thu hẹp nguồn &amp; định dạng</text>
+    <rect x="662" y="130" width="220" height="32" rx="7" fill="#0f172a"/>
+    <text x="772" y="151" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#fde68a">site:edu OR filetype:pdf</text>
+    <text x="664" y="182" font-family="'Be Vietnam Pro', sans-serif" font-size="11.5" fill="#334155">• <tspan font-family="'JetBrains Mono', monospace" font-weight="700" fill="#0369a1">site:</tspan> giới hạn cổng học thuật/đại học.</text>
+    <text x="664" y="200" font-family="'Be Vietnam Pro', sans-serif" font-size="11.5" fill="#334155">• <tspan font-family="'JetBrains Mono', monospace" font-weight="700" fill="#0369a1">filetype:pdf</tspan> tìm toàn văn báo cáo.</text>
+    <text x="664" y="216" font-family="'Be Vietnam Pro', sans-serif" font-size="11.5" fill="#334155">• <tspan font-family="'JetBrains Mono', monospace" font-weight="700" fill="#0369a1">intitle:</tspan> bắt buộc từ nằm ở tiêu đề.</text>
+  </g>
+
+  <!-- Down arrow -->
+  <path d="M 460 232 L 460 264" fill="none" stroke="#131b3a" stroke-width="2.5"/>
+  <polygon points="453,260 467,260 460,270" fill="#131b3a"/>
+
+  <!-- Combined Query & Output -->
+  <g filter="url(#sh2)">
+    <rect x="24" y="272" width="872" height="136" rx="14" fill="#131b3a" stroke="#f59e0b" stroke-width="1.5"/>
+    <text x="44" y="298" font-family="'Be Vietnam Pro', sans-serif" font-size="13" font-weight="700" fill="#fde68a">TRUY VẤN THỰC NGHIỆM TRÊN GOOGLE SEARCH &amp; KẾT QUẢ THU ĐƯỢC:</text>
+    <rect x="44" y="310" width="832" height="34" rx="8" fill="#0b1026" stroke="#334155"/>
+    <text x="60" y="332" font-family="'JetBrains Mono', monospace" font-size="13" fill="#38bdf8">"artificial intelligence" AND "music education"</text>
+    <text x="515" y="332" font-family="'Be Vietnam Pro', sans-serif" font-size="12" fill="#94a3b8">(+ biến thể site:journals.sagepub.com / site:unesco.org / filetype:pdf)</text>
+
+    <!-- 3 output pills -->
+    <rect x="44" y="358" width="264" height="36" rx="8" fill="#1e2b58" stroke="#38bdf8" stroke-width="1"/>
+    <text x="176" y="380" text-anchor="middle" font-family="'Be Vietnam Pro', sans-serif" font-size="12" font-weight="600" fill="#ffffff">NAfME (nafme.org) — Khung hướng dẫn</text>
+
+    <rect x="328" y="358" width="264" height="36" rx="8" fill="#1e2b58" stroke="#f59e0b" stroke-width="1"/>
+    <text x="460" y="380" text-anchor="middle" font-family="'Be Vietnam Pro', sans-serif" font-size="12" font-weight="600" fill="#ffffff">Oxford Academic — Oxford Handbook</text>
+
+    <rect x="612" y="358" width="264" height="36" rx="8" fill="#1e2b58" stroke="#38bdf8" stroke-width="1"/>
+    <text x="744" y="380" text-anchor="middle" font-family="'Be Vietnam Pro', sans-serif" font-size="12" font-weight="600" fill="#ffffff">Sage Journals &amp; MDPI — Bài bình duyệt</text>
+  </g>
+</svg>

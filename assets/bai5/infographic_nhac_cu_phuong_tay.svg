@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 780" width="1100" height="780" role="img" aria-labelledby="infoTitle infoDesc">
+  <title id="infoTitle">Infographic: 4 Bộ Nhạc Cụ Phương Tây trong Dàn Nhạc Giao Hưởng</title>
+  <desc id="infoDesc">Học liệu trực quan môn Âm nhạc lớp 6 bài Giới thiệu nhạc cụ phương Tây gồm Bộ Dây, Bộ Gỗ, Bộ Đồng và Bộ Gõ</desc>
+  <defs>
+    <linearGradient id="topHero" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#131b3a"/>
+      <stop offset="60%" stop-color="#1e2b58"/>
+      <stop offset="100%" stop-color="#28356b"/>
+    </linearGradient>
+    <linearGradient id="goldBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <filter id="shadowSoft" x="-3%" y="-3%" width="106%" height="108%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1100" height="780" rx="20" fill="#f8fafc"/>
+  <rect x="1" y="1" width="1098" height="778" rx="19" fill="none" stroke="#cbd5e1" stroke-width="1.5"/>
+
+  <!-- Header Banner -->
+  <rect x="24" y="22" width="1052" height="104" rx="16" fill="url(#topHero)"/>
+  <!-- Decorative Staff Lines in Header -->
+  <g stroke="#38bdf8" stroke-opacity="0.18" stroke-width="1.2" fill="none">
+    <path d="M 40 52 Q 300 28, 560 54 T 1060 44"/>
+    <path d="M 40 62 Q 300 38, 560 64 T 1060 54"/>
+    <path d="M 40 72 Q 300 48, 560 74 T 1060 64"/>
+    <path d="M 40 82 Q 300 58, 560 84 T 1060 74"/>
+    <path d="M 40 92 Q 300 68, 560 94 T 1060 84"/>
+  </g>
+  <rect x="44" y="42" width="174" height="24" rx="12" fill="url(#goldBar)"/>
+  <text x="131" y="58" text-anchor="middle" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="11.5" font-weight="700" fill="#131b3a">ÂM NHẠC LỚP 6 • 45 PHÚT</text>
+  <text x="44" y="92" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="24" font-weight="800" fill="#ffffff">GIỚI THIỆU 4 BỘ NHẠC CỤ PHƯƠNG TÂY</text>
+  <text x="44" y="114" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="13" fill="#cbd5e1">Học liệu trực quan Dàn nhạc Giao hưởng • Biên tập sư phạm: Tô Đức Thịnh (K20G - SPAN)</text>
+
+  <!-- CARD 1: BỘ DÂY (Top Left) -->
+  <g filter="url(#shadowSoft)">
+    <rect x="24" y="144" width="516" height="278" rx="16" fill="#ffffff" stroke="#fde68a" stroke-width="2"/>
+    <path d="M 24 160 Q 24 144 40 144 L 524 144 Q 540 144 540 160 L 540 198 L 24 198 Z" fill="#fef3c7"/>
+    <circle cx="56" cy="171" r="16" fill="#d97706"/>
+    <text x="56" y="176" text-anchor="middle" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="14" font-weight="800" fill="#ffffff">1</text>
+    <text x="84" y="176" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="17" font-weight="800" fill="#92400e">BỘ DÂY (STRINGS) — "Gia đình giọng hát"</text>
+  </g>
+  <!-- Violin SVG Icon -->
+  <g transform="translate(465, 290) rotate(-18)">
+    <ellipse cx="0" cy="-26" rx="22" ry="25" fill="#d97706" stroke="#78350f" stroke-width="2"/>
+    <ellipse cx="0" cy="24" rx="28" ry="30" fill="#b45309" stroke="#78350f" stroke-width="2"/>
+    <rect x="-12" y="-12" width="24" height="24" fill="#d97706"/>
+    <rect x="-4.5" y="-86" width="9" height="68" rx="2" fill="#451a03"/>
+    <circle cx="0" cy="-92" r="7" fill="#78350f"/>
+    <line x1="-2" y1="-84" x2="-2" y2="38" stroke="#fef3c7" stroke-width="1"/>
+    <line x1="2" y1="-84" x2="2" y2="38" stroke="#fef3c7" stroke-width="1"/>
+    <rect x="-10" y="10" width="20" height="4" rx="1" fill="#451a03"/>
+    <line x1="-38" y1="22" x2="42" y2="-28" stroke="#78350f" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+  <g font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="13" fill="#334155">
+    <text x="42" y="226" font-weight="700" fill="#0f172a">Nhạc cụ tiêu biểu (theo kích thước nhỏ → lớn):</text>
+    <text x="42" y="248">• <tspan font-weight="700" fill="#b45309">Violin</tspan> ("nữ hoàng" cao vút) • <tspan font-weight="700">Viola</tspan> (ấm, vừa)</text>
+    <text x="42" y="269">• <tspan font-weight="700">Cello</tspan> (trầm ấm, sâu lắng) • <tspan font-weight="700" fill="#b45309">Contrabass</tspan> (to nhất, rất trầm)</text>
+    <text x="42" y="298" font-weight="700" fill="#0f172a">Cơ chế tạo âm thanh:</text>
+    <text x="42" y="319">Kéo cây vĩ (cung vĩ) cọ xát lên dây hoặc gảy dây đàn.</text>
+    <rect x="42" y="340" width="352" height="64" rx="10" fill="#fffbeb" stroke="#fcd34d"/>
+    <text x="54" y="360" font-weight="700" font-size="12.5" fill="#92400e">Gợi ý sư phạm &amp; Nghe mẫu trên lớp:</text>
+    <text x="54" y="379" font-size="12">Phát trích đoạn <tspan font-weight="700">"Mùa Xuân"</tspan> (Vivaldi) + kể chuyện</text>
+    <text x="54" y="395" font-size="12">gia đình: chị Violin giọng cao, ông Contrabass trầm ấm.</text>
+  </g>
+
+  <!-- CARD 2: BỘ GỖ (Top Right) -->
+  <g filter="url(#shadowSoft)">
+    <rect x="560" y="144" width="516" height="278" rx="16" fill="#ffffff" stroke="#99f6e4" stroke-width="2"/>
+    <path d="M 560 160 Q 560 144 576 144 L 1060 144 Q 1076 144 1076 160 L 1076 198 L 560 198 Z" fill="#ccfbf1"/>
+    <circle cx="592" cy="171" r="16" fill="#0f766e"/>
+    <text x="592" y="176" text-anchor="middle" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="14" font-weight="800" fill="#ffffff">2</text>
+    <text x="620" y="176" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="17" font-weight="800" fill="#115e59">BỘ GỖ (WOODWINDS) — Thổi hơi &amp; Dăm kèn</text>
+  </g>
+  <!-- Flute + Saxophone SVG Icon -->
+  <g transform="translate(1010, 272)">
+    <!-- Flute -->
+    <rect x="-44" y="-58" width="84" height="10" rx="4" transform="rotate(-24)" fill="#94a3b8" stroke="#334155" stroke-width="1.5"/>
+    <circle cx="-14" cy="-46" r="2.5" fill="#0f172a"/>
+    <circle cx="-2" cy="-51" r="2.5" fill="#0f172a"/>
+    <circle cx="10" cy="-56" r="2.5" fill="#0f172a"/>
+    <!-- Saxophone silhouette -->
+    <path d="M -22 -24 L -10 -24 L 6 24 C 10 36, 26 36, 28 20 L 28 8 L 42 8 L 36 32 C 30 52, 0 54, -8 30 L -22 -16 Z" fill="#f59e0b" stroke="#92400e" stroke-width="1.8"/>
+    <ellipse cx="35" cy="8" rx="9" ry="4" fill="#fde68a" stroke="#92400e" stroke-width="1.5"/>
+  </g>
+  <g font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="13" fill="#334155">
+    <text x="578" y="226" font-weight="700" fill="#0f172a">Nhạc cụ tiêu biểu:</text>
+    <text x="578" y="248">• <tspan font-weight="700">Flute</tspan> (Sáo ngang) • <tspan font-weight="700">Clarinet</tspan> • <tspan font-weight="700">Oboe</tspan> • <tspan font-weight="700">Bassoon</tspan> • <tspan font-weight="700" fill="#0f766e">Saxophone</tspan></text>
+    <text x="578" y="276" font-weight="700" fill="#0f172a">Cơ chế tạo âm thanh:</text>
+    <text x="578" y="297">Thổi luồng hơi qua lỗ thổi (Flute) hoặc rung <tspan font-weight="700">dăm kèn</tspan> bằng gỗ/sậy.</text>
+    <!-- Critical Fact-Check Box -->
+    <rect x="578" y="316" width="368" height="88" rx="10" fill="#fef2f2" stroke="#fca5a5" stroke-width="1.5"/>
+    <text x="592" y="338" font-weight="800" font-size="12.5" fill="#b91c1c">KIỂM DUYỆT CHUYÊN MÔN (CHỐNG ẢO GIÁC AI):</text>
+    <text x="592" y="358" font-size="12" fill="#7f1d1d">Kèn <tspan font-weight="700">Saxophone</tspan> tuy làm bằng kim loại (đồng thau) nhưng</text>
+    <text x="592" y="376" font-size="12" fill="#7f1d1d">vẫn xếp vào <tspan font-weight="700">BỘ GỖ</tspan> vì phát âm bằng <tspan font-weight="700">dăm kèn đơn</tspan>.</text>
+    <text x="592" y="394" font-size="11.5" fill="#991b1b">(AI dễ phân loại nhầm sang Bộ Đồng nếu nhìn vật liệu!)</text>
+  </g>
+
+  <!-- CARD 3: BỘ ĐỒNG (Bottom Left) -->
+  <g filter="url(#shadowSoft)">
+    <rect x="24" y="440" width="516" height="258" rx="16" fill="#ffffff" stroke="#bae6fd" stroke-width="2"/>
+    <path d="M 24 456 Q 24 440 40 440 L 524 440 Q 540 440 540 456 L 540 494 L 24 494 Z" fill="#e0f2fe"/>
+    <circle cx="56" cy="467" r="16" fill="#0284c7"/>
+    <text x="56" y="472" text-anchor="middle" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="14" font-weight="800" fill="#ffffff">3</text>
+    <text x="84" y="472" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="17" font-weight="800" fill="#0369a1">BỘ ĐỒNG (BRASS) — Âm vang rực rỡ</text>
+  </g>
+  <!-- Trumpet SVG Icon -->
+  <g transform="translate(460, 588) rotate(-12)">
+    <rect x="-50" y="-8" width="70" height="8" rx="3" fill="#fbbf24" stroke="#92400e" stroke-width="1.5"/>
+    <path d="M 20 -8 L 48 -22 L 48 14 L 20 0 Z" fill="#f59e0b" stroke="#92400e" stroke-width="1.5"/>
+    <rect x="-26" y="0" width="38" height="16" rx="6" fill="none" stroke="#d97706" stroke-width="3.5"/>
+    <rect x="-14" y="-18" width="5" height="14" rx="1.5" fill="#fef3c7" stroke="#92400e" stroke-width="1"/>
+    <rect x="-6" y="-18" width="5" height="14" rx="1.5" fill="#fef3c7" stroke="#92400e" stroke-width="1"/>
+    <rect x="2" y="-18" width="5" height="14" rx="1.5" fill="#fef3c7" stroke="#92400e" stroke-width="1"/>
+    <polygon points="-58,-7 -50,-10 -50,2 -58,-1" fill="#fde68a" stroke="#92400e" stroke-width="1.2"/>
+  </g>
+  <g font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="13" fill="#334155">
+    <text x="42" y="522" font-weight="700" fill="#0f172a">Nhạc cụ tiêu biểu:</text>
+    <text x="42" y="544">• <tspan font-weight="700" fill="#0369a1">Trumpet</tspan> (âm cao, sáng, vang xa) • <tspan font-weight="700">Trombone</tspan> (ống trượt)</text>
+    <text x="42" y="565">• <tspan font-weight="700">French Horn</tspan> (Kèn Cor ấm) • <tspan font-weight="700">Tuba</tspan> (âm trầm nền tảng)</text>
+    <text x="42" y="595" font-weight="700" fill="#0f172a">Cơ chế tạo âm thanh:</text>
+    <text x="42" y="616">Rung đôi môi người thổi áp vào <tspan font-weight="700">búp kèn hình chén</tspan> bằng kim loại.</text>
+    <rect x="42" y="634" width="340" height="46" rx="8" fill="#f0f9ff" stroke="#bae6fd"/>
+    <text x="54" y="655" font-size="12" fill="#0c4a6e"><tspan font-weight="700">Vai trò:</tspan> Tạo khí thế hào hùng, điểm nhấn cao trào mạnh mẽ</text>
+    <text x="54" y="671" font-size="12" fill="#0c4a6e">trong hòa tấu giao hưởng &amp; quân nhạc.</text>
+  </g>
+
+  <!-- CARD 4: BỘ GÕ (Bottom Right) -->
+  <g filter="url(#shadowSoft)">
+    <rect x="560" y="440" width="516" height="258" rx="16" fill="#ffffff" stroke="#ddd6fe" stroke-width="2"/>
+    <path d="M 560 456 Q 560 440 576 440 L 1060 440 Q 1076 440 1076 456 L 1076 494 L 560 494 Z" fill="#ede9fe"/>
+    <circle cx="592" cy="467" r="16" fill="#6d28d9"/>
+    <text x="592" y="472" text-anchor="middle" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="14" font-weight="800" fill="#ffffff">4</text>
+    <text x="620" y="472" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="17" font-weight="800" fill="#5b21b6">BỘ GÕ (PERCUSSION) — Giữ nhịp &amp; Sắc thái</text>
+  </g>
+  <!-- Drum + Triangle SVG Icon -->
+  <g transform="translate(1008, 594)">
+    <!-- Drum -->
+    <ellipse cx="-14" cy="6" rx="28" ry="11" fill="#7c3aed" stroke="#4c1d95" stroke-width="1.8"/>
+    <rect x="-42" y="-22" width="56" height="28" fill="#8b5cf6" stroke="#4c1d95" stroke-width="1.8"/>
+    <ellipse cx="-14" cy="-22" rx="28" ry="11" fill="#fef3c7" stroke="#4c1d95" stroke-width="1.8"/>
+    <!-- Triangle -->
+    <polygon points="28,-44 10,-12 46,-12" fill="none" stroke="#94a3b8" stroke-width="3.5" stroke-linejoin="round"/>
+    <line x1="20" y1="-26" x2="48" y2="-38" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+  <g font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="13" fill="#334155">
+    <text x="578" y="522" font-weight="700" fill="#0f172a">3 nhạc cụ trọng tâm bài học lớp 6:</text>
+    <text x="578" y="544">• <tspan font-weight="700" fill="#5b21b6">Grand Cassa</tspan> (Trống cái): Âm trầm sâu, uy lực, hùng tráng.</text>
+    <text x="578" y="565">• <tspan font-weight="700" fill="#5b21b6">Piatti</tspan> (Chũm chọe): Âm thanh vang, chói sáng khi va đập.</text>
+    <text x="578" y="586">• <tspan font-weight="700" fill="#5b21b6">Triangle</tspan> (Tam giác chuông): Tiếng ngân trong trẻo, điểm xuyết.</text>
+    <rect x="578" y="608" width="356" height="72" rx="10" fill="#f5f3ff" stroke="#ddd6fe"/>
+    <text x="590" y="630" font-weight="700" font-size="12.5" fill="#5b21b6">Vai trò &amp; Hoạt động Luyện tập (15 phút):</text>
+    <text x="590" y="649" font-size="12" fill="#4c1d95">Học sinh xem video hòa tấu giao hưởng &amp; thảo luận nhóm</text>
+    <text x="590" y="666" font-size="12" fill="#4c1d95">chỉ ra thời điểm xuất hiện <tspan font-weight="700">Bộ Dây</tspan> và <tspan font-weight="700">Bộ Gõ</tspan>.</text>
+  </g>
+
+  <!-- Footer Note -->
+  <rect x="24" y="714" width="1052" height="44" rx="10" fill="#131b3a"/>
+  <text x="550" y="741" text-anchor="middle" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="12.5" fill="#e2e8f0">
+    <tspan fill="#fbbf24" font-weight="700">Lưu ý giảng dạy:</tspan> Học liệu SVG dùng song song với bản thu âm chuẩn (Piano, Violin, Flute, Trumpet, Grand Cassa) để học sinh trải nghiệm thính giác trực tiếp.
+  </text>
+</svg>

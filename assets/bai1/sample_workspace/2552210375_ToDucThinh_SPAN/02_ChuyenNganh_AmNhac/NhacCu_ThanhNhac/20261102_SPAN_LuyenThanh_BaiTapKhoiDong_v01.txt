@@ -1,0 +1,2 @@
+Bài tập khởi động hơi thở và luyện thanh hàng ngày (Sư phạm Âm nhạc - K20G)
+- Lưu trữ kèm beat tách nền chuẩn hóa bằng Moises theo cấu trúc YYYYMMDD_SPAN_TenBai_Tone.mp3.

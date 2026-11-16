@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài 3: Viết Prompt hiệu quả cho các tác vụ học tập — Tô Đức Thịnh | INF2501 Portfolio</title>
+  <meta name="description" content="Chương 3 - Bài tập 2 (mục 3.4): So sánh 3 cấp độ Prompt cho 3 tác vụ học tập ngành Sư phạm Âm nhạc và tích hợp Trình tạo & tối ưu Prompt tương tác.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bai123.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">♪</span>
+        <span class="brand-text"><strong>Tô Đức Thịnh</strong><small>INF2501 • Sư phạm Âm nhạc</small></span>
+      </a>
+      <button type="button" class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Mở menu điều hướng">☰</button>
+      <nav class="site-nav" id="siteNav" aria-label="Điều hướng chính">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html" class="nav-link">Giới thiệu</a></li>
+          <li class="nav-item nav-dropdown">
+            <a href="projects.html" class="nav-link active">Dự án</a>
+            <button type="button" class="dropdown-toggle" aria-expanded="false" aria-label="Mở danh mục 6 bài tập">▾</button>
+            <ul class="dropdown-menu">
+              <li><a href="bai1.html">Bài 1: Tệp tin &amp; Thư mục <span class="badge badge-navy">C1</span></a></li>
+              <li><a href="bai2.html">Bài 2: Tìm kiếm học thuật <span class="badge badge-navy">C2</span></a></li>
+              <li><a href="bai3.html" class="active">Bài 3: Viết Prompt hiệu quả <span class="badge badge-gold">C3 ★</span></a></li>
+              <li><a href="bai4.html">Bài 4: Hợp tác trực tuyến <span class="badge badge-navy">C4</span></a></li>
+              <li><a href="bai5.html">Bài 5: Sáng tạo nội dung AI <span class="badge badge-teal">C5</span></a></li>
+              <li><a href="bai6.html">Bài 6: AI có trách nhiệm <span class="badge badge-gold">C6 ★</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="conclusion.html" class="nav-link">Tổng kết</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Giới thiệu</a>
+          <span>/</span>
+          <a href="projects.html">Dự án</a>
+          <span>/</span>
+          <span>Bài 3 (Chương 3)</span>
+        </nav>
+        <span class="hero-eyebrow">Chương 3: Tổng quan về trí tuệ nhân tạo • Bài tập 2 (Mục 3.4 — 0,75đ) ★ Tương tác</span>
+        <h1 class="hero-title">Viết Prompt hiệu quả cho các tác vụ học tập</h1>
+        <p class="hero-subtitle">
+          Thử nghiệm và đối chiếu 3 cấp độ viết câu lệnh (<strong>Cơ bản &rarr; Cải tiến &rarr; Nâng cao</strong> với <em>Role Prompting</em>, <em>Chain-of-Thought</em>, <em>Few-Shot</em>) cho 3 tác vụ học tập chuyên ngành Sư phạm Âm nhạc, kết hợp ứng dụng tương tác <strong>Trình tạo và tối ưu Prompt học tập</strong>.
+        </p>
+        <div class="hero-meta-row">
+          <span class="badge">3 Tác vụ x 3 Cấp độ Prompt</span>
+          <span class="badge">Liên kết thực nghiệm Giáo án Lớp 6</span>
+          <span class="badge badge-gold">★ Công cụ JS Tối ưu Prompt (+0,5đ)</span>
+        </div>
+        <div class="hero-actions">
+          <a href="projects.html" class="btn btn-outline">← Quay lại trang Dự án</a>
+          <a href="#promptOptimizerApp" class="btn btn-primary">Mở Trình tối ưu Prompt ↓</a>
+          <a href="bai4.html" class="btn btn-outline">Chuyển sang Bài tập 4 →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <div class="container">
+
+        <!-- PHẦN A: MỤC TIÊU BÀI TẬP -->
+        <article class="part-card">
+          <div class="part-header">
+            <span class="part-badge">Phần A</span>
+            <h2 class="part-title">Mục tiêu bài tập &amp; Kỹ thuật Prompt Engineering</h2>
+          </div>
+          <p>
+            Theo hướng dẫn học phần <strong>INF2501</strong> (Chương 3 — Mục 3.4), chất lượng đầu ra của Mô hình ngôn ngữ lớn (LLM) phụ thuộc trực tiếp vào cách người học thiết kế câu lệnh (prompt). Bài tập hướng tới 3 mục tiêu trọng tâm:
+          </p>
+          <div class="card-grid-3">
+            <div class="card">
+              <span class="badge badge-navy">Mục tiêu 1</span>
+              <h3 style="margin-top:10px; font-size:1.02rem;">Làm chủ 3 tác vụ học tập lõi</h3>
+              <p style="margin-bottom:0;">Áp dụng viết prompt cho: (1) Tóm tắt tài liệu học thuật, (2) Giải thích khái niệm phức tạp, (3) Tạo bộ câu hỏi ôn tập theo cấp độ nhận thức.</p>
+            </div>
+            <div class="card">
+              <span class="badge badge-teal">Mục tiêu 2</span>
+              <h3 style="margin-top:10px; font-size:1.02rem;">Vận dụng kỹ thuật nâng cao</h3>
+              <p style="margin-bottom:0;">Chuyển hóa từ câu hỏi rời rạc sang prompt chuẩn hóa bằng <strong>Role Prompting</strong> (đóng vai), <strong>Chain-of-Thought</strong> (suy luận từng bước) và <strong>Few-Shot</strong> (ví dụ mẫu).</p>
+            </div>
+            <div class="card">
+              <span class="badge badge-gold">Mục tiêu 3</span>
+              <h3 style="margin-top:10px; font-size:1.02rem;">Phản biện &amp; Kiểm chứng đầu ra</h3>
+              <p style="margin-bottom:0;">Đánh giá nguyên nhân khiến một prompt hiệu quả hơn và phát hiện điểm yếu của AI (như lỗi thực tế lớp học hay kiến thức âm nhạc chưa chuẩn SGK).</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- PHẦN B: TÓM TẮT QUÁ TRÌNH THỰC HIỆN -->
+        <article class="part-card">
+          <div class="part-header">
+            <span class="part-badge">Phần B</span>
+            <h2 class="part-title">Tóm tắt quá trình thực hiện &amp; Liên kết thực nghiệm Giáo án Âm nhạc</h2>
+          </div>
+
+          <ol class="step-list">
+            <li class="step-item">
+              <span class="step-num">1</span>
+              <div class="step-content">
+                <strong>Chọn 3 tác vụ học tập gắn trực tiếp với ngành Sư phạm Âm nhạc</strong>
+                <p>Lấy chính bài báo khoa học tìm được ở <a href="bai2.html">Bài 2</a> (MDPI <em>Education Sciences</em>), kiến thức chuyên ngành phân loại nhạc cụ phương Tây (SGK Âm nhạc 6) và nhu cầu kiểm tra đánh giá cuối tiết học để làm dữ liệu đầu vào thực tế.</p>
+              </div>
+            </li>
+            <li class="step-item">
+              <span class="step-num">2</span>
+              <div class="step-content">
+                <strong>Thiết kế 3 phiên bản Prompt cho mỗi tác vụ &amp; thử nghiệm trên ChatGPT</strong>
+                <p>Bắt đầu từ <em>Prompt cơ bản</em> (1 câu hỏi ngắn), nâng cấp lên <em>Prompt cải tiến</em> (thêm đối tượng, định dạng, độ dài), rồi hoàn thiện thành <em>Prompt nâng cao</em> (gắn vai trò chuyên gia, suy luận từng bước CoT, ví dụ mẫu Few-Shot và ràng buộc chống bịa thông tin).</p>
+              </div>
+            </li>
+            <li class="step-item">
+              <span class="step-num">3</span>
+              <div class="step-content">
+                <strong>Liên kết thực nghiệm Prompt soạn giáo án Âm nhạc lớp 6 (từ Báo cáo thực hành của sinh viên)</strong>
+                <p>Khi thử nghiệm Prompt đóng vai chuyên gia sư phạm âm nhạc để thiết kế trò chơi Khởi động 5 phút bài <em>“Giới thiệu nhạc cụ phương Tây”</em> (xem chi tiết tại <a href="bai5.html">Bài 5</a>), AI trả về cấu trúc 3 bước rất tốt nhưng gợi ý <em>“giấu nhạc cụ thật như Trumpet, Cello sau lưng”</em>. Sinh viên nhận ra ràng buộc bối cảnh lớp học THCS Việt Nam chưa đủ chặt &rarr; từ đó bổ sung trường <strong>Ràng buộc thực tế</strong> vào công thức tối ưu Prompt.</p>
+              </div>
+            </li>
+            <li class="step-item">
+              <span class="step-num">4</span>
+              <div class="step-content">
+                <strong>Xây dựng ứng dụng web tương tác <code>prompt-optimizer.js</code></strong>
+                <p>Đúc kết kinh nghiệm thực nghiệm thành công cụ trực quan ngay trên trang này, cho phép người dùng lắp ghép 5 thành phần vàng, bật/tắt kỹ thuật CoT/Few-Shot/Self-Review và đo điểm chất lượng theo thời gian thực.</p>
+              </div>
+            </li>
+          </ol>
+
+          <div class="svg-showcase">
+            <img src="assets/bai3/quy_trinh_toi_uu_prompt.svg" alt="Mô hình tiến hóa 3 cấp độ Prompt Engineering và công thức 5 thành phần">
+            <p class="svg-showcase-caption"><strong>Hình 3.1:</strong> Mô hình nâng cấp từ Prompt Cơ bản (~25%) lên Prompt Nâng cao (95%+) với 5 trụ cột thiết kế câu lệnh.</p>
+          </div>
+
+          <div class="card-grid-2">
+            <figure class="figure-card">
+              <img src="assets/bai3/de_bai_bai3_viet_prompt_hieu_qua.jpg" alt="Đề bài Bài 3 trên LMS về viết prompt hiệu quả">
+              <figcaption class="figure-caption"><strong>Hình 3.2:</strong> Đề bài LMS Bài 3 — Yêu cầu 3 tác vụ học tập x 3 cấp độ prompt, đối chiếu kết quả và tổng hợp nguyên tắc.</figcaption>
+            </figure>
+            <div style="display:flex; flex-direction:column; gap:14px;">
+              <div class="callout callout-ai" style="margin:0;">
+                <strong>Công cụ sử dụng &amp; Liêm chính AI</strong>
+                <ul>
+                  <li><strong>Mô hình thử nghiệm:</strong> ChatGPT &amp; Gemini (dùng để chạy đối chứng 9 phiên bản prompt và 2 prompt giáo án Âm nhạc lớp 6).</li>
+                  <li><strong>Vai trò con người:</strong> Sinh viên trực tiếp thiết kế cấu trúc prompt, chấm điểm so sánh chất lượng, phát hiện lỗi thiếu thực tế lớp học và viết phần phân tích phản biện.</li>
+                </ul>
+              </div>
+              <div class="callout callout-warn" style="margin:0;">
+                <strong>Khó khăn &amp; Cách giải quyết</strong>
+                <p><strong>Vấn đề:</strong> AI thường viết văn phong bách khoa khô cứng (ví dụ lời dẫn Bộ Dây liệt kê máy móc 4 cây đàn) hoặc có nguy cơ nhầm kèn Saxophone vào Bộ Đồng.</p>
+                <p><strong>Giải pháp:</strong> Ép giọng văn kể chuyện cho lứa tuổi lớp 6, kèm ràng buộc <em>“đối chiếu phân loại theo nguyên lý phát âm của SGK Âm nhạc 6”</em>.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- PHẦN C: SẢN PHẨM CUỐI CÙNG -->
+        <article class="part-card">
+          <div class="part-header">
+            <span class="part-badge">Phần C</span>
+            <h2 class="part-title">Sản phẩm cuối cùng: Đối chiếu 3 Tác vụ &amp; Trình tối ưu Prompt tương tác</h2>
+          </div>
+
+          <!-- TÁC VỤ 1 -->
+          <div class="task-block">
+            <div class="task-block-header">
+              <h3>Tác vụ 1: Tóm tắt tài liệu học thuật (Áp dụng bài báo MDPI <em>Education Sciences</em> từ Bài 2)</h3>
+              <span class="badge badge-navy">Kỹ thuật: Role + Output Schema + Anti-Hallucination</span>
+            </div>
+            <div class="prompt-tier-grid">
+              <div class="prompt-tier-card tier-basic">
+                <div class="prompt-tier-head"><span>1. Prompt Cơ bản</span><span>~25%</span></div>
+                <div class="prompt-tier-body">
+                  <div class="prompt-box">
+                    <button type="button" class="copy-btn">Sao chép</button>
+                    <pre>Tóm tắt giúp tôi bài báo "Artificial Intelligence-Assisted Music Education" (2024).</pre>
+                  </div>
+                  <div class="ai-output-card">
+                    <strong>Kết quả AI trả về</strong>
+                    Đoạn văn dài 350 chữ kể chung chung rằng AI giúp học nhạc tốt hơn, có nhiều thách thức về công nghệ, không nêu được 9 lĩnh vực ứng dụng hay phương pháp tổng quan.
+                  </div>
+                  <div class="critique-note"><strong>Phân tích:</strong> AI tự đoán nội dung dựa trên tiêu đề; thiếu cấu trúc đọc nhanh để đưa vào tổng quan tài liệu.</div>
+                </div>
+              </div>
+
+              <div class="prompt-tier-card tier-improved">
+                <div class="prompt-tier-head"><span>2. Prompt Cải tiến</span><span>~65%</span></div>
+                <div class="prompt-tier-body">
+                  <div class="prompt-box">
+                    <button type="button" class="copy-btn">Sao chép</button>
+                    <pre>Dựa trên đoạn tóm tắt bài báo dưới đây, hãy tóm tắt cho sinh viên Sư phạm Âm nhạc thành 4 gạch đầu dòng: Mục tiêu, Phương pháp, Kết quả chính, Hạn chế. Độ dài tối đa 200 từ.</pre>
+                  </div>
+                  <div class="ai-output-card">
+                    <strong>Kết quả AI trả về</strong>
+                    Tách được 4 ý gọn gàng, đúng giới hạn 200 từ, dễ theo dõi hơn nhưng thuật ngữ chuyên ngành bị dịch hơi thô và chưa tách nhóm công cụ thực tế.
+                  </div>
+                  <div class="critique-note"><strong>Phân tích:</strong> Đã kiểm soát được độ dài và bố cục, nhưng chưa có cơ chế chống suy diễn ngoài văn bản gốc.</div>
+                </div>
+              </div>
+
+              <div class="prompt-tier-card tier-advanced">
+                <div class="prompt-tier-head"><span>3. Prompt Nâng cao</span><span>96%</span></div>
+                <div class="prompt-tier-body">
+                  <div class="prompt-box">
+                    <button type="button" class="copy-btn">Sao chép</button>
+                    <pre>Vai trò: Giảng viên nghiên cứu Giáo dục Âm nhạc.
+Nhiệm vụ: Từ văn bản gốc đính kèm, phân tích từng bước (CoT) theo 4 trục: (1) Mục tiêu &amp; phương pháp tổng quan, (2) Các nhóm ứng dụng AI nổi bật, (3) Giá trị sư phạm, (4) Thách thức triển khai.
+Định dạng: 1 câu luận điểm + Bảng 4 dòng + 3 thuật ngữ giữ tiếng Anh trong ngoặc.
+Ràng buộc: Chỉ dùng dữ liệu trong văn bản cung cấp; nếu thiếu thông tin hãy ghi "Chưa nêu trong đoạn trích".</pre>
+                  </div>
+                  <div class="ai-output-card">
+                    <strong>Kết quả AI trả về</strong>
+                    Xuất ra bảng tổng hợp sắc nét, giữ chuẩn thuật ngữ (<em>intelligent tutoring systems</em>), trích đúng các nhóm ứng dụng từ tài liệu mà không tự bịa số liệu mẫu.
+                  </div>
+                  <div class="critique-note"><strong>Vì sao hiệu quả nhất:</strong> Ràng buộc nguồn + cơ chế nói "Chưa nêu" triệt tiêu tình trạng AI bịa chi tiết nghiên cứu.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TÁC VỤ 2 -->
+          <div class="task-block">
+            <div class="task-block-header">
+              <h3>Tác vụ 2: Giải thích khái niệm phức tạp chuyên ngành Âm nhạc (Phân loại Saxophone &amp; Cơ chế tạo âm)</h3>
+              <span class="badge badge-teal">Kỹ thuật: Role + Analogy + Few-Shot + 2-Tier Explanation</span>
+            </div>
+            <div class="prompt-tier-grid">
+              <div class="prompt-tier-card tier-basic">
+                <div class="prompt-tier-head"><span>1. Prompt Cơ bản</span><span>~25%</span></div>
+                <div class="prompt-tier-body">
+                  <div class="prompt-box">
+                    <button type="button" class="copy-btn">Sao chép</button>
+                    <pre>Tại sao kèn Saxophone lại thuộc Bộ Gỗ?</pre>
+                  </div>
+                  <div class="ai-output-card">
+                    <strong>Kết quả AI trả về</strong>
+                    Giải thích ngắn rằng vì Saxophone có cái dăm bằng gỗ và phím giống kèn Clarinet, dùng nhiều từ chuyên môn vật lý âm học hơi khó giảng trực tiếp cho học sinh lớp 6.
+                  </div>
+                  <div class="critique-note"><strong>Phân tích:</strong> Đúng ý nhưng thiếu sự phân tầng sư phạm cho học sinh THCS.</div>
+                </div>
+              </div>
+
+              <div class="prompt-tier-card tier-improved">
+                <div class="prompt-tier-head"><span>2. Prompt Cải tiến</span><span>~68%</span></div>
+                <div class="prompt-tier-body">
+                  <div class="prompt-box">
+                    <button type="button" class="copy-btn">Sao chép</button>
+                    <pre>Hãy giải thích cho học sinh lớp 6 hiểu tại sao kèn Saxophone làm bằng kim loại nhưng lại xếp vào Bộ Gỗ trong dàn nhạc. Viết ngắn gọn khoảng 120 chữ, có ví dụ so sánh với kèn Trumpet.</pre>
+                  </div>
+                  <div class="ai-output-card">
+                    <strong>Kết quả AI trả về</strong>
+                    Văn phong dễ hiểu hơn, nêu được sự khác biệt giữa dăm gỗ của Saxophone và búp kèn đồng của Trumpet, nhưng chưa rõ quy luật phân loại chung cho cả Sáo Flute.
+                  </div>
+                  <div class="critique-note"><strong>Phân tích:</strong> Gần sát nhu cầu giảng dạy nhưng giáo viên vẫn phải tự bổ sung bảng đối chiếu tổng quát.</div>
+                </div>
+              </div>
+
+              <div class="prompt-tier-card tier-advanced">
+                <div class="prompt-tier-head"><span>3. Prompt Nâng cao</span><span>95%</span></div>
+                <div class="prompt-tier-body">
+                  <div class="prompt-box">
+                    <button type="button" class="copy-btn">Sao chép</button>
+                    <pre>Vai trò: Giáo viên Âm nhạc THCS giàu kinh nghiệm trực quan hóa kiến thức.
+Tư duy từng bước (CoT): (1) Chỉ ra hiểu lầm phổ biến nhìn vỏ kim loại, (2) Giải thích nguyên lý phân loại dựa vào nguồn tạo dao động không khí, (3) Đối chiếu Saxophone (dăm đơn) vs Trumpet (rung môi).
+Ví dụ mẫu (Few-Shot): "Giống như phân loại xe dựa vào động cơ chứ không phải màu sơn vỏ xe..."
+Định dạng: Phần 1 lời giảng cho HS lớp 6 (100 chữ) + Phần 2 bảng đối chiếu 3 nhạc cụ + 1 câu hỏi nhanh kiểm tra hiểu bài.</pre>
+                  </div>
+                  <div class="ai-output-card">
+                    <strong>Kết quả AI trả về</strong>
+                    Tạo ra lời giảng giàu hình ảnh so sánh ("động cơ bên trong vs lớp vỏ bên ngoài"), bảng đối chiếu rõ ràng (Saxophone — Clarinet — Trumpet) và câu hỏi tương tác ngay tại lớp.
+                  </div>
+                  <div class="critique-note"><strong>Vì sao hiệu quả nhất:</strong> Few-Shot định hướng đúng lối ví von sư phạm, CoT giúp học sinh hiểu bản chất thay vì học vẹt.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TÁC VỤ 3 -->
+          <div class="task-block">
+            <div class="task-block-header">
+              <h3>Tác vụ 3: Tạo bộ câu hỏi ôn tập theo thang Bloom (Chủ đề 4 bộ nhạc cụ phương Tây lớp 6)</h3>
+              <span class="badge badge-gold">Kỹ thuật: Role + Bloom Matrix + Few-Shot Format + Self-Check</span>
+            </div>
+            <div class="prompt-tier-grid">
+              <div class="prompt-tier-card tier-basic">
+                <div class="prompt-tier-head"><span>1. Prompt Cơ bản</span><span>~20%</span></div>
+                <div class="prompt-tier-body">
+                  <div class="prompt-box">
+                    <button type="button" class="copy-btn">Sao chép</button>
+                    <pre>Tạo 5 câu hỏi trắc nghiệm về nhạc cụ phương Tây.</pre>
+                  </div>
+                  <div class="ai-output-card">
+                    <strong>Kết quả AI trả về</strong>
+                    5 câu hỏi chỉ ở mức nhớ máy móc ("Đàn nào có 4 dây?"), không phân độ khó, không có lời giải thích đáp án sai và không bám sát bài học lớp 6.
+                  </div>
+                  <div class="critique-note"><strong>Phân tích:</strong> Quá dễ, không đánh giá được khả năng phân biệt âm sắc hay vận dụng của học sinh.</div>
+                </div>
+              </div>
+
+              <div class="prompt-tier-card tier-improved">
+                <div class="prompt-tier-head"><span>2. Prompt Cải tiến</span><span>~70%</span></div>
+                <div class="prompt-tier-body">
+                  <div class="prompt-box">
+                    <button type="button" class="copy-btn">Sao chép</button>
+                    <pre>Soạn 6 câu hỏi trắc nghiệm 4 đáp án A, B, C, D cho học sinh lớp 6 về 4 bộ nhạc cụ phương Tây (Dây, Gỗ, Đồng, Gõ). Chia 3 mức độ: dễ, trung bình, khá. Ghi kèm đáp án đúng ở cuối.</pre>
+                  </div>
+                  <div class="ai-output-card">
+                    <strong>Kết quả AI trả về</strong>
+                    Câu hỏi phủ đều 4 bộ nhạc cụ, có phân mức độ và bảng đáp án. Tuy nhiên phương án nhiễu ở một số câu còn lộ liễu, thiếu giải thích vì sao đáp án kia sai.
+                  </div>
+                  <div class="critique-note"><strong>Phân tích:</strong> Dùng được để ôn tập nhanh nhưng cần biên tập lại phương án nhiễu để tăng chất lượng kiểm tra.</div>
+                </div>
+              </div>
+
+              <div class="prompt-tier-card tier-advanced">
+                <div class="prompt-tier-head"><span>3. Prompt Nâng cao</span><span>98%</span></div>
+                <div class="prompt-tier-body">
+                  <div class="prompt-box">
+                    <button type="button" class="copy-btn">Sao chép</button>
+                    <pre>Vai trò: Chuyên gia khảo thí giáo dục Âm nhạc THCS.
+Nhiệm vụ: Tạo 6 câu trắc nghiệm (4 lựa chọn A–D) cho bài "Giới thiệu nhạc cụ phương Tây" lớp 6 theo ma trận Bloom: 2 Nhận biết, 2 Thông hiểu, 2 Vận dụng tình huống âm thanh.
+Ví dụ mẫu 1 câu: [Mức độ] Câu hỏi -&gt; A..D -&gt; Đáp án đúng -&gt; Giải thích sư phạm (1–2 câu).
+Ràng buộc: Bắt buộc có 1 câu tình huống phân biệt kèn Saxophone (Bộ Gỗ) và 1 câu về bộ Gõ (Grand Cassa / Triangle). Tự kiểm tra không có câu nào 2 đáp án đúng.</pre>
+                  </div>
+                  <div class="ai-output-card">
+                    <strong>Kết quả AI trả về</strong>
+                    Bộ 6 câu hỏi đạt chuẩn ma trận Bloom, phương án nhiễu hợp lý, tích hợp đúng ngữ liệu tiết học lớp 6 (<code>Violin, Saxophone, Grand Cassa, Triangle</code>) kèm giải thích chi tiết để giáo viên chữa bài ngay trên lớp.
+                  </div>
+                  <div class="critique-note"><strong>Vì sao hiệu quả nhất:</strong> Ma trận Bloom + Few-Shot mẫu định dạng + ràng buộc nội dung SGK tạo ra bộ đề có tính phân hóa thật sự.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="section-subhead">Liên kết thực nghiệm Prompt soạn giáo án Âm nhạc lớp 6 (Dữ liệu thật từ Bài 5)</h3>
+          <div class="prompt-diff-grid">
+            <div class="card">
+              <span class="badge badge-teal">Thực nghiệm A — Trò chơi Khởi động (5 phút)</span>
+              <h4 style="margin-top:10px;">Prompt gốc của sinh viên trên ChatGPT</h4>
+              <div class="prompt-box">
+                <button type="button" class="copy-btn">Sao chép</button>
+                <pre>Tôi đang soạn giáo án Âm nhạc lớp 6 bài Giới thiệu nhạc cụ phương Tây. Đóng vai một chuyên gia sư phạm âm nhạc, hãy thiết kế cho tôi 1 trò chơi Khởi động dài 5 phút. Yêu cầu: Trò chơi phải sôi động, giúp học sinh tò mò về âm thanh, không cần chuẩn bị đạo cụ phức tạp.</pre>
+              </div>
+              <p style="margin-bottom:0; font-size:0.9rem;"><strong>Rút kinh nghiệm Prompt:</strong> Vì chưa ràng buộc rõ <em>“chỉ dùng loa/máy chiếu, không yêu cầu nhạc cụ thật”</em>, AI đề xuất giấu kèn Trumpet/Cello sau lưng &rarr; sinh viên đã biên tập thành <em>“Lắng nghe giai điệu ẩn danh”</em> (<a href="bai5.html">xem 2 ảnh ChatGPT tại Bài 5</a>).</p>
+            </div>
+            <div class="card">
+              <span class="badge badge-gold">Thực nghiệm B — Lời dẫn giới thiệu Bộ Dây</span>
+              <h4 style="margin-top:10px;">Prompt gốc của sinh viên trên ChatGPT</h4>
+              <div class="prompt-box">
+                <button type="button" class="copy-btn">Sao chép</button>
+                <pre>Viết lời dẫn của giáo viên (khoảng 150 chữ) để giới thiệu về nhóm nhạc cụ Dây trong dàn nhạc giao hưởng. Hãy dùng lối kể chuyện, ngôn từ giàu hình ảnh, ví von để học sinh lớp 6 dễ hình dung.</pre>
+              </div>
+              <p style="margin-bottom:0; font-size:0.9rem;"><strong>Rút kinh nghiệm Prompt:</strong> Cần thêm ví dụ mẫu (Few-Shot) về cách nhân hóa để AI tránh liệt kê kiểu từ điển bách khoa (<code>Violin, Viola, Cello, Contrabass</code>) mà chuyển sang hình ảnh <em>“gia đình đàn Dây”</em> kết hợp nhạc mẫu <em>“Mùa Xuân”</em>.</p>
+            </div>
+          </div>
+
+          <h3 class="section-subhead">Bộ 06 nguyên tắc vàng viết Prompt hiệu quả rút ra từ thực nghiệm</h3>
+          <div class="card-grid-3">
+            <div class="callout" style="margin:0;"><strong>1. Giao vai trò cụ thể (Role)</strong><br>Gắn đúng chuyên môn (<em>Chuyên gia Sư phạm Âm nhạc THCS</em>) để AI chọn thuật ngữ và giọng văn chuẩn.</div>
+            <div class="callout callout-info" style="margin:0;"><strong>2. Khóa bối cảnh thực tế</strong><br>Nêu rõ cấp lớp (lớp 6), thời lượng (5 phút), điều kiện thiết bị lớp học để tránh giải pháp viển vông.</div>
+            <div class="callout" style="margin:0;"><strong>3. Phân rã suy luận (CoT)</strong><br>Yêu cầu AI lập luận từng bước trước khi kết luận cho các khái niệm âm nhạc dễ gây nhầm lẫn.</div>
+            <div class="callout callout-info" style="margin:0;"><strong>4. Dùng ví dụ mẫu (Few-Shot)</strong><br>Đưa 1 mẫu câu hỏi hoặc đoạn văn mẫu giúp AI khóa chặt cấu trúc và phong cách mong muốn.</div>
+            <div class="callout callout-warn" style="margin:0;"><strong>5. Đặt rào chắn chống bịa</strong><br>Luôn kèm ràng buộc <em>“không tự bịa số liệu/trích dẫn”</em> và bắt đối chiếu lại SGK chuyên ngành.</div>
+            <div class="callout callout-ai" style="margin:0;"><strong>6. Lặp &amp; Biên tập (Human-in-the-Loop)</strong><br>Prompt tốt nhất chỉ cho bản nháp 80%; 20% cảm xúc sư phạm cuối cùng luôn do giáo viên hoàn thiện.</div>
+          </div>
+
+          <!-- CÔNG CỤ TƯƠNG TÁC JAVASCRIPT (+0,5Đ) -->
+          <div class="optimizer-shell" id="promptOptimizerApp">
+            <div class="optimizer-top-bar">
+              <div>
+                <span class="badge badge-gold">★ Tính năng tương tác sáng tạo • js/prompt-optimizer.js</span>
+                <h3 style="margin:8px 0 4px; font-size:1.3rem;">Trình tạo và tối ưu Prompt học tập (Chuyên ngành Sư phạm Âm nhạc)</h3>
+                <p style="margin:0; font-size:0.9rem;">Chọn nhanh 1 trong 4 mẫu tác vụ bên dưới hoặc tự nhập 5 thành phần để xem điểm chất lượng và nhận câu lệnh tối ưu hóa theo thời gian thực.</p>
+              </div>
+              <button type="button" class="btn btn-outline btn-sm" id="optResetBtn">Làm mới (Reset)</button>
+            </div>
+
+            <div class="preset-pills" role="group" aria-label="Mẫu tác vụ gợi ý">
+              <button type="button" class="preset-btn active" data-preset="lesson" aria-pressed="true">🎵 Giáo án Âm nhạc lớp 6</button>
+              <button type="button" class="preset-btn" data-preset="summary" aria-pressed="false">📄 Tóm tắt bài báo KH</button>
+              <button type="button" class="preset-btn" data-preset="concept" aria-pressed="false">🎷 Giải thích khái niệm Saxophone</button>
+              <button type="button" class="preset-btn" data-preset="quiz" aria-pressed="false">📝 Tạo bộ câu hỏi Bloom</button>
+            </div>
+
+            <div class="optimizer-grid">
+              <!-- Left: Form Inputs -->
+              <div class="optimizer-form">
+                <div class="opt-field">
+                  <label for="optRole">1. Vai trò (Role) <span>+18% điểm</span></label>
+                  <input type="text" id="optRole" class="opt-input" placeholder="VD: Chuyên gia Sư phạm Âm nhạc THCS...">
+                </div>
+                <div class="opt-field">
+                  <label for="optContext">2. Bối cảnh &amp; Đối tượng (Context) <span>+18% điểm</span></label>
+                  <textarea id="optContext" class="opt-textarea" rows="3" placeholder="VD: Dạy tiết Âm nhạc lớp 6 (45 phút), lớp chỉ có loa và máy chiếu..."></textarea>
+                </div>
+                <div class="opt-field">
+                  <label for="optTask">3. Nhiệm vụ cốt lõi (Task) <span>+20% điểm</span></label>
+                  <textarea id="optTask" class="opt-textarea" rows="3" placeholder="VD: Thiết kế hoạt động khởi động 5 phút giúp HS nhận diện âm sắc..."></textarea>
+                </div>
+                <div class="opt-field">
+                  <label for="optFormat">4. Định dạng đầu ra (Output Format) <span>+14% điểm</span></label>
+                  <input type="text" id="optFormat" class="opt-input" placeholder="VD: Bảng 3 cột, tối đa 200 chữ, kèm câu hỏi kiểm tra...">
+                </div>
+                <div class="opt-field">
+                  <label for="optConstraints">5. Ràng buộc chuyên môn (Constraints) <span>+12% điểm</span></label>
+                  <textarea id="optConstraints" class="opt-textarea" rows="2" placeholder="VD: Bám sát SGK Âm nhạc 6, không bịa thông tin..."></textarea>
+                </div>
+
+                <div class="opt-field">
+                  <label>6. Kỹ thuật Prompt Engineering nâng cao <span>+18% điểm</span></label>
+                  <div class="technique-checks">
+                    <label class="tech-check-item">
+                      <input type="checkbox" id="optTechCot" checked>
+                      <div><strong>Chain-of-Thought</strong>Suy luận từng bước</div>
+                    </label>
+                    <label class="tech-check-item">
+                      <input type="checkbox" id="optTechFewShot" checked>
+                      <div><strong>Few-Shot</strong>Khung ví dụ mẫu</div>
+                    </label>
+                    <label class="tech-check-item">
+                      <input type="checkbox" id="optTechSelfReview" checked>
+                      <div><strong>Self-Review</strong>Tự rà soát ảo giác</div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right: Live Score & Comparison -->
+              <div class="optimizer-output">
+                <div class="score-meter-wrap" aria-live="polite">
+                  <div class="score-meter-head">
+                    <div>
+                      <div style="font-size:0.8rem; text-transform:uppercase; letter-spacing:0.04em; color:#93c5fd;">Điểm chất lượng Prompt</div>
+                      <span class="score-value-badge" id="optScoreValue">0%</span>
+                    </div>
+                    <span class="score-tier-label" id="optScoreTier">Đang tính...</span>
+                  </div>
+                  <div class="score-bar-track">
+                    <div class="score-bar-fill" id="optScoreBar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+                  </div>
+                  <ul class="optimizer-tips" id="optTipsList"></ul>
+                </div>
+
+                <div class="diff-panel">
+                  <div class="diff-panel-head">
+                    <h4>Prompt Cơ bản (Chưa tối ưu)</h4>
+                    <span class="badge badge-warn">Dễ thiếu trọng tâm</span>
+                  </div>
+                  <div class="basic-preview-box" id="optBasicOutput"></div>
+                </div>
+
+                <div class="diff-panel" style="border-color: var(--navy-800);">
+                  <div class="diff-panel-head">
+                    <h4>Prompt Tối ưu hoàn chỉnh (Sẵn sàng dán vào ChatGPT/Gemini)</h4>
+                    <span class="badge badge-success">Chuẩn cấu trúc</span>
+                  </div>
+                  <div class="prompt-box" style="margin:0;">
+                    <button type="button" class="copy-btn" data-copy-target="#optOptimizedOutput">Sao chép Prompt</button>
+                    <pre id="optOptimizedOutput"></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="exercise-pager">
+          <a href="projects.html" class="btn btn-outline">← Quay lại trang Dự án</a>
+          <a href="bai4.html" class="btn btn-primary">Chuyển sang bài tập kế tiếp: Bài 4 →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>Hồ sơ Học tập Số (INF2501)</h3>
+          <p><strong>Họ và tên:</strong> Tô Đức Thịnh | <strong>Mã sinh viên:</strong> 2552210375</p>
+          <p><strong>Ngành:</strong> Sư phạm Âm nhạc (SPAN) — Trường Đại học Sư phạm Nghệ thuật Trung ương</p>
+          <p><strong>Học phần:</strong> Nhập môn Công nghệ số và ứng dụng trí tuệ nhân tạo (INF2501) | <strong>Lớp:</strong> K20G</p>
+        </div>
+        <div>
+          <h4>Liên kết nhanh</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Giới thiệu (About Me)</a></li>
+            <li><a href="projects.html">Tổng quan Dự án (Projects)</a></li>
+            <li><a href="bai1.html">Bài 1: Tệp tin &amp; Thư mục</a></li>
+            <li><a href="bai2.html">Bài 2: Tìm kiếm học thuật</a></li>
+            <li><a href="bai3.html">Bài 3: Viết Prompt hiệu quả</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Hồ sơ &amp; Liêm chính</h4>
+          <ul class="footer-links">
+            <li><a href="bai4.html">Bài 4: Hợp tác trực tuyến (Nhóm 10)</a></li>
+            <li><a href="bai5.html">Bài 5: Sáng tạo nội dung AI</a></li>
+            <li><a href="bai6.html">Bài 6: AI có trách nhiệm</a></li>
+            <li><a href="conclusion.html">Tổng kết (Conclusion)</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Tô Đức Thịnh (MSSV: 2552210375 — K20G). Portfolio học phần INF2501.</span>
+        <span>Cam kết Liêm chính AI: Mọi công cụ AI hỗ trợ đều được ghi chú minh bạch, kiểm chứng chuyên môn qua SGK &amp; tài liệu học thuật, không đăng tải thông tin cá nhân nhạy cảm.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/prompt-optimizer.js"></script>
+</body>
+</html>

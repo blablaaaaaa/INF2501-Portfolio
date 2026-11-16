@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài 4: Hợp tác trực tuyến (Nhóm 10) — Tô Đức Thịnh | INF2501 Portfolio</title>
+  <meta name="description" content="Chương 4 - Bài tập 3 (mục 4.4): Sử dụng công cụ hợp tác trực tuyến cho dự án Nhóm 10 về AI và Công nghệ số trong giảng dạy và học tập Âm nhạc THCS.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bai456.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">♪</span>
+        <span class="brand-text"><strong>Tô Đức Thịnh</strong><small>INF2501 • Sư phạm Âm nhạc</small></span>
+      </a>
+      <button type="button" class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Mở menu điều hướng">☰</button>
+      <nav class="site-nav" id="siteNav" aria-label="Điều hướng chính">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html" class="nav-link">Giới thiệu</a></li>
+          <li class="nav-item nav-dropdown">
+            <a href="projects.html" class="nav-link active">Dự án</a>
+            <button type="button" class="dropdown-toggle" aria-expanded="false" aria-label="Mở danh mục 6 bài tập">▾</button>
+            <ul class="dropdown-menu">
+              <li><a href="bai1.html">Bài 1: Tệp tin &amp; Thư mục <span class="badge badge-navy">C1</span></a></li>
+              <li><a href="bai2.html">Bài 2: Tìm kiếm học thuật <span class="badge badge-navy">C2</span></a></li>
+              <li><a href="bai3.html">Bài 3: Viết Prompt hiệu quả <span class="badge badge-gold">C3 ★</span></a></li>
+              <li><a href="bai4.html" class="active" aria-current="page">Bài 4: Hợp tác trực tuyến <span class="badge badge-navy">C4</span></a></li>
+              <li><a href="bai5.html">Bài 5: Sáng tạo nội dung AI <span class="badge badge-teal">C5</span></a></li>
+              <li><a href="bai6.html">Bài 6: AI có trách nhiệm <span class="badge badge-gold">C6 ★</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="conclusion.html" class="nav-link">Tổng kết</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Đường dẫn">
+          <a href="index.html">Giới thiệu</a>
+          <span>/</span>
+          <a href="projects.html">Dự án</a>
+          <span>/</span>
+          <span>Bài tập 4 (Chương 4)</span>
+        </nav>
+        <span class="hero-eyebrow">Chương 4: Giao tiếp và hợp tác trong môi trường số • Bài tập 3 (mục 4.4)</span>
+        <h1 class="hero-title">Sử dụng công cụ hợp tác trực tuyến cho dự án nhóm</h1>
+        <p class="hero-subtitle">
+          Ghi nhận thực tế quá trình phối hợp trực tuyến của <strong>Nhóm 10</strong> (ngành Sư phạm Âm nhạc — GVHD: <strong>Vũ Việt Hoàng</strong>) khi triển khai đề tài <em>"AI &amp; Công nghệ số trong giảng dạy và học tập Âm nhạc THCS"</em> qua quy trình 3 giai đoạn và bảng phân công 5 phần.
+        </p>
+        <div class="hero-meta-row">
+          <span class="badge">Nhóm 10 • 5 Thành viên SPAN</span>
+          <span class="badge">Trello/Kanban • Google Meet • Drive</span>
+          <span class="badge">Kịch bản tiết 40 phút &amp; Video sản phẩm</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="container section-block">
+      <!-- PHẦN A: MỤC TIÊU BÀI TẬP -->
+      <article class="part-card">
+        <div class="part-header">
+          <span class="part-badge">Thành phần 1</span>
+          <h2 class="part-title">a) Mục tiêu bài tập</h2>
+        </div>
+        <p>
+          Bài tập thuộc <strong>Chương 4 (Mục 4.4)</strong> nhằm rèn luyện năng lực tổ chức làm việc nhóm từ xa, điều phối công việc minh bạch và đồng bộ tài nguyên số trên môi trường trực tuyến:
+        </p>
+        <div class="card-grid-2">
+          <div class="callout callout-info">
+            <strong>Kỹ năng hợp tác &amp; điều phối số:</strong>
+            <ul>
+              <li>Tổ chức họp nhóm trực tuyến (lập kế hoạch, phân vai điều phối/thư ký/thuyết trình, thống nhất lịch trình và biên bản làm việc).</li>
+              <li>Thiết lập bảng quản lý tiến độ công việc theo mô hình <strong>Kanban / Trello</strong> để theo dõi từng đầu việc từ ý tưởng đến sản phẩm.</li>
+              <li>Lưu trữ và chia sẻ học liệu tập trung trên đám mây (<strong>Google Drive</strong>), khắc phục xung đột phiên bản giữa các thành viên.</li>
+            </ul>
+          </div>
+          <div class="callout callout-ai">
+            <strong>Gắn kết chuyên ngành Sư phạm Âm nhạc (Nhóm 10):</strong>
+            <ul>
+              <li>Phối hợp 5 sinh viên thuộc 4 lớp hành chính khác nhau (<code>K20A</code>, <code>K20C</code>, <code>K20F</code>, <code>K20G</code>) cùng xây dựng mô hình <em>"Lớp học Âm nhạc thông minh 4.0"</em> cho bậc THCS.</li>
+              <li>Thử nghiệm thực tế hệ sinh thái công cụ AI &amp; ứng dụng âm nhạc số, đồng thời kiểm soát chất lượng âm thanh và định dạng đa nền tảng (<code>iOS</code>, <code>Android</code>, <code>Windows</code>).</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- PHẦN B: TÓM TẮT QUÁ TRÌNH THỰC HIỆN -->
+      <article class="part-card">
+        <div class="part-header">
+          <span class="part-badge">Thành phần 2</span>
+          <h2 class="part-title">b) Tóm tắt quá trình thực hiện</h2>
+        </div>
+
+        <h3>1. Thông tin thành viên Nhóm 10 &amp; Bảng phân công 5 phần</h3>
+        <p>
+          Dự án do thầy <strong>Vũ Việt Hoàng</strong> hướng dẫn, quy tụ 5 thành viên ngành Sư phạm Âm nhạc (<code>SPAN</code>). Toàn bộ công việc được chia thành 5 phần nội dung rạch ròi:
+        </p>
+        <div class="table-responsive">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>STT</th>
+                <th>Họ và tên thành viên</th>
+                <th>Lớp &amp; Ngành</th>
+                <th>MSSV</th>
+                <th>Nhiệm vụ phân công chính</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>1</strong></td>
+                <td><strong>Tô Đức Thịnh</strong> <span class="badge badge-gold">Chủ Portfolio</span></td>
+                <td><code>K20G</code> — SPAN</td>
+                <td><code>2552210375</code></td>
+                <td><strong>Phần 1: Tổng quan &amp; AI Soạn giảng</strong></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Vũ Đức Thịnh</td>
+                <td><code>K20F</code> — SPAN</td>
+                <td><code>2552210319</code></td>
+                <td>Phần 2: AI &amp; Công nghệ số trong hát và nhạc cụ</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Bùi Minh Thuỳ</td>
+                <td><code>K20C</code> — SPAN</td>
+                <td><code>2552210157</code></td>
+                <td>Phần 3: AI &amp; Công nghệ số trong đọc nhạc, lý thuyết và kiểm tra</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Lê Phương Thảo</td>
+                <td><code>K20A</code> — SPAN</td>
+                <td><code>2552210043</code></td>
+                <td>Phần 4: AI sáng tạo trong thưởng thức âm nhạc và nhạc cụ</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Lê Thị Phương Thảo</td>
+                <td><code>K20G</code> — SPAN</td>
+                <td><code>2552210374</code></td>
+                <td>Phần 5: Ví dụ gợi ý về kịch bản của 1 tiết học (40 phút)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 style="margin-top: 24px;">2. Quy trình phối hợp 3 giai đoạn</h3>
+        <ol class="step-list">
+          <li class="step-item">
+            <span class="step-num">1</span>
+            <div class="step-content">
+              <h4>Giai đoạn 1 — Ý tưởng &amp; Nghiên cứu</h4>
+              <p>Họp nhóm trực tuyến trên Google Meet và trao đổi nhanh qua Zalo để thống nhất mô hình chủ đạo <strong>"Lớp học Âm nhạc thông minh 4.0"</strong>. Cả nhóm tiến hành khảo sát, dùng thử và chọn lọc các công cụ AI cũng như ứng dụng âm nhạc phù hợp với chương trình Âm nhạc THCS.</p>
+            </div>
+          </li>
+          <li class="step-item">
+            <span class="step-num">2</span>
+            <div class="step-content">
+              <h4>Giai đoạn 2 — Nội dung &amp; Học liệu</h4>
+              <p>Các thành viên trực tiếp thao tác trên ứng dụng được phân công để chuẩn bị học liệu thực tế: tách beat/hạ tông, số hóa nốt nhạc, tạo hình ảnh minh họa AI và soạn bộ câu hỏi trắc nghiệm ôn tập. Nhóm phối hợp biên soạn kịch bản chi tiết cho <strong>1 tiết học thực tế 40 phút</strong>.</p>
+            </div>
+          </li>
+          <li class="step-item">
+            <span class="step-num">3</span>
+            <div class="step-content">
+              <h4>Giai đoạn 3 — Sản xuất &amp; Hoàn thiện</h4>
+              <p>Quay video thuyết trình kết hợp thu màn hình thao tác từng ứng dụng trên điện thoại/máy tính. Chuyển sang khâu hậu kỳ dựng phim (<code>CapCut</code> / <code>Premiere</code>), lọc tạp âm, đồng bộ định dạng tệp từ nhiều thiết bị và hoàn thiện <em>Báo cáo nhóm 10</em>.</p>
+            </div>
+          </li>
+        </ol>
+
+        <h3 style="margin-top: 24px;">3. Hệ sinh thái công cụ hợp tác &amp; Sáng tạo số đã sử dụng</h3>
+        <div class="tool-eco-grid">
+          <div class="tool-eco-card">
+            <h4>🤝 Giao tiếp, Họp nhóm &amp; Điều phối tiến độ</h4>
+            <p>Duy trì nhịp độ làm việc xuyên suốt giữa 5 thành viên ở 4 lớp khác nhau, lưu trữ dữ liệu tập trung.</p>
+            <div class="tool-pills">
+              <span class="tool-pill">Google Meet (Họp trực tuyến)</span>
+              <span class="tool-pill">Zalo (Điều phối nhanh)</span>
+              <span class="tool-pill">Trello / Kanban (Theo dõi task)</span>
+              <span class="tool-pill">Google Drive (Kho file chung)</span>
+            </div>
+          </div>
+          <div class="tool-eco-card">
+            <h4>🤖 AI Soạn giảng, Hình ảnh &amp; Đánh giá</h4>
+            <p>Hỗ trợ lên khung bài giảng, minh họa trực quan bối cảnh âm nhạc và thiết kế kiểm tra đánh giá tương tác.</p>
+            <div class="tool-pills">
+              <span class="tool-pill">ChatGPT</span>
+              <span class="tool-pill">Gemini</span>
+              <span class="tool-pill">Canva</span>
+              <span class="tool-pill">Midjourney</span>
+              <span class="tool-pill">Quizizz AI</span>
+            </div>
+          </div>
+          <div class="tool-eco-card">
+            <h4>🎼 Ứng dụng Chuyên ngành Âm nhạc</h4>
+            <p>Phục vụ trực tiếp cho các phần hát, nhạc cụ, đọc nhạc, lý thuyết và phối khí minh họa.</p>
+            <div class="tool-pills">
+              <span class="tool-pill">Moises (Tách beat / Hạ tông)</span>
+              <span class="tool-pill">Perfect Piano</span>
+              <span class="tool-pill">MuseScore (Số hóa nốt)</span>
+              <span class="tool-pill">Suno AI (Phối khí tự động)</span>
+            </div>
+          </div>
+          <div class="tool-eco-card">
+            <h4>🎬 Quay dựng &amp; Xử lý Hậu kỳ</h4>
+            <p>Kết nối các đoạn quay thuyết trình và ghi màn hình đa thiết bị thành video sản phẩm thống nhất (<code>1280×720</code>).</p>
+            <div class="tool-pills">
+              <span class="tool-pill">CapCut (Dựng &amp; lọc tạp âm)</span>
+              <span class="tool-pill">Canva Video</span>
+              <span class="tool-pill">Adobe Premiere</span>
+            </div>
+          </div>
+        </div>
+
+        <h3 style="margin-top: 24px;">4. Phân tích phản biện 4 khó khăn thực tế &amp; Giải pháp khắc phục</h3>
+        <div class="table-responsive">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Nhóm khó khăn</th>
+                <th>Vấn đề thực tế Nhóm 10 gặp phải</th>
+                <th>Giải pháp nhóm đã áp dụng</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>1. Kỹ thuật thu âm</strong></td>
+                <td>Ghi màn hình thao tác ứng dụng âm nhạc (<code>Moises</code>, <code>Perfect Piano</code>) trên điện thoại bị lẫn tiếng ồn môi trường.</td>
+                <td>Thu lại phần lời ở không gian yên tĩnh và xử lý khử ồn, cân bằng âm lượng ở khâu hậu kỳ trên CapCut/Canva.</td>
+              </tr>
+              <tr>
+                <td><strong>2. Tối ưu câu lệnh AI (Prompting)</strong></td>
+                <td>Các công cụ tạo hình ảnh (Midjourney) và giai điệu (Suno AI) ban đầu thiên về phong cách phương Tây.</td>
+                <td>Tinh chỉnh prompt nhiều vòng, bổ sung bối cảnh văn hóa, trang phục và chất liệu giáo dục Việt Nam.</td>
+              </tr>
+              <tr>
+                <td><strong>3. Tối ưu thời lượng tiết học</strong></td>
+                <td>Đưa quá nhiều ứng dụng số vào kịch bản tiết 40 phút dễ gây quá tải và phân tán sự tập trung.</td>
+                <td>Cân đối lại kịch bản ở Phần 5 để công nghệ giữ vai trò hỗ trợ mạch bài học, không làm đứt gãy trải nghiệm âm nhạc.</td>
+              </tr>
+              <tr>
+                <td><strong>4. Đồng bộ đa hệ điều hành</strong></td>
+                <td>Thành viên sử dụng đồng thời <code>iOS</code>, <code>Android</code> và <code>Windows</code>, phát sinh khác biệt codec/định dạng tệp khi ghép video.</td>
+                <td>Quy chuẩn cây thư mục trên Google Drive, quy đổi đồng bộ về <code>MP4 (H.264)</code> trước khi chuyển sang bộ phận hậu kỳ.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <!-- PHẦN C: SẢN PHẨM CUỐI CÙNG -->
+      <article class="part-card">
+        <div class="part-header">
+          <span class="part-badge">Thành phần 3</span>
+          <h2 class="part-title">c) Sản phẩm cuối cùng</h2>
+        </div>
+
+        <h3>1. Minh họa Bảng Kanban quản lý dự án Nhóm 10</h3>
+        <p>
+          Mô phỏng bảng theo dõi tiến độ 5 phần công việc của Nhóm 10 qua 4 cột trạng thái (<em>Kế hoạch</em> → <em>Đang triển khai</em> → <em>Kiểm duyệt &amp; Hậu kỳ</em> → <em>Hoàn thành</em>):
+        </p>
+
+        <div class="kanban-wrapper">
+          <div class="kanban-board">
+            <!-- Column 1 -->
+            <div class="kanban-col">
+              <div class="kanban-col-header col-todo">
+                <span>Kế hoạch (GĐ 1)</span>
+                <span class="kanban-count">2</span>
+              </div>
+              <div class="kanban-cards">
+                <div class="kanban-card">
+                  <span class="kanban-card-tag tag-phase1">Khởi động</span>
+                  <h4>Chốt đề tài "Lớp học Âm nhạc thông minh 4.0"</h4>
+                  <p>Họp Google Meet thống nhất phạm vi chương trình THCS &amp; tiêu chí chọn app.</p>
+                  <div class="kanban-card-meta">
+                    <span class="kanban-assignee">Cả Nhóm 10</span>
+                    <span>Meet • Zalo</span>
+                  </div>
+                </div>
+                <div class="kanban-card">
+                  <span class="kanban-card-tag tag-phase1">Hạ tầng</span>
+                  <h4>Tạo Google Drive &amp; quy chuẩn định dạng</h4>
+                  <p>Phân quyền thư mục Phần 1–5 cho thành viên dùng iOS, Android, Windows.</p>
+                  <div class="kanban-card-meta">
+                    <span class="kanban-assignee">Tô Đức Thịnh</span>
+                    <span>Drive</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="kanban-col">
+              <div class="kanban-col-header col-doing">
+                <span>Học liệu &amp; Kịch bản (GĐ 2)</span>
+                <span class="kanban-count">3</span>
+              </div>
+              <div class="kanban-cards">
+                <div class="kanban-card">
+                  <span class="kanban-card-tag tag-phase2">Phần 1 &amp; 2</span>
+                  <h4>AI Soạn giảng &amp; Hát, Nhạc cụ số</h4>
+                  <p>Thử nghiệm ChatGPT/Gemini soạn bài; demo tách beat Moises &amp; Perfect Piano.</p>
+                  <div class="kanban-card-meta">
+                    <span class="kanban-assignee">T.Đ. Thịnh &amp; V.Đ. Thịnh</span>
+                    <span>Moises</span>
+                  </div>
+                </div>
+                <div class="kanban-card">
+                  <span class="kanban-card-tag tag-phase2">Phần 3 &amp; 4</span>
+                  <h4>Số hóa nốt nhạc, Quiz &amp; Thưởng thức</h4>
+                  <p>Tạo bản nhạc MuseScore, câu hỏi Quizizz AI, ảnh Midjourney &amp; nhạc Suno AI.</p>
+                  <div class="kanban-card-meta">
+                    <span class="kanban-assignee">M. Thuỳ &amp; L.P. Thảo</span>
+                    <span>MuseScore</span>
+                  </div>
+                </div>
+                <div class="kanban-card">
+                  <span class="kanban-card-tag tag-phase2">Phần 5</span>
+                  <h4>Kịch bản chi tiết tiết dạy 40 phút</h4>
+                  <p>Cân đối thời lượng tránh quá tải ứng dụng, giữ mạch sư phạm âm nhạc.</p>
+                  <div class="kanban-card-meta">
+                    <span class="kanban-assignee">Lê Thị Phương Thảo</span>
+                    <span>Word/Docs</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Column 3 -->
+            <div class="kanban-col">
+              <div class="kanban-col-header col-review">
+                <span>Kiểm duyệt &amp; Hậu kỳ (GĐ 3)</span>
+                <span class="kanban-count">2</span>
+              </div>
+              <div class="kanban-cards">
+                <div class="kanban-card">
+                  <span class="kanban-card-tag tag-phase3">Xử lý âm thanh</span>
+                  <h4>Lọc tạp âm video quay màn hình</h4>
+                  <p>Khử nhiễu môi trường cho clip thao tác Moises, Perfect Piano trên điện thoại.</p>
+                  <div class="kanban-card-meta">
+                    <span class="kanban-assignee">Bộ phận Hậu kỳ</span>
+                    <span>CapCut</span>
+                  </div>
+                </div>
+                <div class="kanban-card">
+                  <span class="kanban-card-tag tag-phase3">Tinh chỉnh</span>
+                  <h4>Chuẩn hóa prompt &amp; đồng bộ codec</h4>
+                  <p>Điều chỉnh ảnh/giai điệu AI hợp văn hóa Việt Nam; chuyển về MP4 1280×720.</p>
+                  <div class="kanban-card-meta">
+                    <span class="kanban-assignee">Cả Nhóm 10</span>
+                    <span>Premiere</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Column 4 -->
+            <div class="kanban-col">
+              <div class="kanban-col-header col-done">
+                <span>Hoàn thành &amp; Nộp bài</span>
+                <span class="kanban-count">2</span>
+              </div>
+              <div class="kanban-cards">
+                <div class="kanban-card">
+                  <span class="kanban-card-tag tag-phase3">Sản phẩm 1</span>
+                  <h4>Báo cáo Nhóm 10 hoàn chỉnh (.docx)</h4>
+                  <p>Tổng hợp đầy đủ 3 giai đoạn, phân công 5 phần, công cụ &amp; 4 bài học kinh nghiệm.</p>
+                  <div class="kanban-card-meta">
+                    <span class="kanban-assignee">GVHD: Vũ Việt Hoàng</span>
+                    <span>Đã nghiệm thu</span>
+                  </div>
+                </div>
+                <div class="kanban-card">
+                  <span class="kanban-card-tag tag-phase3">Sản phẩm 2</span>
+                  <h4>Video thuyết trình sản phẩm (38.78 MB)</h4>
+                  <p>Xuất bản MP4 HD 720p (30fps) giới thiệu mô hình lớp học Âm nhạc số THCS.</p>
+                  <div class="kanban-card-meta">
+                    <span class="kanban-assignee">Nhúng ở Bài 5</span>
+                    <span>Hoàn tất ✓</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h3 style="margin-top: 26px;">2. Sơ đồ luồng phối hợp trực tuyến Nhóm 10 (SVG)</h3>
+        <figure class="figure-card figure-svg" style="margin-top: 12px;">
+          <img src="assets/bai4/so_do_hop_tac_nhom10.svg" alt="Sơ đồ quy trình hợp tác trực tuyến 3 giai đoạn và hạ tầng đồng bộ đa nền tảng của Nhóm 10">
+          <figcaption class="figure-caption">
+            <strong>Hình 4.1:</strong> Sơ đồ luồng phối hợp trực tuyến 3 giai đoạn, phân công 5 phần và giải pháp đồng bộ đa hệ điều hành (<code>iOS / Android / Windows</code>) của Nhóm 10. <em>(Nhấn vào hình để phóng to).</em>
+          </figcaption>
+        </figure>
+
+        <div class="download-bar">
+          <div class="download-bar-info">
+            <strong>📄 Tài liệu gốc: Báo cáo dự án Nhóm 10 (.docx)</strong>
+            <span>Tệp lưu trữ chuẩn hóa: <code>assets/bai4/bao_cao_nhom_10_am_nhac_thcs.docx</code> (GVHD: Vũ Việt Hoàng • 5 thành viên SPAN)</span>
+          </div>
+          <a href="assets/bai4/bao_cao_nhom_10_am_nhac_thcs.docx" class="btn btn-secondary btn-sm" download>Tải Báo cáo Nhóm 10 ↓</a>
+        </div>
+      </article>
+
+      <!-- Điều hướng bài tập -->
+      <nav class="exercise-pager" aria-label="Điều hướng giữa các bài tập">
+        <a href="projects.html" class="btn btn-outline">← Quay lại trang Dự án</a>
+        <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+          <a href="bai3.html" class="btn btn-outline">← Bài tập trước (Bài 3)</a>
+          <a href="bai5.html" class="btn btn-primary">Chuyển sang bài tập kế tiếp (Bài 5) →</a>
+        </div>
+      </nav>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>Hồ sơ Học tập Số (INF2501)</h3>
+          <p><strong>Họ và tên:</strong> Tô Đức Thịnh | <strong>Mã sinh viên:</strong> 2552210375</p>
+          <p><strong>Ngành:</strong> Sư phạm Âm nhạc (SPAN) — Trường Đại học Sư phạm Nghệ thuật Trung ương</p>
+          <p><strong>Học phần:</strong> Nhập môn Công nghệ số và ứng dụng trí tuệ nhân tạo (INF2501) | <strong>Lớp:</strong> K20G</p>
+        </div>
+        <div>
+          <h4>Liên kết nhanh</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Giới thiệu (About Me)</a></li>
+            <li><a href="projects.html">Tổng quan Dự án (Projects)</a></li>
+            <li><a href="bai1.html">Bài 1: Tệp tin &amp; Thư mục</a></li>
+            <li><a href="bai2.html">Bài 2: Tìm kiếm học thuật</a></li>
+            <li><a href="bai3.html">Bài 3: Viết Prompt hiệu quả</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Hồ sơ &amp; Liêm chính</h4>
+          <ul class="footer-links">
+            <li><a href="bai4.html">Bài 4: Hợp tác trực tuyến (Nhóm 10)</a></li>
+            <li><a href="bai5.html">Bài 5: Sáng tạo nội dung AI</a></li>
+            <li><a href="bai6.html">Bài 6: AI có trách nhiệm</a></li>
+            <li><a href="conclusion.html">Tổng kết (Conclusion)</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Tô Đức Thịnh (MSSV: 2552210375 — K20G). Portfolio học phần INF2501.</span>
+        <span>Cam kết Liêm chính AI: Mọi công cụ AI hỗ trợ đều được ghi chú minh bạch, kiểm chứng chuyên môn qua SGK &amp; tài liệu học thuật, không đăng tải thông tin cá nhân nhạy cảm.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

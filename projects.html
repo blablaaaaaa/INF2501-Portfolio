@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dự án (Projects) — Tô Đức Thịnh | INF2501 Portfolio</title>
+  <meta name="description" content="Tổng quan 06 bài tập thực hành học phần INF2501 của Tô Đức Thịnh (K20G, Sư phạm Âm nhạc) cùng ma trận năng lực số 06 chương.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">♪</span>
+        <span class="brand-text"><strong>Tô Đức Thịnh</strong><small>INF2501 • Sư phạm Âm nhạc</small></span>
+      </a>
+      <button type="button" class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Mở menu điều hướng">☰</button>
+      <nav class="site-nav" id="siteNav" aria-label="Điều hướng chính">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html" class="nav-link">Giới thiệu</a></li>
+          <li class="nav-item nav-dropdown">
+            <a href="projects.html" class="nav-link active">Dự án</a>
+            <button type="button" class="dropdown-toggle" aria-expanded="false" aria-label="Mở danh mục 6 bài tập">▾</button>
+            <ul class="dropdown-menu">
+              <li><a href="bai1.html">Bài 1: Tệp tin &amp; Thư mục <span class="badge badge-navy">C1</span></a></li>
+              <li><a href="bai2.html">Bài 2: Tìm kiếm học thuật <span class="badge badge-navy">C2</span></a></li>
+              <li><a href="bai3.html">Bài 3: Viết Prompt hiệu quả <span class="badge badge-gold">C3 ★</span></a></li>
+              <li><a href="bai4.html">Bài 4: Hợp tác trực tuyến <span class="badge badge-navy">C4</span></a></li>
+              <li><a href="bai5.html">Bài 5: Sáng tạo nội dung AI <span class="badge badge-teal">C5</span></a></li>
+              <li><a href="bai6.html">Bài 6: AI có trách nhiệm <span class="badge badge-gold">C6 ★</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="conclusion.html" class="nav-link">Tổng kết</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Trang chủ (Giới thiệu)</a>
+          <span>/</span>
+          <span>Dự án (06 Bài tập INF2501)</span>
+        </nav>
+        <span class="hero-eyebrow">Danh mục Dự án &amp; Minh chứng Thực hành • Câu 2 Đề thi INF2501</span>
+        <h1 class="hero-title">Tổng quan 06 Bài tập Năng lực Số &amp; Ứng dụng AI</h1>
+        <p class="hero-subtitle">
+          Hệ thống 06 bài tập thực hành bám sát 06 chương học phần <strong>Nhập môn Công nghệ số và ứng dụng trí tuệ nhân tạo (INF2501)</strong>, được triển khai gắn liền với chuyên ngành <strong>Sư phạm Âm nhạc</strong>. Mỗi trang bài tập trình bày đầy đủ 3 phần: <em>Mục tiêu</em>, <em>Quá trình thực hiện</em> và <em>Sản phẩm minh chứng</em>.
+        </p>
+        <div class="hero-meta-row">
+          <span class="badge">6 Chương chuẩn đề thi</span>
+          <span class="badge">Minh chứng thực hành gốc</span>
+          <span class="badge">2 Công cụ tương tác JS (Bài 3 &amp; Bài 6)</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06 Thẻ bài tập -->
+    <section class="section-block">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">1. Danh mục 06 Bài tập Thực hành</h2>
+          <p class="section-desc">Chọn bất kỳ thẻ bài tập nào dưới đây để truy cập trang chi tiết, xem ảnh chụp thao tác thật, sơ đồ chuyên ngành và công cụ tương tác.</p>
+        </div>
+
+        <div class="card-grid-2">
+          <!-- Bài 1 -->
+          <article class="card project-card">
+            <div>
+              <div class="project-card-top">
+                <span class="badge badge-navy">Chương 1 • Bài tập 1 (Mục 1.4)</span>
+                <span class="badge badge-success">6 ảnh thực hành thật</span>
+              </div>
+              <h3 style="margin-top: 12px;">Thao tác cơ bản với tệp tin và thư mục</h3>
+              <p>Thực hành 12 bước quản trị tệp tin trên Windows File Explorer (tạo thư mục <code>ThucHanh_ToDucThinh</code>, đổi tên <code>GhiChuQuanTrong.txt</code>, Copy/Cut, Shift+Delete và khôi phục từ Recycle Bin), kèm chuẩn đặt tên học liệu ngành Sư phạm Âm nhạc.</p>
+              <ul class="project-meta-list">
+                <li><strong>Chương tương ứng:</strong> Máy tính và các thiết bị ngoại vi</li>
+                <li><strong>Công cụ sử dụng:</strong> Windows File Explorer, Recycle Bin, cấu trúc cây thư mục chuẩn <code>SPAN</code></li>
+                <li><strong>Minh chứng nổi bật:</strong> 6 ảnh chụp thao tác thật trên ổ <code>D:</code> + đề bài/rubric LMS + cây thư mục mẫu</li>
+              </ul>
+            </div>
+            <div class="project-card-footer">
+              <span class="badge badge-navy">Trọng số đề thi: 0,5 điểm</span>
+              <a href="bai1.html" class="btn btn-secondary btn-sm">Mở Bài 1 →</a>
+            </div>
+          </article>
+
+          <!-- Bài 2 -->
+          <article class="card project-card">
+            <div>
+              <div class="project-card-top">
+                <span class="badge badge-navy">Chương 2 • Bài tập 2 (Mục 2.4)</span>
+                <span class="badge badge-teal">Chuẩn trích dẫn Harvard</span>
+              </div>
+              <h3 style="margin-top: 12px;">Tìm kiếm và đánh giá thông tin học thuật</h3>
+              <p>Khai thác tài liệu khoa học chủ đề <em>"Ứng dụng Trí tuệ nhân tạo trong Giáo dục Âm nhạc"</em> bằng toán tử nâng cao (<code>AND</code>, ngoặc kép, lọc nguồn), thẩm định 11 tài liệu (6 bài báo khoa học) theo 5 tiêu chí độ tin cậy và lập danh mục Harvard.</p>
+              <ul class="project-meta-list">
+                <li><strong>Chương tương ứng:</strong> Khai thác dữ liệu và thông tin</li>
+                <li><strong>Công cụ sử dụng:</strong> Google Search nâng cao, Google Scholar, NAfME, Oxford Academic, Sage Journals</li>
+                <li><strong>Minh chứng nổi bật:</strong> Ảnh chụp truy vấn <code>"artificial intelligence" AND "music education"</code> &amp; bảng 11 nguồn tin</li>
+              </ul>
+            </div>
+            <div class="project-card-footer">
+              <span class="badge badge-navy">Trọng số đề thi: 0,75 điểm</span>
+              <a href="bai2.html" class="btn btn-secondary btn-sm">Mở Bài 2 →</a>
+            </div>
+          </article>
+
+          <!-- Bài 3 -->
+          <article class="card project-card has-interactive">
+            <div>
+              <div class="project-card-top">
+                <span class="badge badge-navy">Chương 3 • Bài tập 2 (Mục 3.4)</span>
+                <span class="badge badge-gold">★ Tính năng tương tác JS</span>
+              </div>
+              <h3 style="margin-top: 12px;">Viết Prompt hiệu quả cho các tác vụ học tập</h3>
+              <p>Thiết kế và đối chiếu 3 cấp độ Prompt (Cơ bản → Cải tiến → Nâng cao với <em>Role Prompting</em>, <em>Chain-of-Thought</em>, <em>Few-shot</em>) trên 3 tác vụ học tập Sư phạm Âm nhạc, kết hợp trình tối ưu Prompt tương tác trực tiếp trên web.</p>
+              <ul class="project-meta-list">
+                <li><strong>Chương tương ứng:</strong> Tổng quan về trí tuệ nhân tạo</li>
+                <li><strong>Công cụ / AI sử dụng:</strong> ChatGPT, Gemini, Trình tối ưu Prompt tương tác (<code>prompt-optimizer.js</code>)</li>
+                <li><strong>Minh chứng nổi bật:</strong> Bảng so sánh 9 phiên bản Prompt + case study giáo án thật &amp; công cụ tạo Prompt</li>
+              </ul>
+            </div>
+            <div class="project-card-footer">
+              <span class="badge badge-gold">Trọng số: 0,75đ (+ Điểm thưởng)</span>
+              <a href="bai3.html" class="btn btn-primary btn-sm">Mở Bài 3 &amp; Trình tối ưu →</a>
+            </div>
+          </article>
+
+          <!-- Bài 4 -->
+          <article class="card project-card">
+            <div>
+              <div class="project-card-top">
+                <span class="badge badge-navy">Chương 4 • Bài tập 3 (Mục 4.4)</span>
+                <span class="badge badge-success">Dự án thật Nhóm 10</span>
+              </div>
+              <h3 style="margin-top: 12px;">Sử dụng công cụ hợp tác trực tuyến cho dự án nhóm</h3>
+              <p>Triển khai dự án Nhóm 10 (5 thành viên ngành SPAN, GVHD Vũ Việt Hoàng): <em>"AI &amp; Công nghệ số trong giảng dạy và học tập Âm nhạc THCS"</em> qua quy trình 3 giai đoạn, phân công 5 phần và khắc phục đồng bộ đa hệ điều hành.</p>
+              <ul class="project-meta-list">
+                <li><strong>Chương tương ứng:</strong> Giao tiếp và hợp tác trong môi trường số</li>
+                <li><strong>Công cụ sử dụng:</strong> Google Meet, Zalo, Trello/Kanban, Google Drive, Moises, MuseScore, Suno AI, Quizizz AI</li>
+                <li><strong>Minh chứng nổi bật:</strong> Báo cáo gốc Nhóm 10 (.docx), bảng Kanban 3 giai đoạn &amp; sơ đồ luồng phối hợp</li>
+              </ul>
+            </div>
+            <div class="project-card-footer">
+              <span class="badge badge-navy">Trọng số đề thi: 0,5 điểm</span>
+              <a href="bai4.html" class="btn btn-secondary btn-sm">Mở Bài 4 →</a>
+            </div>
+          </article>
+
+          <!-- Bài 5 -->
+          <article class="card project-card">
+            <div>
+              <div class="project-card-top">
+                <span class="badge badge-navy">Chương 5 • Bài tập 2 (Mục 5.4)</span>
+                <span class="badge badge-teal">Giáo án + Video + SVG</span>
+              </div>
+              <h3 style="margin-top: 12px;">Sử dụng AI tạo sinh để hỗ trợ sáng tạo nội dung</h3>
+              <p>Xây dựng trọn vẹn Giáo án Âm nhạc lớp 6 (45 phút): <em>"Giới thiệu nhạc cụ phương Tây"</em> với 2 lần thực nghiệm Prompt ChatGPT, biên tập sư phạm giảm 75% thời gian (180p → 45p), Infographic 4 bộ nhạc cụ &amp; Video Nhóm 10.</p>
+              <ul class="project-meta-list">
+                <li><strong>Chương tương ứng:</strong> Sáng tạo nội dung số</li>
+                <li><strong>Công cụ / AI sử dụng:</strong> ChatGPT, Canva AI, CapCut, Moises, MuseScore, Suno AI, Midjourney</li>
+                <li><strong>Minh chứng nổi bật:</strong> 03 ảnh chụp ChatGPT thật, file báo cáo giáo án (.docx), Infographic SVG &amp; Video Card</li>
+              </ul>
+            </div>
+            <div class="project-card-footer">
+              <span class="badge badge-teal">Trọng số đề thi: 1,0 điểm</span>
+              <a href="bai5.html" class="btn btn-secondary btn-sm">Mở Bài 5 →</a>
+            </div>
+          </article>
+
+          <!-- Bài 6 -->
+          <article class="card project-card has-interactive">
+            <div>
+              <div class="project-card-top">
+                <span class="badge badge-navy">Chương 6 • Bài tập 4 (Mục 6.4)</span>
+                <span class="badge badge-gold">★ Thẻ lật &amp; Quiz tương tác</span>
+              </div>
+              <h3 style="margin-top: 12px;">Sử dụng AI có trách nhiệm trong học tập và nghiên cứu</h3>
+              <p>Đối chiếu chính sách AI trong giáo dục đại học, thiết lập khung kiểm duyệt <em>Human-in-the-Loop</em> phòng chống lỗi ảo giác AI (như nhầm lẫn phân loại kèn Saxophone), quyền tác giả âm nhạc và bộ 7 nguyên tắc cá nhân.</p>
+              <ul class="project-meta-list">
+                <li><strong>Chương tương ứng:</strong> An toàn và liêm chính học thuật trong môi trường số</li>
+                <li><strong>Công cụ sử dụng:</strong> Khung kiểm duyệt SVG &amp; Mô-đun tương tác <code>ethics-quiz.js</code></li>
+                <li><strong>Minh chứng nổi bật:</strong> Bộ thẻ lật 7 Nguyên tắc AI &amp; Trắc nghiệm 6 tình huống cấp huy hiệu liêm chính</li>
+              </ul>
+            </div>
+            <div class="project-card-footer">
+              <span class="badge badge-gold">Trọng số: 0,5đ (+ Điểm thưởng)</span>
+              <a href="bai6.html" class="btn btn-primary btn-sm">Mở Bài 6 &amp; Thử thách →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ma trận năng lực tổng hợp 06 chương -->
+    <section class="section-block">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">2. Ma trận Năng lực Số Tổng hợp (06 Chương INF2501)</h2>
+          <p class="section-desc">Bảng tổng hợp đối chiếu chuẩn đầu ra từng chương, công cụ số/AI đã vận dụng và sản phẩm minh chứng tương ứng trong Portfolio.</p>
+        </div>
+
+        <div class="table-responsive">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Chương &amp; Bài tập</th>
+                <th>Kỹ năng cốt lõi đạt được</th>
+                <th>Công cụ số / AI sử dụng</th>
+                <th>Minh chứng chính trong Portfolio</th>
+                <th>Điểm / Truy cập</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Chương 1</strong><br>Bài tập 1 (mục 1.4)</td>
+                <td>Quản trị tệp tin, thư mục đa tầng; phân biệt Copy/Cut/Delete/Shift+Delete; chuẩn hóa tên học liệu âm nhạc.</td>
+                <td>Windows File Explorer, Recycle Bin</td>
+                <td>6 ảnh chụp thật tại <code>D:\ThucHanh_ToDucThinh</code>, đề bài &amp; rubric LMS, cây thư mục <code>SPAN</code>.</td>
+                <td><code>0,5đ</code><br><a href="bai1.html">Chi tiết →</a></td>
+              </tr>
+              <tr>
+                <td><strong>Chương 2</strong><br>Bài tập 2 (mục 2.4)</td>
+                <td>Tìm kiếm bằng toán tử Boolean (<code>AND</code>, <code>" "</code>), đánh giá nguồn theo 5 tiêu chí và trích dẫn chuẩn Harvard.</td>
+                <td>Google Search nâng cao, Google Scholar, NAfME, Oxford Academic, Sage</td>
+                <td>Ảnh chụp truy vấn thật + bảng thẩm định 11 tài liệu khoa học (6 bài báo) &amp; danh mục Harvard.</td>
+                <td><code>0,75đ</code><br><a href="bai2.html">Chi tiết →</a></td>
+              </tr>
+              <tr>
+                <td><strong>Chương 3</strong><br>Bài tập 2 (mục 3.4)</td>
+                <td>Kỹ thuật viết Prompt (Role, Chain-of-Thought, Few-shot) nâng cao chất lượng phản hồi AI cho tác vụ học tập.</td>
+                <td>ChatGPT, Gemini, Trình tối ưu Prompt JS</td>
+                <td>9 phiên bản Prompt cho 3 tác vụ + Case study giáo án lớp 6 + Công cụ tối ưu Prompt tương tác.</td>
+                <td><code>0,75đ</code> ★<br><a href="bai3.html">Chi tiết →</a></td>
+              </tr>
+              <tr>
+                <td><strong>Chương 4</strong><br>Bài tập 3 (mục 4.4)</td>
+                <td>Tổ chức họp nhóm trực tuyến, phân công vai trò, theo dõi tiến độ Kanban và đồng bộ file đa nền tảng.</td>
+                <td>Google Meet, Zalo, Trello, Google Drive, CapCut</td>
+                <td>Báo cáo gốc Nhóm 10 (5 thành viên, GVHD Vũ Việt Hoàng), Kanban 3 giai đoạn &amp; sơ đồ phối hợp SVG.</td>
+                <td><code>0,5đ</code><br><a href="bai4.html">Chi tiết →</a></td>
+              </tr>
+              <tr>
+                <td><strong>Chương 5</strong><br>Bài tập 2 (mục 5.4)</td>
+                <td>Phối hợp AI tạo sinh thiết kế giáo án 45 phút, biên tập sư phạm, trực quan hóa học liệu và hậu kỳ video.</td>
+                <td>ChatGPT, Canva AI, Moises, MuseScore, Suno AI, Midjourney, Quizizz AI</td>
+                <td>Giáo án Âm nhạc lớp 6 hoàn chỉnh, 3 ảnh ChatGPT thật, Infographic 4 bộ nhạc cụ SVG &amp; Video 38.78 MB (Drive).</td>
+                <td><code>1,0đ</code><br><a href="bai5.html">Chi tiết →</a></td>
+              </tr>
+              <tr>
+                <td><strong>Chương 6</strong><br>Bài tập 4 (mục 6.4)</td>
+                <td>Nhận diện ảo giác AI, bảo vệ dữ liệu &amp; bản quyền âm nhạc, áp dụng kiểm duyệt <em>Human-in-the-Loop</em>.</td>
+                <td>Khung kiểm duyệt SVG, Bộ thẻ lật &amp; Quiz JS</td>
+                <td>So sánh chính sách AI đại học, 7 Nguyên tắc cá nhân (Flip Cards) &amp; Trắc nghiệm 6 tình huống.</td>
+                <td><code>0,5đ</code> ★<br><a href="bai6.html">Chi tiết →</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="exercise-pager">
+          <a href="index.html" class="btn btn-outline">← Quay lại Giới thiệu (About Me)</a>
+          <a href="bai1.html" class="btn btn-secondary">Bắt đầu xem từ Bài tập 1 →</a>
+          <a href="conclusion.html" class="btn btn-primary">Đi tới Trang Tổng kết →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>Hồ sơ Học tập Số (INF2501)</h3>
+          <p><strong>Họ và tên:</strong> Tô Đức Thịnh | <strong>Mã sinh viên:</strong> 2552210375</p>
+          <p><strong>Ngành:</strong> Sư phạm Âm nhạc (SPAN) — Trường Đại học Sư phạm Nghệ thuật Trung ương</p>
+          <p><strong>Học phần:</strong> Nhập môn Công nghệ số và ứng dụng trí tuệ nhân tạo (INF2501) | <strong>Lớp:</strong> K20G</p>
+        </div>
+        <div>
+          <h4>Liên kết nhanh</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Giới thiệu (About Me)</a></li>
+            <li><a href="projects.html">Tổng quan Dự án (Projects)</a></li>
+            <li><a href="bai1.html">Bài 1: Tệp tin &amp; Thư mục</a></li>
+            <li><a href="bai2.html">Bài 2: Tìm kiếm học thuật</a></li>
+            <li><a href="bai3.html">Bài 3: Viết Prompt hiệu quả</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Hồ sơ &amp; Liêm chính</h4>
+          <ul class="footer-links">
+            <li><a href="bai4.html">Bài 4: Hợp tác trực tuyến (Nhóm 10)</a></li>
+            <li><a href="bai5.html">Bài 5: Sáng tạo nội dung AI</a></li>
+            <li><a href="bai6.html">Bài 6: AI có trách nhiệm</a></li>
+            <li><a href="conclusion.html">Tổng kết (Conclusion)</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Tô Đức Thịnh (MSSV: 2552210375 — K20G). Portfolio học phần INF2501.</span>
+        <span>Cam kết Liêm chính AI: Mọi công cụ AI hỗ trợ đều được ghi chú minh bạch, kiểm chứng chuyên môn qua SGK &amp; tài liệu học thuật, không đăng tải thông tin cá nhân nhạy cảm.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

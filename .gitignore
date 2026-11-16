@@ -1,0 +1,7 @@
+raw_data/
+scripts/
+__pycache__/
+*.pyc
+Thumbs.db
+.DS_Store
+*.tmp

@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 540" width="1100" height="540" role="img" aria-labelledby="hitlTitle hitlDesc">
+  <title id="hitlTitle">Sơ đồ Khung kiểm duyệt Human-in-the-Loop trong dạy học Âm nhạc</title>
+  <desc id="hitlDesc">Quy trình 4 bước sử dụng AI có trách nhiệm đặt chuyên môn sư phạm và liêm chính học thuật của con người làm trung tâm</desc>
+  <defs>
+    <linearGradient id="bgNavy" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#131b3a"/>
+      <stop offset="100%" stop-color="#1e2b58"/>
+    </linearGradient>
+    <filter id="drop" x="-4%" y="-4%" width="108%" height="112%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.08"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#0284c7"/>
+    </marker>
+    <marker id="arrowGold" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#d97706"/>
+    </marker>
+  </defs>
+
+  <!-- Canvas -->
+  <rect width="1100" height="540" rx="18" fill="#f8fafc"/>
+  <rect x="1" y="1" width="1098" height="538" rx="17" fill="none" stroke="#cbd5e1" stroke-width="1.5"/>
+
+  <!-- Header -->
+  <rect x="22" y="20" width="1056" height="76" rx="12" fill="url(#bgNavy)"/>
+  <text x="550" y="50" text-anchor="middle" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="19" font-weight="800" fill="#ffffff">KHUNG KIỂM DUYỆT HUMAN-IN-THE-LOOP TRONG DẠY HỌC ÂM NHẠC</text>
+  <text x="550" y="75" text-anchor="middle" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="13" fill="#93c5fd">AI chỉ là trợ lý phác thảo — Nhà giáo &amp; Sinh viên Sư phạm giữ quyền kiểm chứng, biên tập và chịu trách nhiệm cuối cùng</text>
+
+  <!-- Step 1: Human Initiates -->
+  <g filter="url(#drop)">
+    <rect x="26" y="122" width="236" height="296" rx="14" fill="#ffffff" stroke="#bae6fd" stroke-width="2"/>
+    <path d="M 26 136 Q 26 122 40 122 L 248 122 Q 262 122 262 136 L 262 174 L 26 174 Z" fill="#0284c7"/>
+    <text x="144" y="153" text-anchor="middle" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="14" font-weight="700" fill="#ffffff">1. CON NGƯỜI ĐỊNH HƯỚNG</text>
+  </g>
+  <g font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="12.5" fill="#334155">
+    <rect x="42" y="188" width="204" height="58" rx="8" fill="#f0f9ff" stroke="#bae6fd"/>
+    <text x="52" y="208" font-weight="700" fill="#0369a1">Xác định mục tiêu sư phạm</text>
+    <text x="52" y="227" font-size="11.5">Bám chuẩn CT GDPT &amp; SGK</text>
+    <text x="52" y="240" font-size="11.5">Âm nhạc trước khi gọi AI.</text>
+
+    <rect x="42" y="256" width="204" height="66" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+    <text x="52" y="276" font-weight="700" fill="#0f172a">Viết Prompt có bối cảnh</text>
+    <text x="52" y="295" font-size="11.5">Gắn lớp học, thời lượng (45p)</text>
+    <text x="52" y="311" font-size="11.5">&amp; đặc thù cảm thụ âm thanh.</text>
+
+    <rect x="42" y="332" width="204" height="68" rx="8" fill="#fef2f2" stroke="#fecaca"/>
+    <text x="52" y="352" font-weight="700" fill="#b91c1c">Bảo mật dữ liệu (Privacy)</text>
+    <text x="52" y="371" font-size="11.5">Tuyệt đối không nạp tên thật,</text>
+    <text x="52" y="387" font-size="11.5">SĐT, điểm số học sinh lên AI.</text>
+  </g>
+
+  <line x1="265" y1="270" x2="290" y2="270" stroke="#0284c7" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- Step 2: AI Drafts -->
+  <g filter="url(#drop)">
+    <rect x="296" y="122" width="236" height="296" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+    <path d="M 296 136 Q 296 122 310 122 L 518 122 Q 532 122 532 136 L 532 174 L 296 174 Z" fill="#475569"/>
+    <text x="414" y="153" text-anchor="middle" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="14" font-weight="700" fill="#ffffff">2. AI PHÁC THẢO NHANH</text>
+  </g>
+  <g font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="12.5" fill="#334155">
+    <rect x="312" y="188" width="204" height="64" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+    <text x="322" y="208" font-weight="700" fill="#0f172a">Sinh ý tưởng &amp; kịch bản thô</text>
+    <text x="322" y="227" font-size="11.5">ChatGPT, Gemini gợi ý trò chơi,</text>
+    <text x="322" y="242" font-size="11.5">tiết kiệm ~75% thời gian nháp.</text>
+
+    <rect x="312" y="262" width="204" height="64" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+    <text x="322" y="282" font-weight="700" fill="#0f172a">Hỗ trợ học liệu đa phương tiện</text>
+    <text x="322" y="301" font-size="11.5">Canva AI, Moises (tách beat),</text>
+    <text x="322" y="316" font-size="11.5">Suno AI (gợi ý hòa âm tham khảo).</text>
+
+    <rect x="312" y="336" width="204" height="64" rx="8" fill="#fffbeb" stroke="#fcd34d"/>
+    <text x="322" y="356" font-weight="700" fill="#92400e">Rủi ro cố hữu của AI</text>
+    <text x="322" y="375" font-size="11.5">Thiếu thính giác, thiếu cảm xúc</text>
+    <text x="322" y="390" font-size="11.5">&amp; dễ "ảo giác" chuyên môn.</text>
+  </g>
+
+  <line x1="535" y1="270" x2="560" y2="270" stroke="#d97706" stroke-width="3.5" marker-end="url(#arrowGold)"/>
+
+  <!-- Step 3: HUMAN GATE (Highlighted Centerpiece) -->
+  <g filter="url(#drop)">
+    <rect x="566" y="114" width="248" height="312" rx="14" fill="#fffbeb" stroke="#d97706" stroke-width="3"/>
+    <path d="M 566 128 Q 566 114 580 114 L 800 114 Q 814 114 814 128 L 814 174 L 566 174 Z" fill="#d97706"/>
+    <text x="690" y="142" text-anchor="middle" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="14" font-weight="800" fill="#ffffff">3. CỔNG KIỂM DUYỆT (HITL)</text>
+    <text x="690" y="161" text-anchor="middle" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="11.5" font-weight="600" fill="#fef3c7">Chuyên môn Giáo viên quyết định</text>
+  </g>
+  <g font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="12.5" fill="#334155">
+    <rect x="582" y="188" width="216" height="70" rx="8" fill="#ffffff" stroke="#fcd34d"/>
+    <text x="592" y="208" font-weight="700" fill="#b91c1c">Đối chiếu kiến thức lõi SGK</text>
+    <text x="592" y="227" font-size="11.5">Chặn lỗi ảo giác (VD: khẳng định</text>
+    <text x="592" y="243" font-size="11.5">Saxophone thuộc Bộ Gỗ dù bằng đồng).</text>
+
+    <rect x="582" y="268" width="216" height="70" rx="8" fill="#ffffff" stroke="#fcd34d"/>
+    <text x="592" y="288" font-weight="700" fill="#92400e">Biên tập 100% văn phong lớp học</text>
+    <text x="592" y="307" font-size="11.5">Sửa trò chơi phi thực tế; viết lại</text>
+    <text x="592" y="323" font-size="11.5">lời dẫn giàu cảm xúc + bản thu thật.</text>
+
+    <rect x="582" y="348" width="216" height="64" rx="8" fill="#ffffff" stroke="#fcd34d"/>
+    <text x="592" y="368" font-weight="700" fill="#0f766e">Rà soát bản quyền âm nhạc</text>
+    <text x="592" y="387" font-size="11.5">Không nhận vơ beat Suno/Moises;</text>
+    <text x="592" y="402" font-size="11.5">tôn trọng quyền tác giả tác phẩm.</text>
+  </g>
+
+  <line x1="817" y1="270" x2="842" y2="270" stroke="#0284c7" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- Step 4: Transparency & Accountability -->
+  <g filter="url(#drop)">
+    <rect x="848" y="122" width="228" height="296" rx="14" fill="#ffffff" stroke="#99f6e4" stroke-width="2"/>
+    <path d="M 848 136 Q 848 122 862 122 L 1062 122 Q 1076 122 1076 136 L 1076 174 L 848 174 Z" fill="#0f766e"/>
+    <text x="962" y="153" text-anchor="middle" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="14" font-weight="700" fill="#ffffff">4. MINH BẠCH &amp; LIÊM CHÍNH</text>
+  </g>
+  <g font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="12.5" fill="#334155">
+    <rect x="864" y="188" width="196" height="64" rx="8" fill="#f0fdfa" stroke="#99f6e4"/>
+    <text x="874" y="208" font-weight="700" fill="#0f766e">Công bố minh bạch AI</text>
+    <text x="874" y="227" font-size="11.5">Ghi rõ tên công cụ, prompt</text>
+    <text x="874" y="242" font-size="11.5">&amp; tỷ lệ phần con người biên tập.</text>
+
+    <rect x="864" y="262" width="196" height="64" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+    <text x="874" y="282" font-weight="700" fill="#0f172a">Lưu vết quá trình sáng tạo</text>
+    <text x="874" y="301" font-size="11.5">Lưu ảnh chụp đầu ra AI gốc</text>
+    <text x="874" y="316" font-size="11.5">đối chiếu với bản hoàn thiện.</text>
+
+    <rect x="864" y="336" width="196" height="64" rx="8" fill="#eff6ff" stroke="#bfdbfe"/>
+    <text x="874" y="356" font-weight="700" fill="#1e3a8a">Trách nhiệm học thuật</text>
+    <text x="874" y="375" font-size="11.5">Tác giả chịu trách nhiệm 100%</text>
+    <text x="874" y="390" font-size="11.5">về tính đúng đắn khi giảng dạy.</text>
+  </g>
+
+  <!-- Feedback Loop Bottom Bar -->
+  <path d="M 962 426 L 962 456 L 144 456 L 144 426" fill="none" stroke="#0284c7" stroke-width="2.5" stroke-dasharray="6 4" marker-end="url(#arrow)"/>
+  <rect x="256" y="440" width="588" height="32" rx="16" fill="#131b3a"/>
+  <text x="550" y="460" text-anchor="middle" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="12.5" font-weight="600" fill="#fde68a">Vòng lặp phản biện liên tục: Kinh nghiệm thực tế lớp học → Tinh chỉnh Prompt &amp; Quy tắc đạo đức</text>
+
+  <!-- Bottom Summary Strip -->
+  <text x="550" y="512" text-anchor="middle" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="12.5" fill="#475569">
+    Áp dụng thực tế trong Portfolio INF2501 của Tô Đức Thịnh (MSV: 2552210375) tại Bài 4 (Hợp tác Nhóm 10), Bài 5 (Giáo án lớp 6) &amp; Bài 6 (7 Nguyên tắc).
+  </text>
+</svg>

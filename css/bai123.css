@@ -1,0 +1,731 @@
+/* ==========================================================================
+   INF2501 Portfolio — Supplementary Styles for Exercises 1, 2 & 3
+   File: css/bai123.css (Loaded after css/style.css)
+   Owner: web-bai123
+   ========================================================================== */
+
+/* Shared helpers for bai1-bai3 */
+.svg-showcase {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 16px;
+  box-shadow: var(--shadow-sm);
+  margin: 18px 0;
+}
+
+.svg-showcase img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-md);
+}
+
+.svg-showcase-caption {
+  margin-top: 10px;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.operator-card .code-block,
+.task-block .prompt-box,
+.prompt-diff-grid .prompt-box,
+.optimizer-output .prompt-box {
+  padding-top: 44px;
+}
+
+.section-subhead {
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: var(--navy-900);
+  margin: 22px 0 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ==========================================================================
+   Bài 1: Shortcut Keys, Folder Tree & Naming Anatomy
+   ========================================================================== */
+.hotkey-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin: 16px 0;
+}
+
+.hotkey-card {
+  background: var(--bg-page);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.hotkey-card kbd {
+  display: inline-block;
+  align-self: flex-start;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 4px 9px;
+  border-radius: 6px;
+  background: var(--navy-900);
+  color: #fde68a;
+  border: 1px solid var(--navy-700);
+  box-shadow: 0 2px 0 #0b1026;
+}
+
+.hotkey-card strong {
+  font-size: 0.92rem;
+  color: var(--navy-900);
+}
+
+.hotkey-card span {
+  font-size: 0.83rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+
+.folder-tree-card {
+  background: #0b1026;
+  color: #e2e8f0;
+  border-radius: var(--radius-lg);
+  border: 1px solid #1e293b;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  margin: 18px 0;
+}
+
+.folder-tree-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 12px 18px;
+  background: #131b3a;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.folder-tree-path {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: #fde68a;
+  word-break: break-all;
+}
+
+.folder-tree-body {
+  padding: 18px 20px;
+  font-family: var(--font-mono);
+  font-size: 0.84rem;
+  line-height: 1.75;
+  overflow-x: auto;
+}
+
+.tree-ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.tree-ul ul {
+  list-style: none;
+  padding-left: 22px;
+  margin: 2px 0 4px 8px;
+  border-left: 1px dashed rgba(148, 163, 184, 0.35);
+}
+
+.tree-node {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+
+.tree-node:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.tree-folder {
+  color: #fbbf24;
+  font-weight: 700;
+}
+
+.tree-file {
+  color: #93c5fd;
+}
+
+.tree-note {
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  color: #94a3b8;
+}
+
+.naming-formula {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  padding: 16px;
+  background: var(--navy-50);
+  border: 1px solid var(--navy-100);
+  border-radius: var(--radius-md);
+  margin: 14px 0;
+}
+
+.formula-part {
+  display: inline-flex;
+  flex-direction: column;
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-strong);
+  min-width: 110px;
+}
+
+.formula-part code {
+  border: none;
+  padding: 0;
+  background: transparent;
+  font-weight: 700;
+  color: var(--navy-900);
+}
+
+.formula-part small {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.formula-sep {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--gold-600);
+  font-size: 1.1rem;
+}
+
+/* ==========================================================================
+   Bài 2: Search Operators, Trust Badges & Harvard References
+   ========================================================================== */
+.operator-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin: 16px 0;
+}
+
+.operator-card {
+  background: var(--bg-page);
+  border: 1px solid var(--border-color);
+  border-top: 3px solid var(--blue-500);
+  border-radius: var(--radius-md);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.operator-syntax {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--navy-900);
+  background: var(--blue-50);
+  border: 1px solid #bae6fd;
+  padding: 4px 10px;
+  border-radius: 6px;
+  align-self: flex-start;
+}
+
+.operator-card p {
+  font-size: 0.88rem;
+  margin: 0;
+}
+
+.query-example-box {
+  background: #0f172a;
+  color: #38bdf8;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  padding: 8px 10px;
+  border-radius: 6px;
+  word-break: break-word;
+}
+
+.trust-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  font-size: 0.76rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.trust-high {
+  background: #dcfce7;
+  color: #166534;
+  border: 1px solid #86efac;
+}
+
+.trust-mid {
+  background: #fef3c7;
+  color: #92400e;
+  border: 1px solid #fcd34d;
+}
+
+.harvard-list {
+  list-style: none;
+  padding: 0;
+  margin: 14px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.harvard-item {
+  padding: 12px 16px 12px 34px;
+  background: var(--bg-page);
+  border: 1px solid var(--border-color);
+  border-left: 3px solid var(--navy-800);
+  border-radius: var(--radius-sm);
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  text-indent: -18px;
+  word-break: break-word;
+}
+
+.harvard-item em {
+  color: var(--navy-900);
+}
+
+/* ==========================================================================
+   Bài 3: Prompt Comparison & Interactive Prompt Optimizer
+   ========================================================================== */
+.task-block {
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  background: var(--bg-surface);
+  padding: 22px;
+  margin-bottom: 24px;
+  box-shadow: var(--shadow-xs);
+}
+
+.task-block-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding-bottom: 14px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.task-block-header h3 {
+  margin: 0;
+  font-size: 1.14rem;
+  color: var(--navy-900);
+}
+
+.prompt-tier-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.prompt-tier-card {
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  background: var(--bg-page);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-width: 0;
+}
+
+.prompt-tier-head {
+  padding: 11px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+.tier-basic .prompt-tier-head {
+  background: #f1f5f9;
+  color: #334155;
+  border-bottom: 2px solid #cbd5e1;
+}
+
+.tier-improved .prompt-tier-head {
+  background: #e0f2fe;
+  color: #0369a1;
+  border-bottom: 2px solid #38bdf8;
+}
+
+.tier-advanced .prompt-tier-head {
+  background: #131b3a;
+  color: #fde68a;
+  border-bottom: 2px solid #f59e0b;
+}
+
+.prompt-tier-body {
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1 1 auto;
+}
+
+.prompt-tier-body .prompt-box {
+  margin: 0;
+  padding: 12px 14px;
+  font-size: 0.8rem;
+}
+
+.ai-output-card {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 11px 13px;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.ai-output-card strong {
+  display: block;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--navy-800);
+  margin-bottom: 4px;
+}
+
+.critique-note {
+  font-size: 0.83rem;
+  padding: 9px 11px;
+  border-radius: var(--radius-sm);
+  background: var(--gold-50);
+  border-left: 3px solid var(--gold-500);
+  color: var(--text-secondary);
+}
+
+/* Interactive Prompt Optimizer */
+.optimizer-shell {
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  border: 2px solid var(--navy-800);
+  border-radius: var(--radius-xl);
+  padding: 24px;
+  box-shadow: var(--shadow-md);
+  margin-top: 16px;
+}
+
+.optimizer-top-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-bottom: 16px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.preset-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.preset-btn {
+  padding: 8px 14px;
+  border-radius: var(--radius-pill);
+  border: 1.5px solid var(--border-strong);
+  background: #ffffff;
+  color: #131b3a;
+  font-family: inherit;
+  font-size: 0.84rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.preset-btn:hover {
+  border-color: var(--blue-500);
+  background: var(--blue-50);
+  color: #0f172a;
+}
+
+.preset-btn.active,
+.preset-btn.active:hover,
+.preset-btn.active:focus-visible {
+  background: #131b3a;
+  color: #ffffff;
+  border-color: #131b3a;
+  box-shadow: 0 4px 12px rgba(19, 27, 58, 0.24);
+  outline: none;
+}
+
+.gallery-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 16px;
+}
+
+.optimizer-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+  gap: 22px;
+  align-items: start;
+}
+
+.optimizer-form {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  min-width: 0;
+}
+
+.opt-field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.opt-field label {
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: var(--navy-900);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.opt-field label span {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+.opt-input,
+.opt-textarea,
+.opt-select {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid var(--border-strong);
+  background: #ffffff;
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.opt-textarea {
+  resize: vertical;
+  min-height: 68px;
+}
+
+.opt-input:focus,
+.opt-textarea:focus,
+.opt-select:focus {
+  outline: none;
+  border-color: var(--blue-500);
+  box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.16);
+}
+
+.technique-checks {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.tech-check-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 9px 10px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-color);
+  background: var(--bg-page);
+  cursor: pointer;
+  font-size: 0.81rem;
+  line-height: 1.35;
+}
+
+.tech-check-item input {
+  margin-top: 2px;
+  accent-color: var(--navy-900);
+}
+
+.tech-check-item strong {
+  display: block;
+  color: var(--navy-900);
+}
+
+.optimizer-output {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-width: 0;
+}
+
+.score-meter-wrap {
+  background: var(--navy-900);
+  color: #ffffff;
+  border-radius: var(--radius-md);
+  padding: 16px 18px;
+}
+
+.score-meter-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.score-value-badge {
+  font-family: var(--font-mono);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #fde68a;
+}
+
+.score-tier-label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: var(--radius-pill);
+  background: rgba(255, 255, 255, 0.14);
+  color: #e0f2fe;
+}
+
+.score-bar-track {
+  width: 100%;
+  height: 11px;
+  border-radius: var(--radius-pill);
+  background: rgba(255, 255, 255, 0.14);
+  overflow: hidden;
+}
+
+.score-bar-fill {
+  height: 100%;
+  width: 0%;
+  border-radius: var(--radius-pill);
+  background: linear-gradient(90deg, #ef4444 0%, #f59e0b 50%, #22c55e 100%);
+  transition: width 0.3s ease;
+}
+
+.optimizer-tips {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 0.81rem;
+  color: #cbd5e1;
+}
+
+.optimizer-tips li.tip-ok {
+  color: #86efac;
+}
+
+.optimizer-tips li.tip-todo {
+  color: #fde68a;
+}
+
+.diff-panel {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 14px;
+}
+
+.diff-panel-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.diff-panel-head h4 {
+  margin: 0;
+  font-size: 0.92rem;
+}
+
+.basic-preview-box {
+  background: #f1f5f9;
+  border: 1px dashed var(--border-strong);
+  border-radius: var(--radius-sm);
+  padding: 11px 13px;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: #475569;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.optimizer-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* ==========================================================================
+   Responsive Adjustments (<= 992px & Mobile 390x844)
+   ========================================================================== */
+@media (max-width: 992px) {
+  .hotkey-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .operator-grid,
+  .prompt-tier-grid,
+  .gallery-grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .optimizer-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .hotkey-grid,
+  .technique-checks {
+    grid-template-columns: 1fr;
+  }
+
+  .optimizer-shell {
+    padding: 16px;
+  }
+
+  .task-block {
+    padding: 16px;
+  }
+
+  .folder-tree-body {
+    padding: 14px 12px;
+    font-size: 0.76rem;
+  }
+
+  .formula-part {
+    flex: 1 1 130px;
+  }
+}

@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 500" width="920" height="500" role="img" aria-labelledby="svg1Title svg1Desc">
+  <title id="svg1Title">Sơ đồ cấu trúc thư mục tối ưu và quy tắc đặt tên tệp cho sinh viên Sư phạm Âm nhạc</title>
+  <desc id="svg1Desc">Minh họa cấu trúc thư mục 2552210375_ToDucThinh_SPAN gồm 4 nhánh chính và giải phẫu tên tệp YYYYMMDD_MaMon_TenTaiLieu_v01.ext</desc>
+  <defs>
+    <linearGradient id="hdrGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#131b3a"/>
+      <stop offset="100%" stop-color="#1e2b58"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-4%" y="-4%" width="108%" height="112%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#131b3a" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect width="920" height="500" rx="16" fill="#f8fafc"/>
+  <rect x="0" y="0" width="920" height="64" rx="16" fill="url(#hdrGrad)"/>
+  <rect x="0" y="48" width="920" height="16" fill="url(#hdrGrad)"/>
+  <text x="28" y="39" font-family="'Be Vietnam Pro', system-ui, sans-serif" font-size="18" font-weight="700" fill="#ffffff">CẤU TRÚC THƯ MỤC CHUẨN — NGÀNH SƯ PHẠM ÂM NHẠC (SPAN)</text>
+  <rect x="706" y="18" width="188" height="28" rx="14" fill="#f59e0b"/>
+  <text x="800" y="37" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" fill="#0b1026">D:\Workspace\SPAN</text>
+
+  <!-- Root Node -->
+  <g filter="url(#cardShadow)">
+    <rect x="280" y="88" width="360" height="52" rx="12" fill="#131b3a" stroke="#f59e0b" stroke-width="2"/>
+    <text x="460" y="112" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="700" fill="#fde68a">2552210375_ToDucThinh_SPAN/</text>
+    <text x="460" y="130" text-anchor="middle" font-family="'Be Vietnam Pro', sans-serif" font-size="11.5" fill="#cbd5e1">Thư mục gốc đồng bộ học tập &amp; thực hành sư phạm</text>
+  </g>
+
+  <!-- Connectors -->
+  <path d="M 460 140 L 460 166 M 120 166 L 800 166" fill="none" stroke="#94a3b8" stroke-width="2"/>
+  <path d="M 120 166 L 120 190 M 346 166 L 346 190 M 574 166 L 574 190 M 800 166 L 800 190" fill="none" stroke="#94a3b8" stroke-width="2"/>
+
+  <!-- Branch 1 -->
+  <g filter="url(#cardShadow)">
+    <rect x="24" y="190" width="194" height="148" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+    <rect x="24" y="190" width="194" height="34" rx="12" fill="#e0f2fe"/>
+    <rect x="24" y="212" width="194" height="12" fill="#e0f2fe"/>
+    <text x="121" y="212" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="700" fill="#0369a1">01_HocPhan_DaiCuong/</text>
+    <text x="36" y="246" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="600" fill="#1e2b58">├─ INF2501_CongNgheSo_AI/</text>
+    <text x="46" y="266" font-family="'Be Vietnam Pro', sans-serif" font-size="10.5" fill="#475569">• Bài tập thực hành C1–C6</text>
+    <text x="46" y="284" font-family="'Be Vietnam Pro', sans-serif" font-size="10.5" fill="#475569">• Báo cáo Nhóm 10</text>
+    <text x="36" y="306" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="600" fill="#1e2b58">└─ TaiLieu_ThamKhao/</text>
+    <text x="46" y="324" font-family="'Be Vietnam Pro', sans-serif" font-size="10.5" fill="#475569">• Đề cương &amp; Rubric</text>
+  </g>
+
+  <!-- Branch 2 -->
+  <g filter="url(#cardShadow)">
+    <rect x="248" y="190" width="196" height="148" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+    <rect x="248" y="190" width="196" height="34" rx="12" fill="#fef3c7"/>
+    <rect x="248" y="212" width="196" height="12" fill="#fef3c7"/>
+    <text x="346" y="212" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="700" fill="#b45309">02_ChuyenNganh_AmNhac/</text>
+    <text x="260" y="246" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="600" fill="#1e2b58">├─ LyThuyetAmNhac/</text>
+    <text x="270" y="266" font-family="'Be Vietnam Pro', sans-serif" font-size="10.5" fill="#475569">• Hòa âm, Xướng âm (.mscz)</text>
+    <text x="260" y="290" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="600" fill="#1e2b58">└─ NhacCu_ThanhNhac/</text>
+    <text x="270" y="310" font-family="'Be Vietnam Pro', sans-serif" font-size="10.5" fill="#475569">• Beat tách nền Moises (.mp3)</text>
+    <text x="270" y="326" font-family="'Be Vietnam Pro', sans-serif" font-size="10.5" fill="#475569">• Bản ghi luyện thanh</text>
+  </g>
+
+  <!-- Branch 3 -->
+  <g filter="url(#cardShadow)">
+    <rect x="476" y="190" width="196" height="148" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+    <rect x="476" y="190" width="196" height="34" rx="12" fill="#dcfce7"/>
+    <rect x="476" y="212" width="196" height="12" fill="#dcfce7"/>
+    <text x="574" y="212" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="700" fill="#15803d">03_NghiepVuSuPham/</text>
+    <text x="488" y="246" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="600" fill="#1e2b58">├─ GiaoAn_AmNhac_THCS/</text>
+    <text x="498" y="266" font-family="'Be Vietnam Pro', sans-serif" font-size="10.5" fill="#475569">• Giáo án Lớp 6 (45 phút)</text>
+    <text x="488" y="290" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="600" fill="#1e2b58">└─ HocLieu_DaPhuongTien/</text>
+    <text x="498" y="310" font-family="'Be Vietnam Pro', sans-serif" font-size="10.5" fill="#475569">• Slide Canva, Ảnh minh họa</text>
+    <text x="498" y="326" font-family="'Be Vietnam Pro', sans-serif" font-size="10.5" fill="#475569">• Video âm thanh mẫu (.mp4)</text>
+  </g>
+
+  <!-- Branch 4 -->
+  <g filter="url(#cardShadow)">
+    <rect x="702" y="190" width="194" height="148" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+    <rect x="702" y="190" width="194" height="34" rx="12" fill="#e8ecf8"/>
+    <rect x="702" y="212" width="194" height="12" fill="#e8ecf8"/>
+    <text x="799" y="212" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="700" fill="#131b3a">04_MinhChung_Portfolio/</text>
+    <text x="714" y="246" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="600" fill="#1e2b58">├─ AnhChup_ThucHanh/</text>
+    <text x="724" y="266" font-family="'Be Vietnam Pro', sans-serif" font-size="10.5" fill="#475569">• Minh chứng 06 bài tập</text>
+    <text x="714" y="290" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="600" fill="#1e2b58">└─ Checklist_NopBai/</text>
+    <text x="724" y="310" font-family="'Be Vietnam Pro', sans-serif" font-size="10.5" fill="#475569">• Đối chiếu Rubric &amp; PDF</text>
+    <text x="724" y="326" font-family="'Be Vietnam Pro', sans-serif" font-size="10.5" fill="#475569">• Đồng bộ Google Drive</text>
+  </g>
+
+  <!-- File Naming Anatomy Box -->
+  <g filter="url(#cardShadow)">
+    <rect x="24" y="362" width="872" height="114" rx="14" fill="#ffffff" stroke="#1e2b58" stroke-width="1.5"/>
+    <text x="44" y="388" font-family="'Be Vietnam Pro', sans-serif" font-size="13.5" font-weight="700" fill="#131b3a">QUY TẮC ĐẶT TÊN TỆP CHUẨN (KHÔNG DẤU • KHÔNG KHOẢNG TRẮNG • DỄ TÌM KIẾM):</text>
+
+    <!-- Segments -->
+    <rect x="44" y="404" width="136" height="36" rx="8" fill="#131b3a"/>
+    <text x="112" y="427" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="700" fill="#fde68a">20261114</text>
+    <text x="112" y="458" text-anchor="middle" font-family="'Be Vietnam Pro', sans-serif" font-size="11" fill="#475569">YYYYMMDD (Ngày)</text>
+
+    <text x="192" y="427" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="16" font-weight="700" fill="#64748b">_</text>
+
+    <rect x="204" y="404" width="112" height="36" rx="8" fill="#0284c7"/>
+    <text x="260" y="427" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="700" fill="#ffffff">INF2501</text>
+    <text x="260" y="458" text-anchor="middle" font-family="'Be Vietnam Pro', sans-serif" font-size="11" fill="#475569">Mã học phần / Ngành</text>
+
+    <text x="328" y="427" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="16" font-weight="700" fill="#64748b">_</text>
+
+    <rect x="340" y="404" width="292" height="36" rx="8" fill="#1e2b58"/>
+    <text x="486" y="427" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="700" fill="#ffffff">GiaoAnLop6_NhacCuPhuongTay</text>
+    <text x="486" y="458" text-anchor="middle" font-family="'Be Vietnam Pro', sans-serif" font-size="11" fill="#475569">Tên tài liệu không dấu (PascalCase)</text>
+
+    <text x="644" y="427" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="16" font-weight="700" fill="#64748b">_</text>
+
+    <rect x="656" y="404" width="94" height="36" rx="8" fill="#d97706"/>
+    <text x="703" y="427" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="700" fill="#ffffff">v01</text>
+    <text x="703" y="458" text-anchor="middle" font-family="'Be Vietnam Pro', sans-serif" font-size="11" fill="#475569">Phiên bản</text>
+
+    <text x="762" y="427" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="16" font-weight="700" fill="#64748b">.</text>
+
+    <rect x="774" y="404" width="98" height="36" rx="8" fill="#0f766e"/>
+    <text x="823" y="427" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="700" fill="#ffffff">docx</text>
+    <text x="823" y="458" text-anchor="middle" font-family="'Be Vietnam Pro', sans-serif" font-size="11" fill="#475569">Định dạng tệp</text>
+  </g>
+</svg>

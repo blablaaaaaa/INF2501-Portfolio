@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài 6: Sử dụng AI có trách nhiệm — Tô Đức Thịnh | INF2501 Portfolio</title>
+  <meta name="description" content="Chương 6 - Bài tập 4 (mục 6.4): Đối chiếu chính sách AI đại học, khung kiểm duyệt Human-in-the-Loop, 7 nguyên tắc cá nhân và trắc nghiệm tình huống liêm chính học thuật.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bai456.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">♪</span>
+        <span class="brand-text"><strong>Tô Đức Thịnh</strong><small>INF2501 • Sư phạm Âm nhạc</small></span>
+      </a>
+      <button type="button" class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Mở menu điều hướng">☰</button>
+      <nav class="site-nav" id="siteNav" aria-label="Điều hướng chính">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html" class="nav-link">Giới thiệu</a></li>
+          <li class="nav-item nav-dropdown">
+            <a href="projects.html" class="nav-link active">Dự án</a>
+            <button type="button" class="dropdown-toggle" aria-expanded="false" aria-label="Mở danh mục 6 bài tập">▾</button>
+            <ul class="dropdown-menu">
+              <li><a href="bai1.html">Bài 1: Tệp tin &amp; Thư mục <span class="badge badge-navy">C1</span></a></li>
+              <li><a href="bai2.html">Bài 2: Tìm kiếm học thuật <span class="badge badge-navy">C2</span></a></li>
+              <li><a href="bai3.html">Bài 3: Viết Prompt hiệu quả <span class="badge badge-gold">C3 ★</span></a></li>
+              <li><a href="bai4.html">Bài 4: Hợp tác trực tuyến <span class="badge badge-navy">C4</span></a></li>
+              <li><a href="bai5.html">Bài 5: Sáng tạo nội dung AI <span class="badge badge-teal">C5</span></a></li>
+              <li><a href="bai6.html" class="active" aria-current="page">Bài 6: AI có trách nhiệm <span class="badge badge-gold">C6 ★</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="conclusion.html" class="nav-link">Tổng kết</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Đường dẫn">
+          <a href="index.html">Giới thiệu</a>
+          <span>/</span>
+          <a href="projects.html">Dự án</a>
+          <span>/</span>
+          <span>Bài tập 6 (Chương 6)</span>
+        </nav>
+        <span class="hero-eyebrow">Chương 6: An toàn và liêm chính học thuật trong môi trường số • Bài tập 4 (mục 6.4) ★</span>
+        <h1 class="hero-title">Sử dụng AI có trách nhiệm trong học tập và nghiên cứu</h1>
+        <p class="hero-subtitle">
+          Nghiên cứu đối chiếu chính sách AI trong giáo dục đại học, xây dựng khung kiểm duyệt <strong>Human-in-the-Loop</strong> cho Sư phạm Âm nhạc, cùng bộ tương tác <strong>7 Nguyên tắc thẻ lật 3D</strong> và <strong>Trắc nghiệm 6 tình huống Liêm chính học thuật</strong>.
+        </p>
+        <div class="hero-meta-row">
+          <span class="badge">Human-in-the-Loop</span>
+          <span class="badge">7 Thẻ lật 3D Nguyên tắc</span>
+          <span class="badge">Trắc nghiệm Liêm chính (6 tình huống) ★</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="container section-block">
+      <!-- PHẦN A: MỤC TIÊU BÀI TẬP -->
+      <article class="part-card">
+        <div class="part-header">
+          <span class="part-badge">Thành phần 1</span>
+          <h2 class="part-title">a) Mục tiêu bài tập</h2>
+        </div>
+        <div class="card-grid-2">
+          <div class="callout callout-info">
+            <strong>Tư duy phản biện &amp; Liêm chính học thuật:</strong>
+            <ul>
+              <li>Phân tích các vấn đề đạo đức, bản quyền, bảo mật dữ liệu và rủi ro "ảo giác" (hallucination) khi dùng AI tạo sinh trong môi trường đại học.</li>
+              <li>Đối chiếu hướng dẫn ứng xử với AI giữa các mô hình giáo dục đại học quốc tế và Việt Nam để xây dựng quy tắc hành động rõ ràng.</li>
+            </ul>
+          </div>
+          <div class="callout callout-ai">
+            <strong>Gắn kết thực tiễn Sư phạm Âm nhạc (INF2501):</strong>
+            <ul>
+              <li>Rút bài học kiểm chứng chuyên môn trực tiếp từ Bài 5 (tránh AI phân loại sai kèn Saxophone sang Bộ Đồng, biên tập 100% lời dẫn cảm xúc).</li>
+              <li>Bảo vệ dữ liệu riêng tư học sinh và tôn trọng quyền tác giả âm nhạc khi dùng <code>Suno AI</code>, <code>Moises</code> trong dự án Nhóm 10 (Bài 4).</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- PHẦN B: TÓM TẮT QUÁ TRÌNH THỰC HIỆN -->
+      <article class="part-card">
+        <div class="part-header">
+          <span class="part-badge">Thành phần 2</span>
+          <h2 class="part-title">b) Tóm tắt quá trình nghiên cứu &amp; Đối chiếu chính sách AI</h2>
+        </div>
+
+        <h3>1. Đối chiếu khung chính sách AI trong môi trường Đại học</h3>
+        <p>
+          Qua tổng hợp các khung khuyến nghị phổ biến hiện nay (UNESCO 2023 về GenAI trong giáo dục và quy chế liêm chính học thuật tại các trường đại học quốc tế &amp; Việt Nam), có thể phân nhóm thành 3 cách tiếp cận tiêu biểu:
+        </p>
+
+        <div class="table-responsive">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Nhóm mô hình chính sách</th>
+                <th>Mức độ cho phép sử dụng AI</th>
+                <th>Yêu cầu Minh bạch &amp; Trích dẫn</th>
+                <th>Hàm ý cho sinh viên Sư phạm Âm nhạc</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Khung hướng dẫn quốc tế (UNESCO / Nhóm ĐH nghiên cứu mở)</strong></td>
+                <td>Cho phép dùng AI làm công cụ hỗ trợ (assistive) trong brainstorm, cấu trúc ý, rà soát diễn đạt theo quy định từng môn.</td>
+                <td>Bắt buộc công bố tên công cụ, prompt/phạm vi sử dụng và chịu trách nhiệm kiểm chứng nguồn trích dẫn.</td>
+                <td>Cho phép dùng ChatGPT phác thảo trò chơi âm nhạc (Bài 5) nhưng phải lưu ảnh chụp đầu ra gốc &amp; đối chiếu SGK.</td>
+              </tr>
+              <tr>
+                <td><strong>Mô hình phân tầng theo học phần (ĐH khối Sư phạm / Nghệ thuật)</strong></td>
+                <td>Phân 3 mức: Cấm ở bài đánh giá năng lực lõi; Cho phép có điều kiện ở học liệu; Khuyến khích sáng tạo có kiểm duyệt.</td>
+                <td>Không cho phép AI làm thay phần cảm thụ cá nhân hoặc tự đánh giá thực hành sư phạm.</td>
+                <td>Phần cảm nhận cá nhân (trang Tổng kết) và năng lực xướng âm, giảng dạy trên lớp phải do chính sinh viên thực hiện.</td>
+              </tr>
+              <tr>
+                <td><strong>Quy định liêm chính học phần tại Việt Nam (như đề thi INF2501)</strong></td>
+                <td>Khuyến khích ứng dụng AI sáng tạo trong sản phẩm số (+điểm thưởng) nhưng nghiêm cấm sao chép nguyên văn và lộ dữ liệu nhạy cảm.</td>
+                <td>Ghi rõ công cụ AI &amp; mục đích sử dụng trong từng bài hoặc trang Tổng kết; không đăng CCCD, địa chỉ, tài khoản.</td>
+                <td>Mọi sản phẩm Nhóm 10 (Suno AI, Moises, Midjourney) và giáo án lớp 6 đều ghi chú rõ nguồn AI và phạm vi con người chỉnh sửa.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 style="margin-top: 24px;">2. Ba rủi ro đạo đức trọng tâm trong Sư phạm Âm nhạc &amp; Cách xử lý</h3>
+        <div class="card-grid-3">
+          <div class="card">
+            <span class="badge badge-warn" style="margin-bottom: 10px;">Rủi ro 1: Ảo giác chuyên môn</span>
+            <h4>Sai lệch kiến thức &amp; nguồn giả</h4>
+            <p>AI có thể tạo trích dẫn DOI không có thật (Bài 2) hoặc phân loại sai kèn Saxophone vào Bộ Đồng (Bài 5). <strong>Cách xử lý:</strong> Luôn tra cứu nguồn gốc và đối chiếu SGK trước khi giảng dạy.</p>
+          </div>
+          <div class="card">
+            <span class="badge badge-teal" style="margin-bottom: 10px;">Rủi ro 2: Quyền riêng tư số</span>
+            <h4>Lộ dữ liệu cá nhân học sinh</h4>
+            <p>Nhập họ tên, SĐT, bảng điểm học sinh THCS hoặc thông tin CCCD vào AI công cộng dễ gây rò rỉ dữ liệu. <strong>Cách xử lý:</strong> Ẩn danh hoàn toàn ngữ cảnh prompt (chỉ nêu "lớp 6", "tiết 45p").</p>
+          </div>
+          <div class="card">
+            <span class="badge badge-navy" style="margin-bottom: 10px;">Rủi ro 3: Tác quyền âm nhạc</span>
+            <h4>Bản quyền beat &amp; nhạc AI</h4>
+            <p>Tách beat bằng <code>Moises</code> từ ca khúc có bản quyền hoặc sinh nhạc bằng <code>Suno AI</code> dễ gây tranh chấp nếu nhận vơ tác giả. <strong>Cách xử lý:</strong> Ghi rõ tác giả gốc, nguồn AI &amp; chỉ dùng cho học tập.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- PHẦN C: SẢN PHẨM CUỐI CÙNG -->
+      <article class="part-card">
+        <div class="part-header">
+          <span class="part-badge">Thành phần 3</span>
+          <h2 class="part-title">c) Sản phẩm cuối cùng &amp; Công cụ tương tác</h2>
+        </div>
+
+        <!-- 1. Sơ đồ SVG Human-in-the-Loop -->
+        <h3>1. Sơ đồ "Khung kiểm duyệt Human-in-the-Loop trong dạy học Âm nhạc"</h3>
+        <figure class="figure-card figure-svg" style="margin-top: 12px;">
+          <img src="assets/bai6/khung_ai_co_trach_nhiem.svg" alt="Sơ đồ Khung kiểm duyệt Human-in-the-Loop trong dạy học Âm nhạc gồm 4 bước">
+          <figcaption class="figure-caption">
+            <strong>Hình 6.1:</strong> Khung kiểm duyệt 4 bước <em>Human-in-the-Loop</em> (<code>assets/bai6/khung_ai_co_trach_nhiem.svg</code>) đặt cổng kiểm chứng chuyên môn của giáo viên ở trung tâm quy trình ứng dụng AI. <em>(Nhấn vào hình để phóng to).</em>
+          </figcaption>
+        </figure>
+
+        <!-- 2. Bộ thẻ lật 3D 7 Nguyên tắc -->
+        <h3 style="margin-top: 30px;">2. Tương tác 1: Bộ Thẻ lật 3D — 7 Nguyên tắc cá nhân sử dụng AI có trách nhiệm</h3>
+        <p>Nhấn vào từng thẻ (hoặc dùng phím <code>Tab</code> + <code>Enter</code>) để lật xem diễn giải chi tiết và ví dụ áp dụng trực tiếp trong ngành Sư phạm Âm nhạc:</p>
+
+        <div class="flip-controls-bar">
+          <span class="flip-progress-text" id="flipProgressText">Đã khám phá 0/7 nguyên tắc (nhấn vào thẻ để lật)</span>
+          <div class="flip-controls-actions">
+            <button type="button" class="btn btn-secondary btn-sm" id="flipAllBtn">Lật tất cả thẻ</button>
+            <button type="button" class="btn btn-outline btn-sm" id="resetFlipBtn">Úp tất cả thẻ</button>
+          </div>
+        </div>
+
+        <div class="flip-grid" id="principlesFlipGrid" aria-label="Bộ 7 thẻ nguyên tắc sử dụng AI có trách nhiệm"></div>
+
+        <!-- 3. Trắc nghiệm tình huống Liêm chính học thuật -->
+        <h3 style="margin-top: 34px;">3. Tương tác 2: Trắc nghiệm tình huống Liêm chính học thuật (6 tình huống thực tế)</h3>
+        <p>Chọn phương án xử lý phù hợp cho từng tình huống gắn với thực tế học tập đại học, dự án Nhóm 10 và giảng dạy Âm nhạc THCS để nhận phản hồi tức thì và mở khóa huy hiệu hoàn thành:</p>
+
+        <div class="quiz-shell">
+          <div class="quiz-status-bar">
+            <div class="quiz-status-top">
+              <span id="quizStatusText">Tiến độ: 0/6 tình huống</span>
+              <span id="quizScoreText">Điểm hiện tại: 0/6</span>
+              <button type="button" class="btn btn-outline btn-sm" id="resetQuizBtn">Làm lại ↻</button>
+            </div>
+            <div class="quiz-progress-track" aria-hidden="true">
+              <div class="quiz-progress-fill" id="quizProgressFill"></div>
+            </div>
+          </div>
+
+          <div id="ethicsQuizContainer" class="quiz-shell"></div>
+          <div id="quizSummaryBox" hidden></div>
+        </div>
+      </article>
+
+      <!-- Điều hướng bài tập -->
+      <nav class="exercise-pager" aria-label="Điều hướng giữa các bài tập">
+        <a href="projects.html" class="btn btn-outline">← Quay lại trang Dự án</a>
+        <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+          <a href="bai5.html" class="btn btn-outline">← Bài tập trước (Bài 5)</a>
+          <a href="conclusion.html" class="btn btn-primary">Chuyển sang trang Tổng kết →</a>
+        </div>
+      </nav>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>Hồ sơ Học tập Số (INF2501)</h3>
+          <p><strong>Họ và tên:</strong> Tô Đức Thịnh | <strong>Mã sinh viên:</strong> 2552210375</p>
+          <p><strong>Ngành:</strong> Sư phạm Âm nhạc (SPAN) — Trường Đại học Sư phạm Nghệ thuật Trung ương</p>
+          <p><strong>Học phần:</strong> Nhập môn Công nghệ số và ứng dụng trí tuệ nhân tạo (INF2501) | <strong>Lớp:</strong> K20G</p>
+        </div>
+        <div>
+          <h4>Liên kết nhanh</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Giới thiệu (About Me)</a></li>
+            <li><a href="projects.html">Tổng quan Dự án (Projects)</a></li>
+            <li><a href="bai1.html">Bài 1: Tệp tin &amp; Thư mục</a></li>
+            <li><a href="bai2.html">Bài 2: Tìm kiếm học thuật</a></li>
+            <li><a href="bai3.html">Bài 3: Viết Prompt hiệu quả</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Hồ sơ &amp; Liêm chính</h4>
+          <ul class="footer-links">
+            <li><a href="bai4.html">Bài 4: Hợp tác trực tuyến (Nhóm 10)</a></li>
+            <li><a href="bai5.html">Bài 5: Sáng tạo nội dung AI</a></li>
+            <li><a href="bai6.html">Bài 6: AI có trách nhiệm</a></li>
+            <li><a href="conclusion.html">Tổng kết (Conclusion)</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Tô Đức Thịnh (MSSV: 2552210375 — K20G). Portfolio học phần INF2501.</span>
+        <span>Cam kết Liêm chính AI: Mọi công cụ AI hỗ trợ đều được ghi chú minh bạch, kiểm chứng chuyên môn qua SGK &amp; tài liệu học thuật, không đăng tải thông tin cá nhân nhạy cảm.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/ethics-quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,865 @@
+/* ==========================================================================
+   INF2501 Portfolio — Supplementary Styles for Bai 4, Bai 5, Bai 6
+   Loaded after css/style.css
+   ========================================================================== */
+
+/* Full-bleed crisp presentation for custom SVG diagrams & infographics */
+.figure-card.figure-svg {
+  background: #ffffff;
+}
+
+.figure-card.figure-svg img {
+  max-height: none;
+  background: #ffffff;
+  padding: 10px;
+}
+
+.download-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 16px 20px;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, #f3f5fc 0%, #fffbeb 100%);
+  border: 1px solid #cbd5e1;
+  margin-top: 18px;
+}
+
+.download-bar-info strong {
+  color: var(--navy-900);
+  display: block;
+  margin-bottom: 2px;
+}
+
+.download-bar-info span {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+/* ==========================================================================
+   Bai 4: Kanban Board & Collaboration Ecosystem
+   ========================================================================== */
+.kanban-wrapper {
+  margin-top: 16px;
+}
+
+.kanban-board {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  align-items: start;
+}
+
+.kanban-col {
+  background: var(--bg-page);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  min-width: 0;
+}
+
+.kanban-col-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 12px 14px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.kanban-col-header.col-todo {
+  background: var(--navy-800);
+}
+
+.kanban-col-header.col-doing {
+  background: var(--blue-600);
+}
+
+.kanban-col-header.col-review {
+  background: var(--gold-600);
+}
+
+.kanban-col-header.col-done {
+  background: var(--teal-600);
+}
+
+.kanban-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 24px;
+  height: 24px;
+  padding: 0 7px;
+  border-radius: var(--radius-pill);
+  background: rgba(255, 255, 255, 0.22);
+  color: #ffffff;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.kanban-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 12px;
+}
+
+.kanban-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 12px;
+  box-shadow: var(--shadow-xs);
+}
+
+.kanban-card-tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: var(--radius-pill);
+  margin-bottom: 6px;
+}
+
+.tag-phase1 {
+  background: var(--navy-100);
+  color: var(--navy-900);
+}
+
+.tag-phase2 {
+  background: var(--gold-100);
+  color: var(--gold-600);
+}
+
+.tag-phase3 {
+  background: var(--teal-100);
+  color: var(--teal-600);
+}
+
+.kanban-card h4 {
+  font-size: 0.9rem;
+  margin: 0 0 6px;
+  color: var(--navy-900);
+  line-height: 1.4;
+}
+
+.kanban-card p {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin: 0 0 8px;
+  line-height: 1.45;
+}
+
+.kanban-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  padding-top: 8px;
+  border-top: 1px dashed var(--border-color);
+  font-size: 0.76rem;
+  color: var(--text-secondary);
+}
+
+.kanban-assignee {
+  font-weight: 600;
+  color: var(--navy-800);
+}
+
+.tool-eco-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 14px;
+}
+
+.tool-eco-card {
+  background: var(--bg-page);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 16px 18px;
+}
+
+.tool-eco-card h4 {
+  margin-bottom: 8px;
+  font-size: 1rem;
+  color: var(--navy-900);
+}
+
+.tool-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.tool-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-strong);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--navy-800);
+}
+
+/* ==========================================================================
+   Bai 5: Lesson Plan, Metrics & Video Showcase Card
+   ========================================================================== */
+.lesson-plan-shell {
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--bg-surface);
+  margin-top: 16px;
+}
+
+.lesson-plan-banner {
+  background: linear-gradient(135deg, var(--navy-900), var(--navy-800));
+  color: #ffffff;
+  padding: 20px 24px;
+  border-bottom: 3px solid var(--gold-400);
+}
+
+.lesson-plan-banner h3 {
+  color: #ffffff;
+  margin-bottom: 8px;
+  font-size: 1.25rem;
+}
+
+.lesson-meta-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.lesson-meta-bar .badge {
+  background: rgba(255, 255, 255, 0.14);
+  color: #fef3c7;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.lesson-activities {
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.activity-block {
+  border: 1px solid var(--border-color);
+  border-left: 4px solid var(--blue-500);
+  border-radius: var(--radius-md);
+  padding: 16px 18px;
+  background: var(--bg-page);
+}
+
+.activity-block.activity-gold {
+  border-left-color: var(--gold-500);
+}
+
+.activity-block.activity-teal {
+  border-left-color: var(--teal-600);
+}
+
+.activity-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.activity-header h4 {
+  margin: 0;
+  font-size: 1.05rem;
+  color: var(--navy-900);
+}
+
+.activity-time {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: var(--radius-pill);
+  background: var(--navy-100);
+  color: var(--navy-900);
+}
+
+.teacher-quote {
+  margin: 10px 0 0;
+  padding: 12px 15px;
+  border-radius: var(--radius-sm);
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+  font-style: italic;
+  color: #78350f;
+  font-size: 0.93rem;
+}
+
+.metric-highlight-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin: 16px 0;
+}
+
+.metric-pill {
+  background: var(--bg-page);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  text-align: center;
+}
+
+.metric-pill strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.55rem;
+  color: var(--navy-900);
+}
+
+.metric-pill span {
+  font-size: 0.84rem;
+  color: var(--text-muted);
+}
+
+/* Video Showcase Card */
+.video-showcase-card {
+  margin-top: 20px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border-strong);
+  background: var(--bg-surface);
+  box-shadow: var(--shadow-md);
+}
+
+.video-showcase-header {
+  background: linear-gradient(135deg, #0b1026 0%, #131b3a 60%, #1e2b58 100%);
+  color: #ffffff;
+  padding: 18px 22px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.video-showcase-header h4 {
+  color: #ffffff;
+  margin: 0 0 4px;
+  font-size: 1.1rem;
+}
+
+.video-showcase-header p {
+  color: #cbd5e1;
+  margin: 0;
+  font-size: 0.86rem;
+}
+
+.video-player-frame {
+  background: #0f172a;
+  padding: 20px;
+}
+
+.video-placeholder-box {
+  border: 1.5px dashed rgba(56, 189, 248, 0.5);
+  border-radius: var(--radius-md);
+  padding: 28px 22px;
+  text-align: center;
+  color: #e2e8f0;
+  background: radial-gradient(circle at center, rgba(30, 43, 88, 0.72), rgba(11, 16, 38, 0.96));
+}
+
+.video-play-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 12px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--gold-500), var(--gold-400));
+  color: var(--navy-950);
+  font-size: 1.5rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 24px rgba(245, 158, 11, 0.35);
+}
+
+.video-spec-chips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin: 14px 0 8px;
+}
+
+.video-spec-chips span {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  color: #93c5fd;
+}
+
+.video-drive-toolbar {
+  padding: 18px 22px;
+  background: var(--bg-page);
+  border-top: 1px solid var(--border-color);
+}
+
+.video-drive-input-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.video-drive-input-row input {
+  flex: 1 1 280px;
+  min-width: 0;
+  padding: 10px 13px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-strong);
+  font-family: var(--font-mono);
+  font-size: 0.84rem;
+  color: var(--text-primary);
+  background: var(--bg-surface);
+}
+
+.video-drive-iframe-wrap {
+  margin-top: 14px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--border-strong);
+  background: #000000;
+  aspect-ratio: 16 / 9;
+}
+
+.video-drive-iframe-wrap iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* ==========================================================================
+   Bai 6: 3D Flip Cards (7 Principles) & Interactive Ethics Quiz
+   ========================================================================== */
+.flip-controls-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: var(--radius-md);
+  background: var(--navy-50);
+  border: 1px solid var(--border-color);
+  margin-bottom: 18px;
+}
+
+.flip-progress-text {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--navy-900);
+}
+
+.flip-controls-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.flip-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.flip-card {
+  perspective: 1100px;
+  min-height: 280px;
+  cursor: pointer;
+  outline: none;
+  border-radius: var(--radius-lg);
+}
+
+.flip-card:focus-visible {
+  box-shadow: 0 0 0 3px var(--blue-400);
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 280px;
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  transform-style: preserve-3d;
+}
+
+.flip-card.is-flipped .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: var(--shadow-sm);
+}
+
+.flip-card-front {
+  background: linear-gradient(150deg, var(--navy-900) 0%, var(--navy-800) 100%);
+  color: #ffffff;
+  border: 1px solid rgba(245, 158, 11, 0.35);
+}
+
+.flip-card-front-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.flip-num {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  background: rgba(245, 158, 11, 0.2);
+  color: #fde68a;
+  border: 1px solid rgba(245, 158, 11, 0.45);
+}
+
+.flip-icon {
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.flip-card-front h4 {
+  color: #ffffff;
+  font-size: 1.1rem;
+  margin: 12px 0 8px;
+  line-height: 1.35;
+}
+
+.flip-card-front p {
+  color: #cbd5e1;
+  font-size: 0.86rem;
+  margin: 0;
+}
+
+.flip-hint {
+  font-size: 0.78rem;
+  color: #93c5fd;
+  font-weight: 600;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.flip-card-back {
+  background: var(--bg-surface);
+  color: var(--text-primary);
+  border: 2px solid var(--gold-400);
+  transform: rotateY(180deg);
+  overflow-y: auto;
+}
+
+.flip-card-back h4 {
+  font-size: 0.96rem;
+  color: var(--navy-900);
+  margin: 0 0 8px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.flip-card-back p {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin: 0 0 8px;
+  line-height: 1.5;
+}
+
+.flip-example {
+  font-size: 0.81rem;
+  padding: 8px 10px;
+  border-radius: var(--radius-sm);
+  background: var(--gold-50);
+  border-left: 3px solid var(--gold-500);
+  color: #78350f;
+  line-height: 1.45;
+}
+
+/* Interactive Ethics Quiz */
+.quiz-shell {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.quiz-status-bar {
+  background: var(--navy-50);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 14px 18px;
+}
+
+.quiz-status-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--navy-900);
+}
+
+.quiz-progress-track {
+  width: 100%;
+  height: 10px;
+  border-radius: var(--radius-pill);
+  background: #dbeafe;
+  overflow: hidden;
+}
+
+.quiz-progress-fill {
+  height: 100%;
+  width: 0%;
+  border-radius: var(--radius-pill);
+  background: linear-gradient(90deg, var(--blue-500), var(--gold-500));
+  transition: width 0.35s ease;
+}
+
+.quiz-question-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  box-shadow: var(--shadow-xs);
+}
+
+.quiz-q-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.quiz-q-title {
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: var(--navy-900);
+  margin: 0 0 12px;
+  line-height: 1.5;
+}
+
+.quiz-options {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.quiz-option-btn {
+  width: 100%;
+  text-align: left;
+  padding: 12px 14px;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid var(--border-strong);
+  background: var(--bg-page);
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: 0.91rem;
+  line-height: 1.48;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  transition: all var(--transition);
+}
+
+.quiz-option-btn:hover:not(:disabled) {
+  border-color: var(--blue-500);
+  background: var(--blue-50);
+}
+
+.quiz-option-btn:disabled {
+  cursor: default;
+}
+
+.quiz-option-letter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--navy-100);
+  color: var(--navy-900);
+  font-weight: 700;
+  font-size: 0.8rem;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.quiz-option-btn.is-correct {
+  border-color: #16a34a;
+  background: #dcfce7;
+  color: #14532d;
+  font-weight: 600;
+}
+
+.quiz-option-btn.is-correct .quiz-option-letter {
+  background: #16a34a;
+  color: #ffffff;
+}
+
+.quiz-option-btn.is-wrong {
+  border-color: #dc2626;
+  background: #fee2e2;
+  color: #7f1d1d;
+}
+
+.quiz-option-btn.is-wrong .quiz-option-letter {
+  background: #dc2626;
+  color: #ffffff;
+}
+
+.quiz-feedback {
+  margin-top: 12px;
+  padding: 12px 15px;
+  border-radius: var(--radius-sm);
+  font-size: 0.89rem;
+  line-height: 1.55;
+  display: none;
+}
+
+.quiz-feedback.is-visible {
+  display: block;
+}
+
+.quiz-feedback.feedback-ok {
+  background: #f0fdf4;
+  border-left: 4px solid #16a34a;
+  color: #14532d;
+}
+
+.quiz-feedback.feedback-err {
+  background: #fef2f2;
+  border-left: 4px solid #dc2626;
+  color: #7f1d1d;
+}
+
+.quiz-summary-card {
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  background: linear-gradient(135deg, var(--navy-950) 0%, var(--navy-800) 100%);
+  color: #ffffff;
+  border: 2px solid var(--gold-400);
+  box-shadow: var(--shadow-lg);
+}
+
+.quiz-summary-card h4 {
+  color: #fde68a;
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+}
+
+.quiz-summary-card p {
+  color: #e2e8f0;
+}
+
+.integrity-badge-card {
+  margin-top: 14px;
+  padding: 16px 18px;
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px dashed rgba(253, 230, 138, 0.65);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.integrity-seal {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  color: #fde68a;
+  font-size: 1rem;
+}
+
+.integrity-seal-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--gold-400), var(--gold-600));
+  color: var(--navy-950);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.gallery-grid.gallery-grid-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+/* ==========================================================================
+   Responsive Breakpoints (Tablet & Mobile 390x844)
+   ========================================================================== */
+@media (max-width: 1080px) {
+  .kanban-board {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .flip-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  .kanban-board,
+  .tool-eco-grid,
+  .metric-highlight-row,
+  .flip-grid,
+  .gallery-grid.gallery-grid-3 {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .lesson-plan-banner,
+  .lesson-activities,
+  .video-player-frame,
+  .video-drive-toolbar {
+    padding: 16px;
+  }
+
+  .flip-card,
+  .flip-card-inner {
+    min-height: 295px;
+  }
+}

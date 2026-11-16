@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài 1: Thao tác cơ bản với tệp tin và thư mục — Tô Đức Thịnh | INF2501 Portfolio</title>
+  <meta name="description" content="Chương 1 - Bài tập 1 (mục 1.4): Thực hành 12 bước thao tác tệp tin và thư mục trên Windows File Explorer kèm chuẩn cây thư mục ngành Sư phạm Âm nhạc.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bai123.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">♪</span>
+        <span class="brand-text"><strong>Tô Đức Thịnh</strong><small>INF2501 • Sư phạm Âm nhạc</small></span>
+      </a>
+      <button type="button" class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Mở menu điều hướng">☰</button>
+      <nav class="site-nav" id="siteNav" aria-label="Điều hướng chính">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html" class="nav-link">Giới thiệu</a></li>
+          <li class="nav-item nav-dropdown">
+            <a href="projects.html" class="nav-link active">Dự án</a>
+            <button type="button" class="dropdown-toggle" aria-expanded="false" aria-label="Mở danh mục 6 bài tập">▾</button>
+            <ul class="dropdown-menu">
+              <li><a href="bai1.html" class="active">Bài 1: Tệp tin &amp; Thư mục <span class="badge badge-navy">C1</span></a></li>
+              <li><a href="bai2.html">Bài 2: Tìm kiếm học thuật <span class="badge badge-navy">C2</span></a></li>
+              <li><a href="bai3.html">Bài 3: Viết Prompt hiệu quả <span class="badge badge-gold">C3 ★</span></a></li>
+              <li><a href="bai4.html">Bài 4: Hợp tác trực tuyến <span class="badge badge-navy">C4</span></a></li>
+              <li><a href="bai5.html">Bài 5: Sáng tạo nội dung AI <span class="badge badge-teal">C5</span></a></li>
+              <li><a href="bai6.html">Bài 6: AI có trách nhiệm <span class="badge badge-gold">C6 ★</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="conclusion.html" class="nav-link">Tổng kết</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Giới thiệu</a>
+          <span>/</span>
+          <a href="projects.html">Dự án</a>
+          <span>/</span>
+          <span>Bài 1 (Chương 1)</span>
+        </nav>
+        <span class="hero-eyebrow">Chương 1: Máy tính và các thiết bị ngoại vi • Bài tập 1 (Mục 1.4 — 0,5đ)</span>
+        <h1 class="hero-title">Thao tác cơ bản với tệp tin và thư mục</h1>
+        <p class="hero-subtitle">
+          Rèn luyện kỹ năng quản trị hệ thống tệp tin trên Windows 10/11 qua 12 bước thực hành tại phân vùng dữ liệu <code>D:\ThucHanh_ToDucThinh</code>, đồng thời chuẩn hóa cấu trúc thư mục và quy tắc đặt tên học liệu dành riêng cho sinh viên ngành <strong>Sư phạm Âm nhạc (SPAN)</strong>.
+        </p>
+        <div class="hero-meta-row">
+          <span class="badge">6 ảnh chụp thao tác thật</span>
+          <span class="badge">4 ảnh đề bài &amp; Rubric LMS</span>
+          <span class="badge">Thư mục mẫu thực tế SPAN</span>
+        </div>
+        <div class="hero-actions">
+          <a href="projects.html" class="btn btn-outline">← Quay lại trang Dự án</a>
+          <a href="bai2.html" class="btn btn-primary">Chuyển sang Bài tập 2 →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <div class="container">
+
+        <!-- PHẦN A: MỤC TIÊU BÀI TẬP -->
+        <article class="part-card">
+          <div class="part-header">
+            <span class="part-badge">Phần A</span>
+            <h2 class="part-title">Mục tiêu bài tập &amp; Yêu cầu kỹ năng</h2>
+          </div>
+          <p>
+            Theo tài liệu hướng dẫn học phần <strong>INF2501</strong> (Chương 1 — Mục 1.4), bài tập nhằm hình thành nền tảng quản trị dữ liệu cá nhân khoa học trước khi làm việc với các công cụ số và AI nâng cao. Cụ thể, sinh viên cần đạt được các mục tiêu:
+          </p>
+          <div class="card-grid-2">
+            <div class="callout callout-info">
+              <strong>Kỹ năng thao tác hệ thống tệp (Windows File Explorer)</strong>
+              <ul>
+                <li>Phân biệt ổ đĩa hệ thống (<code>C:</code>) với phân vùng lưu trữ dữ liệu cá nhân (<code>D:</code>, <code>E:</code>) để bảo vệ dữ liệu khi cài lại hệ điều hành.</li>
+                <li>Thực hiện thành thạo 12 bước: tạo thư mục, tạo tệp mới, đổi tên (<code>F2</code>), sao chép (<code>Copy</code>), di chuyển (<code>Cut</code>), xóa tạm vào Thùng rác (<code>Delete</code>), xóa vĩnh viễn (<code>Shift + Delete</code>) và khôi phục (<code>Restore</code>).</li>
+              </ul>
+            </div>
+            <div class="callout">
+              <strong>Tư duy tổ chức học liệu Sư phạm Âm nhạc</strong>
+              <ul>
+                <li>Hiểu rõ bản chất khác biệt giữa <em>Sao chép vs Di chuyển</em> và <em>Xóa tạm vs Xóa vĩnh viễn</em> để tránh thất lạc giáo án, bản thu âm hay file tổng phổ <code>.mscz</code>.</li>
+                <li>Thiết kế cây thư mục tối ưu (<code>2552210375_ToDucThinh_SPAN/</code>) và quy chuẩn đặt tên tệp không dấu, giúp đồng bộ mượt mà giữa Windows, iOS và Android.</li>
+              </ul>
+            </div>
+          </div>
+
+          <h3 class="section-subhead">Bảng phím tắt &amp; phân biệt thao tác cốt lõi (Tiêu chí Rubric Mức 4)</h3>
+          <div class="hotkey-grid">
+            <div class="hotkey-card">
+              <kbd>Ctrl + C / Ctrl + V</kbd>
+              <strong>Sao chép (Copy)</strong>
+              <span>Tạo bản sao độc lập ở thư mục đích, giữ nguyên tệp gốc ban đầu.</span>
+            </div>
+            <div class="hotkey-card">
+              <kbd>Ctrl + X / Ctrl + V</kbd>
+              <strong>Di chuyển (Cut)</strong>
+              <span>Chuyển tệp sang vị trí mới và loại bỏ tệp khỏi thư mục nguồn.</span>
+            </div>
+            <div class="hotkey-card">
+              <kbd>Delete</kbd>
+              <strong>Xóa vào Recycle Bin</strong>
+              <span>Chuyển tệp vào Thùng rác; vẫn giữ thông tin vị trí gốc để <code>Restore</code>.</span>
+            </div>
+            <div class="hotkey-card">
+              <kbd>Shift + Delete</kbd>
+              <strong>Xóa vĩnh viễn</strong>
+              <span>Bỏ qua Thùng rác, giải phóng trực tiếp dung lượng sau hộp thoại xác nhận.</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- PHẦN B: TÓM TẮT QUÁ TRÌNH THỰC HIỆN -->
+        <article class="part-card">
+          <div class="part-header">
+            <span class="part-badge">Phần B</span>
+            <h2 class="part-title">Tóm tắt quá trình thực hiện (12 bước &amp; Kinh nghiệm xử lý)</h2>
+          </div>
+
+          <p>
+            Sinh viên thực hiện trực tiếp toàn bộ quy trình 12 bước trên máy tính cá nhân chạy <strong>Windows File Explorer</strong> (ngày thực hành <code>11/11/2026</code>, từ <code>14:58</code> đến <code>15:05</code> theo dấu thời gian hệ thống trên ảnh chụp).
+          </p>
+
+          <ol class="step-list">
+            <li class="step-item">
+              <span class="step-num">1–2</span>
+              <div class="step-content">
+                <strong>Mở File Explorer &amp; chọn ổ đĩa dữ liệu <code>D:</code></strong>
+                <p>Nhấn tổ hợp phím <code>Windows + E</code> để mở cửa sổ File Explorer, chọn mục <code>This PC</code>. Hệ thống hiển thị 3 phân vùng (<code>Local Disk (C:)</code>, <code>New Volume (D:)</code>, <code>New Volume (E:)</code>). Chọn <code>New Volume (D:)</code> thay vì ổ <code>C:</code> để tách biệt dữ liệu thực hành khỏi tệp hệ thống Windows.</p>
+              </div>
+            </li>
+            <li class="step-item">
+              <span class="step-num">3–4</span>
+              <div class="step-content">
+                <strong>Tạo thư mục định danh sinh viên <code>ThucHanh_ToDucThinh</code></strong>
+                <p>Trong <code>D:\</code>, nhấn <code>Ctrl + Shift + N</code> (hoặc <em>New &rarr; Folder</em>) đặt tên đúng quy tắc không dấu <code>ThucHanh_ToDucThinh</code> rồi nhấp đúp mở vào bên trong (đường dẫn hiển thị <code>This PC &gt; New Volume (D:) &gt; ThucHanh_ToDucThinh</code>).</p>
+              </div>
+            </li>
+            <li class="step-item">
+              <span class="step-num">5–7</span>
+              <div class="step-content">
+                <strong>Tạo tệp <code>GhiChu.txt</code>, đổi tên thành <code>GhiChuQuanTrong.txt</code> &amp; tạo thư mục con <code>TaiLieu</code></strong>
+                <p>Nhấp chuột phải chọn <em>New &rarr; Text Document</em> để tạo <code>GhiChu.txt</code>, sau đó nhấn <code>F2</code> đổi tên thành <code>GhiChuQuanTrong.txt</code> (<code>0 KB</code>, tạo lúc <code>2:58 PM</code>). Tiếp tục tạo thư mục con <code>TaiLieu</code> ngay trong <code>ThucHanh_ToDucThinh</code>.</p>
+              </div>
+            </li>
+            <li class="step-item">
+              <span class="step-num">8–9</span>
+              <div class="step-content">
+                <strong>Thực hành Copy &amp; Cut vào thư mục con <code>TaiLieu</code></strong>
+                <p>Sao chép (<code>Ctrl + C</code> &rarr; <code>Ctrl + V</code>) tệp <code>GhiChuQuanTrong.txt</code> vào <code>TaiLieu</code> (bản gốc ở thư mục cha vẫn còn). Sau đó tạo tệp <code>DiChuyen.txt</code> lúc <code>3:00 PM</code> ở thư mục cha và dùng <code>Ctrl + X</code> &rarr; <code>Ctrl + V</code> để di chuyển vào <code>TaiLieu</code> (tệp gốc ở ngoài biến mất).</p>
+              </div>
+            </li>
+            <li class="step-item">
+              <span class="step-num">10–11</span>
+              <div class="step-content">
+                <strong>Kiểm chứng hai cơ chế xóa: <code>Delete</code> vs <code>Shift + Delete</code></strong>
+                <p>Trong <code>D:\ThucHanh_ToDucThinh\TaiLieu</code>, chọn <code>GhiChuQuanTrong.txt</code> và nhấn <code>Delete</code> lúc <code>3:05 PM</code> (tệp chuyển vào <code>Recycle Bin</code>). Tiếp theo, chọn <code>DiChuyen.txt</code> và nhấn <code>Shift + Delete</code>; Windows hiện hộp thoại cảnh báo <em>"Are you sure you want to permanently delete this file?"</em> &rarr; nhấn <code>Yes</code> để xóa vĩnh viễn.</p>
+              </div>
+            </li>
+            <li class="step-item">
+              <span class="step-num">12</span>
+              <div class="step-content">
+                <strong>Khôi phục dữ liệu từ Thùng rác (<code>Restore</code>)</strong>
+                <p>Mở <code>Recycle Bin</code> trên màn hình, kiểm tra thông tin <em>Original Location</em> (<code>D:\ThucHanh_ToDucThinh\TaiLieu</code>) của tệp <code>GhiChuQuanTrong.txt</code>, nhấp chuột phải và chọn <code>Restore</code> để đưa tệp quay lại đúng thư mục ban đầu.</p>
+              </div>
+            </li>
+          </ol>
+
+          <div class="card-grid-2" style="margin-top: 18px;">
+            <div class="callout callout-ai">
+              <strong>Công cụ sử dụng &amp; Ghi chú AI</strong>
+              <ul>
+                <li><strong>Công cụ chính:</strong> Windows File Explorer, Recycle Bin, Snipping Tool (chụp ảnh màn hình từng bước).</li>
+                <li><strong>AI hỗ trợ (minh bạch):</strong> Sử dụng trợ lý AI để gợi ý cấu trúc hóa quy tắc đặt tên tệp chuẩn hóa cho chuyên ngành Sư phạm Âm nhạc (<code>YYYYMMDD_MaMon_TenTaiLieu_v01.ext</code>), sau đó sinh viên tự đối chiếu với thực tế học phần và tạo cây thư mục mẫu kiểm chứng.</li>
+              </ul>
+            </div>
+            <div class="callout callout-warn">
+              <strong>Khó khăn thực tế &amp; Cách giải quyết</strong>
+              <ul>
+                <li><strong>Khó khăn:</strong> Trong thực tế làm việc nhóm (Bài 4), việc đặt tên tệp tiếng Việt có dấu và khoảng trắng (ví dụ <code>Báo cáo Ứng dụng AI (2) (1).docx</code>) gây lỗi đường dẫn và khó nhận biết bản mới nhất khi chia sẻ qua iOS/Android/Windows.</li>
+                <li><strong>Giải pháp:</strong> Áp dụng triệt để quy chuẩn đặt tên không dấu, phân tách bằng dấu gạch dưới <code>_</code> và đánh số phiên bản <code>_v01</code>, <code>_v02</code> ngay trong cây thư mục chuẩn <code>SPAN</code>.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- PHẦN C: SẢN PHẨM CUỐI CÙNG -->
+        <article class="part-card">
+          <div class="part-header">
+            <span class="part-badge">Phần C</span>
+            <h2 class="part-title">Sản phẩm cuối cùng &amp; Minh chứng thực hành</h2>
+          </div>
+
+          <h3 class="section-subhead">1. Bộ 06 ảnh chụp màn hình thực hành thật trên <code>D:\ThucHanh_ToDucThinh</code></h3>
+          <p>Nhấn vào bất kỳ hình ảnh nào dưới đây để mở chế độ xem phóng to (Lightbox) kiểm tra rõ đường dẫn, tên tệp và dấu thời gian thực tế.</p>
+
+          <div class="gallery-grid">
+            <figure class="figure-card">
+              <img src="assets/bai1/thao_tac_tep_1_o_dia_this_pc.png" alt="Bước 1-2: Giao diện This PC hiển thị 3 phân vùng ổ đĩa C:, D:, E:">
+              <figcaption class="figure-caption"><strong>Hình 1.1 (Bước 1–2):</strong> Mở <code>This PC</code> trong Windows File Explorer, xác định 3 ổ đĩa và chọn phân vùng dữ liệu <code>New Volume (D:)</code>.</figcaption>
+            </figure>
+            <figure class="figure-card">
+              <img src="assets/bai1/thao_tac_tep_2_tao_thu_muc_thuchanh.png" alt="Bước 3-4: Tạo thư mục ThucHanh_ToDucThinh trong ổ D:">
+              <figcaption class="figure-caption"><strong>Hình 1.2 (Bước 3–4):</strong> Tạo thư mục <code>ThucHanh_ToDucThinh</code> tại <code>D:\</code> đúng quy tắc đặt tên theo họ tên sinh viên không dấu.</figcaption>
+            </figure>
+            <figure class="figure-card">
+              <img src="assets/bai1/thao_tac_tep_3_tao_tep_va_thu_muc_con.png" alt="Bước 5-7: Tạo tệp GhiChuQuanTrong.txt và thư mục con TaiLieu">
+              <figcaption class="figure-caption"><strong>Hình 1.3 (Bước 5–7):</strong> Tạo <code>GhiChu.txt</code>, đổi tên thành <code>GhiChuQuanTrong.txt</code> (<code>2:58 PM</code>) và tạo thư mục con <code>TaiLieu</code>.</figcaption>
+            </figure>
+            <figure class="figure-card">
+              <img src="assets/bai1/thao_tac_tep_4_sao_chep_va_di_chuyen.png" alt="Bước 8-9: Bên trong TaiLieu chứa GhiChuQuanTrong.txt và DiChuyen.txt">
+              <figcaption class="figure-caption"><strong>Hình 1.4 (Bước 8–9):</strong> Kết quả sau khi Copy <code>GhiChuQuanTrong.txt</code> và Cut <code>DiChuyen.txt</code> (<code>3:00 PM</code>) vào thư mục <code>TaiLieu</code>.</figcaption>
+            </figure>
+            <figure class="figure-card">
+              <img src="assets/bai1/thao_tac_tep_5_xoa_vinh_vien_dichuyen.png" alt="Bước 11: Hộp thoại xác nhận xóa vĩnh viễn Shift + Delete trên DiChuyen.txt">
+              <figcaption class="figure-caption"><strong>Hình 1.5 (Bước 11):</strong> Hộp thoại xác nhận xóa vĩnh viễn (<code>Shift + Delete</code>) tệp <code>DiChuyen.txt</code> không đi qua Thùng rác.</figcaption>
+            </figure>
+            <figure class="figure-card">
+              <img src="assets/bai1/thao_tac_tep_6_khoi_phuc_thung_rac.png" alt="Bước 10 & 12: Khôi phục GhiChuQuanTrong.txt từ Recycle Bin">
+              <figcaption class="figure-caption"><strong>Hình 1.6 (Bước 10 &amp; 12):</strong> Trong <code>Recycle Bin</code>, chọn menu chuột phải <code>Restore</code> trên <code>GhiChuQuanTrong.txt</code> (xóa lúc <code>3:05 PM</code>) để khôi phục về <code>TaiLieu</code>.</figcaption>
+            </figure>
+          </div>
+
+          <h3 class="section-subhead">2. Đề bài &amp; Bảng Rubric đánh giá gốc trên LMS</h3>
+          <div class="gallery-grid-3">
+            <figure class="figure-card">
+              <img src="assets/bai1/de_bai_bai1_buoc_1_8_full.jpg" alt="Đề bài Bài 1 trên LMS - Mục tiêu và Bước 1 đến 8">
+              <figcaption class="figure-caption">Đề bài LMS Bài 1: Mục tiêu &amp; Yêu cầu Bước 1–8.</figcaption>
+            </figure>
+            <figure class="figure-card">
+              <img src="assets/bai1/de_bai_bai1_buoc_9_12.jpg" alt="Đề bài Bài 1 trên LMS - Bước 9 đến 12 và hình thức nộp bài">
+              <figcaption class="figure-caption">Đề bài LMS Bài 1: Yêu cầu Bước 9–12 &amp; Hình thức nộp.</figcaption>
+            </figure>
+            <figure class="figure-card">
+              <img src="assets/bai1/rubric_bai1.jpg" alt="Bảng Rubric đánh giá Bài 1 mức 1 đến 4">
+              <figcaption class="figure-caption">Bảng Rubric 4 tiêu chí (10đ) &amp; thang đánh giá Mức 1–4.</figcaption>
+            </figure>
+          </div>
+
+          <h3 class="section-subhead">3. Cấu trúc thư mục tối ưu &amp; Quy tắc đặt tên tệp chuẩn cho sinh viên Sư phạm Âm nhạc</h3>
+          <p>
+            Từ nền tảng thực hành trên, sinh viên xây dựng chuẩn tổ chức không gian làm việc cho toàn bộ quá trình học đại học ngành <strong>Sư phạm Âm nhạc (SPAN)</strong> theo cấu trúc 4 nhánh và công thức đặt tên 5 thành phần:
+          </p>
+
+          <div class="naming-formula" aria-label="Công thức đặt tên tệp chuẩn">
+            <div class="formula-part"><code>YYYYMMDD</code><small>Ngày tạo (20261114)</small></div>
+            <span class="formula-sep">_</span>
+            <div class="formula-part"><code>MaMon</code><small>INF2501 / SPAN</small></div>
+            <span class="formula-sep">_</span>
+            <div class="formula-part"><code>TenTaiLieu</code><small>Không dấu, PascalCase</small></div>
+            <span class="formula-sep">_</span>
+            <div class="formula-part"><code>v01</code><small>Phiên bản (v01, v02)</small></div>
+            <span class="formula-sep">.</span>
+            <div class="formula-part"><code>ext</code><small>docx, pdf, mscz, mp3</small></div>
+          </div>
+
+          <div class="svg-showcase">
+            <img src="assets/bai1/cay_thu_muc_span.svg" alt="Sơ đồ cấu trúc thư mục chuẩn và quy tắc đặt tên tệp cho sinh viên Sư phạm Âm nhạc">
+            <p class="svg-showcase-caption"><strong>Hình 1.7:</strong> Sơ đồ trực quan cấu trúc 4 nhánh thư mục và giải phẫu tên tệp chuẩn ngành Sư phạm Âm nhạc.</p>
+          </div>
+
+          <div class="folder-tree-card">
+            <div class="folder-tree-bar">
+              <span class="folder-tree-path">📁 assets/bai1/sample_workspace/2552210375_ToDucThinh_SPAN/</span>
+              <span class="badge badge-gold">Cây thư mục mẫu thực tế (nhấn để xem tệp)</span>
+            </div>
+            <div class="folder-tree-body">
+              <ul class="tree-ul">
+                <li>
+                  <div class="tree-node"><span class="tree-folder">📁 2552210375_ToDucThinh_SPAN/</span> <span class="tree-note">— Thư mục gốc định danh SV</span></div>
+                  <ul>
+                    <li>
+                      <div class="tree-node"><a class="tree-file" href="assets/bai1/sample_workspace/2552210375_ToDucThinh_SPAN/README_QuyTacDatTen.md" target="_blank" rel="noopener">📄 README_QuyTacDatTen.md</a> <span class="tree-note">— Quy ước đặt tên &amp; phiên bản</span></div>
+                    </li>
+                    <li>
+                      <div class="tree-node"><span class="tree-folder">📁 01_HocPhan_DaiCuong/</span></div>
+                      <ul>
+                        <li>
+                          <div class="tree-node"><span class="tree-folder">📁 INF2501_CongNgheSo_AI/</span></div>
+                          <ul>
+                            <li><div class="tree-node"><a class="tree-file" href="assets/bai1/sample_workspace/2552210375_ToDucThinh_SPAN/01_HocPhan_DaiCuong/INF2501_CongNgheSo_AI/20261111_INF2501_Bai1_GhiChuThucHanh_v01.txt" target="_blank" rel="noopener">📄 20261111_INF2501_Bai1_GhiChuThucHanh_v01.txt</a></div></li>
+                            <li><div class="tree-node"><a class="tree-file" href="assets/bai1/sample_workspace/2552210375_ToDucThinh_SPAN/01_HocPhan_DaiCuong/INF2501_CongNgheSo_AI/20261115_INF2501_Nhom10_PhanCongDuAn_v01.md" target="_blank" rel="noopener">📄 20261115_INF2501_Nhom10_PhanCongDuAn_v01.md</a></div></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <div class="tree-node"><span class="tree-folder">📁 02_ChuyenNganh_AmNhac/</span></div>
+                      <ul>
+                        <li>
+                          <div class="tree-node"><span class="tree-folder">📁 LyThuyetAmNhac_XuongAm/</span></div>
+                          <ul>
+                            <li><div class="tree-node"><a class="tree-file" href="assets/bai1/sample_workspace/2552210375_ToDucThinh_SPAN/02_ChuyenNganh_AmNhac/LyThuyetAmNhac_XuongAm/20261020_SPAN_HoaAmCoBan_GhiChu_v01.md" target="_blank" rel="noopener">📄 20261020_SPAN_HoaAmCoBan_GhiChu_v01.md</a></div></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <div class="tree-node"><span class="tree-folder">📁 NhacCu_ThanhNhac/</span></div>
+                          <ul>
+                            <li><div class="tree-node"><a class="tree-file" href="assets/bai1/sample_workspace/2552210375_ToDucThinh_SPAN/02_ChuyenNganh_AmNhac/NhacCu_ThanhNhac/20261102_SPAN_LuyenThanh_BaiTapKhoiDong_v01.txt" target="_blank" rel="noopener">📄 20261102_SPAN_LuyenThanh_BaiTapKhoiDong_v01.txt</a></div></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <div class="tree-node"><span class="tree-folder">📁 03_NghiepVuSuPham/</span></div>
+                      <ul>
+                        <li>
+                          <div class="tree-node"><span class="tree-folder">📁 GiaoAn_AmNhac_THCS/</span></div>
+                          <ul>
+                            <li><div class="tree-node"><a class="tree-file" href="assets/bai1/sample_workspace/2552210375_ToDucThinh_SPAN/03_NghiepVuSuPham/GiaoAn_AmNhac_THCS/20261114_SPAN_GiaoAnLop6_NhacCuPhuongTay_v01.md" target="_blank" rel="noopener">📄 20261114_SPAN_GiaoAnLop6_NhacCuPhuongTay_v01.md</a></div></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <div class="tree-node"><span class="tree-folder">📁 HocLieu_So_DaPhuongTien/</span></div>
+                          <ul>
+                            <li><div class="tree-node"><a class="tree-file" href="assets/bai1/sample_workspace/2552210375_ToDucThinh_SPAN/03_NghiepVuSuPham/HocLieu_So_DaPhuongTien/20261114_SPAN_Moises_BeatMau_README.txt" target="_blank" rel="noopener">📄 20261114_SPAN_Moises_BeatMau_README.txt</a></div></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <div class="tree-node"><span class="tree-folder">📁 04_MinhChung_Portfolio/</span></div>
+                      <ul>
+                        <li><div class="tree-node"><a class="tree-file" href="assets/bai1/sample_workspace/2552210375_ToDucThinh_SPAN/04_MinhChung_Portfolio/20261116_INF2501_ChecklistMinhChung_v01.md" target="_blank" rel="noopener">📄 20261116_INF2501_ChecklistMinhChung_v01.md</a></div></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <div class="exercise-pager">
+          <a href="projects.html" class="btn btn-outline">← Quay lại trang Dự án</a>
+          <a href="bai2.html" class="btn btn-primary">Chuyển sang bài tập kế tiếp: Bài 2 →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>Hồ sơ Học tập Số (INF2501)</h3>
+          <p><strong>Họ và tên:</strong> Tô Đức Thịnh | <strong>Mã sinh viên:</strong> 2552210375</p>
+          <p><strong>Ngành:</strong> Sư phạm Âm nhạc (SPAN) — Trường Đại học Sư phạm Nghệ thuật Trung ương</p>
+          <p><strong>Học phần:</strong> Nhập môn Công nghệ số và ứng dụng trí tuệ nhân tạo (INF2501) | <strong>Lớp:</strong> K20G</p>
+        </div>
+        <div>
+          <h4>Liên kết nhanh</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Giới thiệu (About Me)</a></li>
+            <li><a href="projects.html">Tổng quan Dự án (Projects)</a></li>
+            <li><a href="bai1.html">Bài 1: Tệp tin &amp; Thư mục</a></li>
+            <li><a href="bai2.html">Bài 2: Tìm kiếm học thuật</a></li>
+            <li><a href="bai3.html">Bài 3: Viết Prompt hiệu quả</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Hồ sơ &amp; Liêm chính</h4>
+          <ul class="footer-links">
+            <li><a href="bai4.html">Bài 4: Hợp tác trực tuyến (Nhóm 10)</a></li>
+            <li><a href="bai5.html">Bài 5: Sáng tạo nội dung AI</a></li>
+            <li><a href="bai6.html">Bài 6: AI có trách nhiệm</a></li>
+            <li><a href="conclusion.html">Tổng kết (Conclusion)</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Tô Đức Thịnh (MSSV: 2552210375 — K20G). Portfolio học phần INF2501.</span>
+        <span>Cam kết Liêm chính AI: Mọi công cụ AI hỗ trợ đều được ghi chú minh bạch, kiểm chứng chuyên môn qua SGK &amp; tài liệu học thuật, không đăng tải thông tin cá nhân nhạy cảm.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

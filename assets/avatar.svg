@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-labelledby="avatarTitle avatarDesc">
+  <title id="avatarTitle">Avatar Placeholder - Tô Đức Thịnh (Sư phạm Âm nhạc)</title>
+  <desc id="avatarDesc">Ảnh đại diện nghệ thuật chủ đề Sư phạm Âm nhạc và Công nghệ số cho sinh viên Tô Đức Thịnh - K20G - SPAN</desc>
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#131b3a"/>
+      <stop offset="55%" stop-color="#1f2d5c"/>
+      <stop offset="100%" stop-color="#352459"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde68a"/>
+      <stop offset="50%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.15"/>
+      <stop offset="50%" stop-color="#a78bfa" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0.25"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="#131b3a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" rx="200" fill="url(#bgGrad)"/>
+  <circle cx="200" cy="185" r="165" fill="url(#glow)"/>
+
+  <!-- Subtle outer vinyl/staff rings -->
+  <circle cx="200" cy="200" r="184" fill="none" stroke="url(#goldGrad)" stroke-width="2" stroke-opacity="0.45"/>
+  <circle cx="200" cy="200" r="172" fill="none" stroke="#93c5fd" stroke-width="1" stroke-dasharray="4 6" stroke-opacity="0.3"/>
+
+  <!-- Five music staff lines curving softly across background -->
+  <g fill="none" stroke="url(#cyanGrad)" stroke-width="1.5">
+    <path d="M 28 210 Q 130 165, 200 198 T 372 182"/>
+    <path d="M 24 222 Q 130 177, 200 210 T 376 194"/>
+    <path d="M 22 234 Q 130 189, 200 222 T 378 206"/>
+    <path d="M 24 246 Q 130 201, 200 234 T 376 218"/>
+    <path d="M 28 258 Q 130 213, 200 246 T 372 230"/>
+  </g>
+
+  <!-- Digital audio equalizer bars (positioned cleanly on outer flanks away from text) -->
+  <g fill="#38bdf8" fill-opacity="0.32">
+    <rect x="72" y="294" width="5" height="16" rx="2.5"/>
+    <rect x="82" y="286" width="5" height="24" rx="2.5"/>
+    <rect x="92" y="291" width="5" height="19" rx="2.5"/>
+    <rect x="303" y="291" width="5" height="19" rx="2.5"/>
+    <rect x="313" y="286" width="5" height="24" rx="2.5"/>
+    <rect x="323" y="294" width="5" height="16" rx="2.5"/>
+  </g>
+
+  <!-- Stylized Musician / Educator silhouette with Treble Clef emblem -->
+  <g transform="translate(200, 185)">
+    <!-- Circular crest -->
+    <circle cx="0" cy="-12" r="88" fill="#0f172a" fill-opacity="0.55" stroke="url(#goldGrad)" stroke-width="2.5"/>
+    <!-- Stylized musical eighth-note / treble motif -->
+    <path d="M -8 34 C -24 34, -34 22, -34 8 C -34 -12, -10 -24, 6 -44 C 14 -54, 15 -68, 7 -76 C 1 -82, -8 -74, -8 -62 L -8 24 C -8 40, -18 50, -30 48 C -38 46, -42 38, -36 32 C -31 27, -23 30, -23 36"
+          fill="none" stroke="url(#goldGrad)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Secondary beamed notes & AI sparkle -->
+    <g fill="url(#goldGrad)">
+      <ellipse cx="24" cy="14" rx="10" ry="7.5" transform="rotate(-18 24 14)"/>
+      <ellipse cx="46" cy="4" rx="10" ry="7.5" transform="rotate(-18 46 4)"/>
+      <path d="M 32 12 L 32 -30 L 54 -38 L 54 2" fill="none" stroke="url(#goldGrad)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <line x1="32" y1="-20" x2="54" y2="-28" stroke="url(#goldGrad)" stroke-width="4"/>
+    </g>
+    <!-- AI star spark -->
+    <path d="M -44 -48 L -40 -38 L -30 -34 L -40 -30 L -44 -20 L -48 -30 L -58 -34 L -48 -38 Z" fill="#38bdf8" fill-opacity="0.9"/>
+  </g>
+
+  <!-- Monogram & Subtitle -->
+  <text x="200" y="302" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="28" font-weight="bold" letter-spacing="4" fill="url(#goldGrad)">TĐ THỊNH</text>
+  <text x="200" y="328" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" letter-spacing="2.2" fill="#cbd5e1">SƯ PHẠM ÂM NHẠC • K20G</text>
+</svg>
